@@ -13,6 +13,8 @@ Group members:
 
 TODOS:
 - [x] Retrieve JSON data
+- [ ] Make habitat relations on genera
+- [ ] Start filling out readme
 - [ ] Build EMF model of the data
 - [ ] Instantiate the model from data
 - [ ] Build diagram editor 
