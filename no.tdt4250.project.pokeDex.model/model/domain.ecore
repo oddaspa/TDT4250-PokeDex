@@ -20,6 +20,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="species" upperBound="-1"
         eType="#//Species"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="habitat" eType="#//Habitats"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Species">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -27,6 +28,7 @@
         eType="#//Species"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="evolvesFrom" upperBound="-1"
         eType="#//Species"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="icon" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="Kingdoms">
     <eLiterals name="Plantae"/>
@@ -46,14 +48,14 @@
     <eLiterals name="Mammal" value="4"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="Habitats">
-    <eLiterals/>
-    <eLiterals/>
-    <eLiterals/>
-    <eLiterals/>
-    <eLiterals/>
-    <eLiterals/>
-    <eLiterals/>
-    <eLiterals/>
-    <eLiterals/>
+    <eLiterals name="Cave"/>
+    <eLiterals name="Forest" value="1"/>
+    <eLiterals name="Grassland" value="2"/>
+    <eLiterals name="Mountain" value="3"/>
+    <eLiterals name="Rare" value="4"/>
+    <eLiterals name="RoughTerrain" value="5"/>
+    <eLiterals name="Sea" value="6"/>
+    <eLiterals name="Urban" value="7"/>
+    <eLiterals name="WatersEdge" value="8"/>
   </eClassifiers>
 </ecore:EPackage>
