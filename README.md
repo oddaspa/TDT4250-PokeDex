@@ -7,7 +7,9 @@ Group members:
 - Odd Gunnar Aspaas
 
 # Using the [PokeDex API](https://pokeapi.co/docs/v2.html/#pokemon-section) to build the Tree of Life 
-![alt text](https://github.com/oddaspa/TDT4250-PokeDex/blob/img/tree_of_life_darwin.jpg "Tree of Life Darwin")
+
+![alt text](https://github.com/oddaspa/TDT4250-PokeDex/blob/master/prestudy/img/tree_of_life_darwin.jpg "Tree of Life Darwin")
+
 
 TODOS:
 - [x] Retrieve JSON data
@@ -26,7 +28,7 @@ TODOS:
 
 <a name="import_data"></a>
 ### Import data from API
-Using a python script and the API provided from [PokeAPI](https://pokeapi.co) we dumped all 807 pokemon into a single JSON file which we will use in the project. See **the file** to see how we did it.
+Using a python script and the API provided from [PokeAPI](https://pokeapi.co) we dumped all 807 pokemon into a single JSON file which we will use in the project. See [the notebook](https://github.com/oddaspa/TDT4250-PokeDex/blob/master/prestudy/python_retrival/PokeDex%20API.ipynb) to see how we did it.
 
 <a name="build_emf"></a>
 ### Building the EMF model
