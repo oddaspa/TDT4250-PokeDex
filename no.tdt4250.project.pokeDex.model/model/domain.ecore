@@ -1,33 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="domain" nsURI="http://no/tdt4250/project/pokeDex/model" nsPrefix="no.tdt4250.project.pokeDex.model">
+  <eClassifiers xsi:type="ecore:EClass" name="Domain">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="kingdoms" upperBound="-1"
+        eType="#//Kingdom" containment="true"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Kingdom">
     <eStructuralFeatures xsi:type="ecore:EReference" name="phyla" upperBound="-1"
         eType="#//Phylum" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//Kingdoms"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Phylum">
     <eStructuralFeatures xsi:type="ecore:EReference" name="classes" upperBound="-1"
         eType="#//Class" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//Phlya"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Class">
     <eStructuralFeatures xsi:type="ecore:EReference" name="genera" upperBound="-1"
         eType="#//Genus" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="#//Classes"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Genus">
     <eStructuralFeatures xsi:type="ecore:EReference" name="species" upperBound="-1"
-        eType="#//Species"/>
+        eType="#//Species" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="habitat" eType="#//Habitats"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Species">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="evolvesTo" upperBound="-1"
-        eType="#//Species"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="evolvesFrom" upperBound="-1"
-        eType="#//Species"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="evolvesTo" eType="#//Species"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="evolvesFrom" eType="#//Species"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="icon" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="Kingdoms">
@@ -39,6 +42,8 @@
     <eLiterals name="Chordates"/>
     <eLiterals name="Arthropods" value="1"/>
     <eLiterals name="Vertebrate" value="2"/>
+    <eLiterals name="Angiospermophyta" value="3"/>
+    <eLiterals name="Metamorphic" value="4"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EEnum" name="Classes">
     <eLiterals name="Bird"/>

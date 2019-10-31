@@ -23,6 +23,21 @@
       <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Classes/Fairy"/>
       <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Classes/Mammal"/>
     </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="domain.ecore#//Habitats">
+      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/Cave"/>
+      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/Forest"/>
+      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/Grassland"/>
+      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/Mountain"/>
+      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/Rare"/>
+      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/RoughTerrain"/>
+      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/Sea"/>
+      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/Urban"/>
+      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/WatersEdge"/>
+    </genEnums>
+    <genClasses ecoreClass="domain.ecore#//Domain">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute domain.ecore#//Domain/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference domain.ecore#//Domain/kingdoms"/>
+    </genClasses>
     <genClasses ecoreClass="domain.ecore#//Kingdom">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference domain.ecore#//Kingdom/phyla"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute domain.ecore#//Kingdom/name"/>
@@ -38,11 +53,13 @@
     <genClasses ecoreClass="domain.ecore#//Genus">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//Genus/species"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute domain.ecore#//Genus/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute domain.ecore#//Genus/habitat"/>
     </genClasses>
     <genClasses ecoreClass="domain.ecore#//Species">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute domain.ecore#//Species/name"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//Species/evolvesTo"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//Species/evolvesFrom"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute domain.ecore#//Species/icon"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
