@@ -3,7 +3,7 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="domain" nsURI="http://no/tdt4250/project/pokeDex/model" nsPrefix="no.tdt4250.project.pokeDex.model">
   <eClassifiers xsi:type="ecore:EClass" name="Kingdom">
     <eStructuralFeatures xsi:type="ecore:EReference" name="phyla" upperBound="-1"
-        eType="#//Species" containment="true"/>
+        eType="#//Phylum" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Phylum">
@@ -44,5 +44,16 @@
     <eLiterals name="Dragon" value="2"/>
     <eLiterals name="Fairy" value="3"/>
     <eLiterals name="Mammal" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Habitats">
+    <eLiterals/>
+    <eLiterals/>
+    <eLiterals/>
+    <eLiterals/>
+    <eLiterals/>
+    <eLiterals/>
+    <eLiterals/>
+    <eLiterals/>
+    <eLiterals/>
   </eClassifiers>
 </ecore:EPackage>
