@@ -26,6 +26,10 @@
         eType="#//Species" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="habitat" eType="#//Habitats"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sameAnatomy" upperBound="-1"
+        eType="#//Genus"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="anatomy" lowerBound="1"
+        eType="#//Anatomy"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Species">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -62,5 +66,21 @@
     <eLiterals name="Sea" value="6"/>
     <eLiterals name="Urban" value="7"/>
     <eLiterals name="WatersEdge" value="8"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Anatomy">
+    <eLiterals name="Ball"/>
+    <eLiterals name="Fish" value="1"/>
+    <eLiterals name="Squiggle" value="2"/>
+    <eLiterals name="Arms" value="3"/>
+    <eLiterals name="Blob" value="4"/>
+    <eLiterals name="Upright" value="5"/>
+    <eLiterals name="Legs" value="6"/>
+    <eLiterals name="Quadruped" value="7"/>
+    <eLiterals name="Wings" value="8" literal="Wings"/>
+    <eLiterals name="Tentacles" value="9"/>
+    <eLiterals name="Heads" value="10"/>
+    <eLiterals name="Humanoid" value="11"/>
+    <eLiterals name="BugWings" value="12"/>
+    <eLiterals name="Armor" value="13"/>
   </eClassifiers>
 </ecore:EPackage>
