@@ -1,10 +1,11 @@
 # TDT4250-PokeDex
 Semester project in the course TDT4250 - Advanced Software Design
 Group members:
+- Odd Gunnar Aspaas
 - Andreas Kristiansen Melzer
 - Alexander Staff
 - Robin Staff
-- Odd Gunnar Aspaas
+
 
 # Using the [PokeDex API](https://pokeapi.co/docs/v2.html/#pokemon-section) to build the Tree of Life 
 
@@ -34,6 +35,7 @@ Using a python script and the API provided from [PokeAPI](https://pokeapi.co) we
 
 <a name="build_emf"></a>
 ### Building the EMF model
+The greatest challenge in finding a good model was deciding how we would use the PokeAPI to achieve a good level of complexity. We needed more cross-model relations than are immediately obvious with Pokemon. After looking into using the "habitate" attribute we landed on using the "shape" attribute. Pokemon in the API are seperated into 14 different shapes (which we call "Anatomy" in the model) which gives us the relations we need. 
 
 <a name="init_models"></a>
 ### Instantiating pokemon models
