@@ -3,8 +3,11 @@ package domain.util;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -48,72 +51,197 @@ public class DomainResourceImpl extends XMIResourceImpl {
 		super(uri);
 	}
 
-	
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) throws IOException {
-		
 		// SAVING TO XMI
 		ResourceSet resSet = new ResourceSetImpl();
 		resSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("domain", new DomainResourceFactoryImpl());
 		Resource domainResource = resSet.createResource(URI.createURI("test.domain"));
 		Domain domain = DomainFactory.eINSTANCE.createDomain();
 		
+		// CREATE EENUMS
+		ArrayList<String> kingdoms = new ArrayList<>();
+		kingdoms.add("plant");
+		kingdoms.add("animals");
+		kingdoms.add("minerals");
+		
+		ArrayList<String> phyla = new ArrayList<>();
+		phyla.add("Chordata");
+		phyla.add("Angiospemophyta");
+		phyla.add("Arthpods");
+		phyla.add("Vertebrate");
+		phyla.add("Metamorphic");
+		
+		ArrayList<String> classes = new ArrayList<>();
+		classes.add("Fish");
+		classes.add("Bird");
+		classes.add("Mammal");
+		
+		// IF CONDITIONS
+		ArrayList<String> animals = new ArrayList<>();
+		animals.add("glying");
+		animals.add("water1");
+		animals.add("water2");
+		animals.add("water3");
+		animals.add("ground");
+		animals.add("fairy");
+		animals.add("humanshape");
+		animals.add("monster");
+		animals.add("dragon");
+		animals.add("ditto");
+		animals.add("indeterminate");
+
+		
+		
+		
+		// GLOBAL ARRAYS
+		ArrayList<String> genera = new ArrayList<>();
+		ArrayList<Genus> generaInstances = new ArrayList<>();
 		// FILL IN ALL NEEDED ATTRIBUTES
 		domain.setName("Pokemons");
 		System.out.println(resSet);
 		domainResource.getContents().add(domain);
 		
 		// ADD KINGDOMS
-		Kingdom k1 = DomainFactory.eINSTANCE.createKingdom();
-		k1.setName("Animalia");
+		Kingdom animalia = DomainFactory.eINSTANCE.createKingdom();
+		animalia.setName("Animalia");
+		
+		Kingdom plantae = DomainFactory.eINSTANCE.createKingdom();
+		plantae.setName("Plantae");
+		
+		Kingdom mineralia = DomainFactory.eINSTANCE.createKingdom();
+		mineralia.setName("Mineralia");
+		
 		
 		// ADD PHYLUM
-		Phylum p1 = DomainFactory.eINSTANCE.createPhylum();
-		p1.setName("Chordates");
+		Phylum chordates = DomainFactory.eINSTANCE.createPhylum();
+		chordates.setName("Chordates");
+		
+		Phylum generalPlant = DomainFactory.eINSTANCE.createPhylum();
+		generalPlant.setName("Not specified plants");
+		
+		Phylum generalMineral = DomainFactory.eINSTANCE.createPhylum();
+		chordates.setName("Not specified mineral");
+		
 		
 		// ADD CLASS
-		Class c1 = DomainFactory.eINSTANCE.createClass();
-		c1.setName("Mammal");
-		// TRY TO ADD ALL POKEMON
-	
-		// ADD GENUS
-		Genus g1 = DomainFactory.eINSTANCE.createGenus();
-		g1.setName("Poison Pin");
-		g1.setAnatomy("Upright");
-		g1.setHabitat("Grassland");
+		Class mammals = DomainFactory.eINSTANCE.createClass();
+		mammals.setName("Mammal");
 		
-		// FILL IN ALL NEEDED ATTRIBUTES
-		Species species1 = DomainFactory.eINSTANCE.createSpecies();
-		species1.setName("Nidoran");
+		Class birds = DomainFactory.eINSTANCE.createClass();
+		birds.setName("Bird");
+		
+		Class fish = DomainFactory.eINSTANCE.createClass();
+		fish.setName("Fish");
+		
+		Class generalClassAnimal = DomainFactory.eINSTANCE.createClass();
+		generalClassAnimal.setName("Some type of animal");
+		
+		Class generalClassPlants = DomainFactory.eINSTANCE.createClass();
+		generalClassAnimal.setName("Some type of plant");
+		
+		Class generalClassMineral = DomainFactory.eINSTANCE.createClass();
+		generalClassAnimal.setName("Some type of mineral");
+		
+		
+		// READING AND PARSING JSON
+		
+		{
+		    //JSON parser object to parse read file
+		    JSONParser jsonParser = new JSONParser();
+		     
+		    try (FileReader reader = new FileReader("pokemons.json"))
+		    {
+		        //Read JSON file
+		        Object obj  = jsonParser.parse(reader);
+		        JSONArray pokemonList = (JSONArray) new JSONParser().parse((String) obj);
 
-		Species species2 = DomainFactory.eINSTANCE.createSpecies();
-		species1.setName("Nidorino");
+		    	// TRY TO ADD ALL POKEMON
+				for(int i = 0; i < pokemonList.size(); i++)
+				{
+				      JSONObject pokemon = (JSONObject) ((JSONArray) pokemonList).get(i);
+				      HashMap pokemonHashMap = parsePokemonObject(pokemon);
+				      Species pokemonSpecies = DomainFactory.eINSTANCE.createSpecies();
+				      pokemonSpecies.setName((String) pokemonHashMap.get("name"));
+				      String currentGenus = (String) pokemonHashMap.get("genus");
+				      String eggGroup = (String) pokemonHashMap.get("egg_group");
+				      if(!genera.contains(currentGenus)){
+				    	  genera.add(currentGenus);
+				    	  Genus newGen = DomainFactory.eINSTANCE.createGenus();
+				    	  newGen.setName(currentGenus);
+				    	  newGen.getSpecies().add(pokemonSpecies);
+				    	  generaInstances.add(newGen);
+				    	  if(eggGroup.equals("plant")) {
+				    		  generalClassPlants.getGenera().add(newGen);
+				    	  }else if(eggGroup.equals("mineral")) {
+				    		  generalClassMineral.getGenera().add(newGen);
+				    	  }else {
+				    		  generalClassAnimal.getGenera().add(newGen);
+				    	  }
+				      }else {
+				    	  for(Genus gen : generaInstances) {
+				    		  if(gen.getName().equals(currentGenus)) {
+				    			  gen.getSpecies().add(pokemonSpecies);
+				    		  }
+				    	  }
+				      }
+				}
+		    } catch (FileNotFoundException e) {
+		        e.printStackTrace();
+		    } catch (IOException e) {
+		        e.printStackTrace();
+		    } catch (ParseException e) {
+		        e.printStackTrace();
+		    }
+		}
+				
+		generalPlant.getClasses().add(generalClassPlants);
+		chordates.getClasses().add(generalClassAnimal);
+		generalMineral.getClasses().add(generalClassMineral);
 		
-		Species species3 = DomainFactory.eINSTANCE.createSpecies();
-		species1.setName("Nidoking");
+		plantae.getPhyla().add(generalPlant);
+		animalia.getPhyla().add(chordates);
+		mineralia.getPhyla().add(generalMineral);
 		
-		// ADD DEPENDENCIES
-		
-		species1.setEvolvesTo(species2);
-		species2.setEvolvesFrom(species1);
-		species2.setEvolvesTo(species3);
-		species3.setEvolvesFrom(species2);
-		
-		k1.getPhyla().add(p1);
-		p1.getClasses().add(c1);
-		c1.getGenera().add(g1);
-		g1.getSpecies().add(species1);
-		g1.getSpecies().add(species2);
-		g1.getSpecies().add(species3);
-		
-		domain.getKingdoms().add(k1);
+		domain.getKingdoms().add(plantae);
+		domain.getKingdoms().add(animalia);
+		domain.getKingdoms().add(mineralia);
 		String fileSeparator = System.getProperty("file.separator");
-        File file = new File("src-gen" + fileSeparator + "file.xmi");
         
-        
-		domainResource.save(System.out, null);
+        try {
+            File file = new File("src-gen" + fileSeparator + "file.xmi");
+        	FileOutputStream fop = new FileOutputStream(file);
+        	if(!file.exists()) {
+        		file.createNewFile();
+        	}
+        	domainResource.save(fop, null);
+        	fop.flush();
+        	fop.close();
+        } catch (Exception e){
+        	System.out.println("Can not write new file due to :" + e );
+        }
+        System.out.println("Completed serializing...");
 	}
 	
 	
-	
+	//TODO: refactor to get all attributes of pokemon
+	private static HashMap<String, String> parsePokemonObject(JSONObject pokemon) 
+	{	
+		HashMap<String, String> pokemonInstance = new HashMap<String, String>(); 
+	    //Get Pokemon name
+	    String name = (String) pokemon.get("name"); 
+	    name = name.substring(0, 1).toUpperCase() + name.substring(1);
+	    pokemonInstance.put("name", name);
+	    
+	    //Get Pokemon genus
+	    JSONArray genera = (JSONArray) pokemon.get("genera");
+	    String genus = (String) ((JSONObject) genera.get(2)).get("genus"); 
+	    pokemonInstance.put("genus", genus);
+	    
+	  //Get Pokemon egg_group
+	    String egg_group =  ((JSONObject) ((JSONArray) pokemon.get("egg_groups")).get(0)).get("name").toString();  
+	    pokemonInstance.put("egg_group", egg_group);
+	    return pokemonInstance;
+	}
 	
 } //RaResourceImpl
