@@ -2,18 +2,15 @@
  */
 package domain.impl;
 
-import domain.Classes;
+import domain.Domain;
 import domain.DomainFactory;
 import domain.DomainPackage;
 import domain.Genus;
 import domain.Kingdom;
-import domain.Kingdoms;
-import domain.Phlya;
 import domain.Phylum;
 import domain.Species;
 
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -65,6 +62,7 @@ public class DomainFactoryImpl extends EFactoryImpl implements DomainFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
+			case DomainPackage.DOMAIN: return createDomain();
 			case DomainPackage.KINGDOM: return createKingdom();
 			case DomainPackage.PHYLUM: return createPhylum();
 			case DomainPackage.CLASS: return createClass();
@@ -81,36 +79,9 @@ public class DomainFactoryImpl extends EFactoryImpl implements DomainFactory {
 	 * @generated
 	 */
 	@Override
-	public Object createFromString(EDataType eDataType, String initialValue) {
-		switch (eDataType.getClassifierID()) {
-			case DomainPackage.KINGDOMS:
-				return createKingdomsFromString(eDataType, initialValue);
-			case DomainPackage.PHLYA:
-				return createPhlyaFromString(eDataType, initialValue);
-			case DomainPackage.CLASSES:
-				return createClassesFromString(eDataType, initialValue);
-			default:
-				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
-		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String convertToString(EDataType eDataType, Object instanceValue) {
-		switch (eDataType.getClassifierID()) {
-			case DomainPackage.KINGDOMS:
-				return convertKingdomsToString(eDataType, instanceValue);
-			case DomainPackage.PHLYA:
-				return convertPhlyaToString(eDataType, instanceValue);
-			case DomainPackage.CLASSES:
-				return convertClassesToString(eDataType, instanceValue);
-			default:
-				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
-		}
+	public Domain createDomain() {
+		DomainImpl domain = new DomainImpl();
+		return domain;
 	}
 
 	/**
@@ -166,66 +137,6 @@ public class DomainFactoryImpl extends EFactoryImpl implements DomainFactory {
 	public Species createSpecies() {
 		SpeciesImpl species = new SpeciesImpl();
 		return species;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Kingdoms createKingdomsFromString(EDataType eDataType, String initialValue) {
-		Kingdoms result = Kingdoms.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertKingdomsToString(EDataType eDataType, Object instanceValue) {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Phlya createPhlyaFromString(EDataType eDataType, String initialValue) {
-		Phlya result = Phlya.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertPhlyaToString(EDataType eDataType, Object instanceValue) {
-		return instanceValue == null ? null : instanceValue.toString();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Classes createClassesFromString(EDataType eDataType, String initialValue) {
-		Classes result = Classes.get(initialValue);
-		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
-		return result;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String convertClassesToString(EDataType eDataType, Object instanceValue) {
-		return instanceValue == null ? null : instanceValue.toString();
 	}
 
 	/**

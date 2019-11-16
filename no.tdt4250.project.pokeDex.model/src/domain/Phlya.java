@@ -46,7 +46,23 @@ public enum Phlya implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	VERTEBRATE(2, "Vertebrate", "Vertebrate");
+	VERTEBRATE(2, "Vertebrate", "Vertebrate"), /**
+	 * The '<em><b>Angiospermophyta</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ANGIOSPERMOPHYTA_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	ANGIOSPERMOPHYTA(3, "Angiospermophyta", "Angiospermophyta"), /**
+	 * The '<em><b>Metamorphic</b></em>' literal object.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #METAMORPHIC_VALUE
+	 * @generated
+	 * @ordered
+	 */
+	METAMORPHIC(4, "Metamorphic", "Metamorphic");
 
 	/**
 	 * The '<em><b>Chordates</b></em>' literal value.
@@ -82,6 +98,28 @@ public enum Phlya implements Enumerator {
 	public static final int VERTEBRATE_VALUE = 2;
 
 	/**
+	 * The '<em><b>Angiospermophyta</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #ANGIOSPERMOPHYTA
+	 * @model name="Angiospermophyta"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int ANGIOSPERMOPHYTA_VALUE = 3;
+
+	/**
+	 * The '<em><b>Metamorphic</b></em>' literal value.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #METAMORPHIC
+	 * @model name="Metamorphic"
+	 * @generated
+	 * @ordered
+	 */
+	public static final int METAMORPHIC_VALUE = 4;
+
+	/**
 	 * An array of all the '<em><b>Phlya</b></em>' enumerators.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -92,6 +130,8 @@ public enum Phlya implements Enumerator {
 			CHORDATES,
 			ARTHROPODS,
 			VERTEBRATE,
+			ANGIOSPERMOPHYTA,
+			METAMORPHIC,
 		};
 
 	/**
@@ -151,6 +191,8 @@ public enum Phlya implements Enumerator {
 			case CHORDATES_VALUE: return CHORDATES;
 			case ARTHROPODS_VALUE: return ARTHROPODS;
 			case VERTEBRATE_VALUE: return VERTEBRATE;
+			case ANGIOSPERMOPHYTA_VALUE: return ANGIOSPERMOPHYTA;
+			case METAMORPHIC_VALUE: return METAMORPHIC;
 		}
 		return null;
 	}

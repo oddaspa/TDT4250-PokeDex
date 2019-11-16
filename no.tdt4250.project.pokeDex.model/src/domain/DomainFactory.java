@@ -1,5 +1,3 @@
-/**
- */
 package domain;
 
 import org.eclipse.emf.ecore.EFactory;
@@ -20,6 +18,15 @@ public interface DomainFactory extends EFactory {
 	 * @generated
 	 */
 	DomainFactory eINSTANCE = domain.impl.DomainFactoryImpl.init();
+
+	/**
+	 * Returns a new object of class '<em>Domain</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Domain</em>'.
+	 * @generated
+	 */
+	Domain createDomain();
 
 	/**
 	 * Returns a new object of class '<em>Kingdom</em>'.

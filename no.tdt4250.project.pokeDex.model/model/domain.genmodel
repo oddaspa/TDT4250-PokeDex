@@ -6,34 +6,6 @@
     operationReflection="true" importOrganizing="true">
   <foreignModel>domain.ecore</foreignModel>
   <genPackages prefix="Domain" disposableProviderFactory="true" ecorePackage="domain.ecore#/">
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="domain.ecore#//Kingdoms">
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Kingdoms/Plantae"/>
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Kingdoms/Animalia"/>
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Kingdoms/Mineralia"/>
-    </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="domain.ecore#//Phlya">
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Phlya/Chordates"/>
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Phlya/Arthropods"/>
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Phlya/Vertebrate"/>
-    </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="domain.ecore#//Classes">
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Classes/Bird"/>
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Classes/Fish"/>
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Classes/Dragon"/>
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Classes/Fairy"/>
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Classes/Mammal"/>
-    </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="domain.ecore#//Habitats">
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/Cave"/>
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/Forest"/>
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/Grassland"/>
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/Mountain"/>
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/Rare"/>
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/RoughTerrain"/>
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/Sea"/>
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/Urban"/>
-      <genEnumLiterals ecoreEnumLiteral="domain.ecore#//Habitats/WatersEdge"/>
-    </genEnums>
     <genClasses ecoreClass="domain.ecore#//Domain">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute domain.ecore#//Domain/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference domain.ecore#//Domain/kingdoms"/>
@@ -54,6 +26,8 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//Genus/species"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute domain.ecore#//Genus/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute domain.ecore#//Genus/habitat"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference domain.ecore#//Genus/sameAnatomy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute domain.ecore#//Genus/anatomy"/>
     </genClasses>
     <genClasses ecoreClass="domain.ecore#//Species">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute domain.ecore#//Species/name"/>

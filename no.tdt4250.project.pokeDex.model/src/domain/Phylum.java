@@ -48,14 +48,6 @@ public interface Phylum extends EObject {
 	 */
 	String getName();
 
-	/**
-	 * Sets the value of the '{@link domain.Phylum#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
+	void setName(String string);
 
 } // Phylum

@@ -4,7 +4,6 @@ package domain;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -58,6 +57,52 @@ public interface DomainPackage extends EPackage {
 	DomainPackage eINSTANCE = domain.impl.DomainPackageImpl.init();
 
 	/**
+	 * The meta object id for the '{@link domain.impl.DomainImpl <em>Domain</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see domain.impl.DomainImpl
+	 * @see domain.impl.DomainPackageImpl#getDomain()
+	 * @generated
+	 */
+	int DOMAIN = 0;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Kingdoms</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN__KINGDOMS = 1;
+
+	/**
+	 * The number of structural features of the '<em>Domain</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Domain</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN_OPERATION_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link domain.impl.KingdomImpl <em>Kingdom</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -65,7 +110,7 @@ public interface DomainPackage extends EPackage {
 	 * @see domain.impl.DomainPackageImpl#getKingdom()
 	 * @generated
 	 */
-	int KINGDOM = 0;
+	int KINGDOM = 1;
 
 	/**
 	 * The feature id for the '<em><b>Phyla</b></em>' containment reference list.
@@ -111,7 +156,7 @@ public interface DomainPackage extends EPackage {
 	 * @see domain.impl.DomainPackageImpl#getPhylum()
 	 * @generated
 	 */
-	int PHYLUM = 1;
+	int PHYLUM = 2;
 
 	/**
 	 * The feature id for the '<em><b>Classes</b></em>' containment reference list.
@@ -157,7 +202,7 @@ public interface DomainPackage extends EPackage {
 	 * @see domain.impl.DomainPackageImpl#getClass_()
 	 * @generated
 	 */
-	int CLASS = 2;
+	int CLASS = 3;
 
 	/**
 	 * The feature id for the '<em><b>Genera</b></em>' containment reference list.
@@ -203,10 +248,10 @@ public interface DomainPackage extends EPackage {
 	 * @see domain.impl.DomainPackageImpl#getGenus()
 	 * @generated
 	 */
-	int GENUS = 3;
+	int GENUS = 4;
 
 	/**
-	 * The feature id for the '<em><b>Species</b></em>' reference list.
+	 * The feature id for the '<em><b>Species</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -224,13 +269,40 @@ public interface DomainPackage extends EPackage {
 	int GENUS__NAME = 1;
 
 	/**
+	 * The feature id for the '<em><b>Habitat</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENUS__HABITAT = 2;
+
+	/**
+	 * The feature id for the '<em><b>Same Anatomy</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENUS__SAME_ANATOMY = 3;
+
+	/**
+	 * The feature id for the '<em><b>Anatomy</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENUS__ANATOMY = 4;
+
+	/**
 	 * The number of structural features of the '<em>Genus</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GENUS_FEATURE_COUNT = 2;
+	int GENUS_FEATURE_COUNT = 5;
 
 	/**
 	 * The number of operations of the '<em>Genus</em>' class.
@@ -249,7 +321,7 @@ public interface DomainPackage extends EPackage {
 	 * @see domain.impl.DomainPackageImpl#getSpecies()
 	 * @generated
 	 */
-	int SPECIES = 4;
+	int SPECIES = 5;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -261,7 +333,7 @@ public interface DomainPackage extends EPackage {
 	int SPECIES__NAME = 0;
 
 	/**
-	 * The feature id for the '<em><b>Evolves To</b></em>' reference list.
+	 * The feature id for the '<em><b>Evolves To</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -270,7 +342,7 @@ public interface DomainPackage extends EPackage {
 	int SPECIES__EVOLVES_TO = 1;
 
 	/**
-	 * The feature id for the '<em><b>Evolves From</b></em>' reference list.
+	 * The feature id for the '<em><b>Evolves From</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -279,13 +351,22 @@ public interface DomainPackage extends EPackage {
 	int SPECIES__EVOLVES_FROM = 2;
 
 	/**
+	 * The feature id for the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPECIES__ICON = 3;
+
+	/**
 	 * The number of structural features of the '<em>Species</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPECIES_FEATURE_COUNT = 3;
+	int SPECIES_FEATURE_COUNT = 4;
 
 	/**
 	 * The number of operations of the '<em>Species</em>' class.
@@ -297,35 +378,36 @@ public interface DomainPackage extends EPackage {
 	int SPECIES_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link domain.Kingdoms <em>Kingdoms</em>}' enum.
+	 * Returns the meta object for class '{@link domain.Domain <em>Domain</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see domain.Kingdoms
-	 * @see domain.impl.DomainPackageImpl#getKingdoms()
+	 * @return the meta object for class '<em>Domain</em>'.
+	 * @see domain.Domain
 	 * @generated
 	 */
-	int KINGDOMS = 5;
+	EClass getDomain();
 
 	/**
-	 * The meta object id for the '{@link domain.Phlya <em>Phlya</em>}' enum.
+	 * Returns the meta object for the attribute '{@link domain.Domain#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see domain.Phlya
-	 * @see domain.impl.DomainPackageImpl#getPhlya()
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see domain.Domain#getName()
+	 * @see #getDomain()
 	 * @generated
 	 */
-	int PHLYA = 6;
+	EAttribute getDomain_Name();
 
 	/**
-	 * The meta object id for the '{@link domain.Classes <em>Classes</em>}' enum.
+	 * Returns the meta object for the containment reference list '{@link domain.Domain#getKingdoms <em>Kingdoms</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see domain.Classes
-	 * @see domain.impl.DomainPackageImpl#getClasses()
+	 * @return the meta object for the containment reference list '<em>Kingdoms</em>'.
+	 * @see domain.Domain#getKingdoms()
+	 * @see #getDomain()
 	 * @generated
 	 */
-	int CLASSES = 7;
-
+	EReference getDomain_Kingdoms();
 
 	/**
 	 * Returns the meta object for class '{@link domain.Kingdom <em>Kingdom</em>}'.
@@ -434,10 +516,10 @@ public interface DomainPackage extends EPackage {
 	EClass getGenus();
 
 	/**
-	 * Returns the meta object for the reference list '{@link domain.Genus#getSpecies <em>Species</em>}'.
+	 * Returns the meta object for the containment reference list '{@link domain.Genus#getSpecies <em>Species</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Species</em>'.
+	 * @return the meta object for the containment reference list '<em>Species</em>'.
 	 * @see domain.Genus#getSpecies()
 	 * @see #getGenus()
 	 * @generated
@@ -454,6 +536,39 @@ public interface DomainPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getGenus_Name();
+
+	/**
+	 * Returns the meta object for the attribute '{@link domain.Genus#getHabitat <em>Habitat</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Habitat</em>'.
+	 * @see domain.Genus#getHabitat()
+	 * @see #getGenus()
+	 * @generated
+	 */
+	EAttribute getGenus_Habitat();
+
+	/**
+	 * Returns the meta object for the reference list '{@link domain.Genus#getSameAnatomy <em>Same Anatomy</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Same Anatomy</em>'.
+	 * @see domain.Genus#getSameAnatomy()
+	 * @see #getGenus()
+	 * @generated
+	 */
+	EReference getGenus_SameAnatomy();
+
+	/**
+	 * Returns the meta object for the attribute '{@link domain.Genus#getAnatomy <em>Anatomy</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Anatomy</em>'.
+	 * @see domain.Genus#getAnatomy()
+	 * @see #getGenus()
+	 * @generated
+	 */
+	EAttribute getGenus_Anatomy();
 
 	/**
 	 * Returns the meta object for class '{@link domain.Species <em>Species</em>}'.
@@ -477,10 +592,10 @@ public interface DomainPackage extends EPackage {
 	EAttribute getSpecies_Name();
 
 	/**
-	 * Returns the meta object for the reference list '{@link domain.Species#getEvolvesTo <em>Evolves To</em>}'.
+	 * Returns the meta object for the reference '{@link domain.Species#getEvolvesTo <em>Evolves To</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Evolves To</em>'.
+	 * @return the meta object for the reference '<em>Evolves To</em>'.
 	 * @see domain.Species#getEvolvesTo()
 	 * @see #getSpecies()
 	 * @generated
@@ -488,10 +603,10 @@ public interface DomainPackage extends EPackage {
 	EReference getSpecies_EvolvesTo();
 
 	/**
-	 * Returns the meta object for the reference list '{@link domain.Species#getEvolvesFrom <em>Evolves From</em>}'.
+	 * Returns the meta object for the reference '{@link domain.Species#getEvolvesFrom <em>Evolves From</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Evolves From</em>'.
+	 * @return the meta object for the reference '<em>Evolves From</em>'.
 	 * @see domain.Species#getEvolvesFrom()
 	 * @see #getSpecies()
 	 * @generated
@@ -499,34 +614,15 @@ public interface DomainPackage extends EPackage {
 	EReference getSpecies_EvolvesFrom();
 
 	/**
-	 * Returns the meta object for enum '{@link domain.Kingdoms <em>Kingdoms</em>}'.
+	 * Returns the meta object for the attribute '{@link domain.Species#getIcon <em>Icon</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Kingdoms</em>'.
-	 * @see domain.Kingdoms
+	 * @return the meta object for the attribute '<em>Icon</em>'.
+	 * @see domain.Species#getIcon()
+	 * @see #getSpecies()
 	 * @generated
 	 */
-	EEnum getKingdoms();
-
-	/**
-	 * Returns the meta object for enum '{@link domain.Phlya <em>Phlya</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Phlya</em>'.
-	 * @see domain.Phlya
-	 * @generated
-	 */
-	EEnum getPhlya();
-
-	/**
-	 * Returns the meta object for enum '{@link domain.Classes <em>Classes</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for enum '<em>Classes</em>'.
-	 * @see domain.Classes
-	 * @generated
-	 */
-	EEnum getClasses();
+	EAttribute getSpecies_Icon();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -551,6 +647,32 @@ public interface DomainPackage extends EPackage {
 	 * @generated
 	 */
 	interface Literals {
+		/**
+		 * The meta object literal for the '{@link domain.impl.DomainImpl <em>Domain</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see domain.impl.DomainImpl
+		 * @see domain.impl.DomainPackageImpl#getDomain()
+		 * @generated
+		 */
+		EClass DOMAIN = eINSTANCE.getDomain();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute DOMAIN__NAME = eINSTANCE.getDomain_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Kingdoms</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOMAIN__KINGDOMS = eINSTANCE.getDomain_Kingdoms();
+
 		/**
 		 * The meta object literal for the '{@link domain.impl.KingdomImpl <em>Kingdom</em>}' class.
 		 * <!-- begin-user-doc -->
@@ -640,7 +762,7 @@ public interface DomainPackage extends EPackage {
 		EClass GENUS = eINSTANCE.getGenus();
 
 		/**
-		 * The meta object literal for the '<em><b>Species</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Species</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -654,6 +776,30 @@ public interface DomainPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute GENUS__NAME = eINSTANCE.getGenus_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Habitat</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GENUS__HABITAT = eINSTANCE.getGenus_Habitat();
+
+		/**
+		 * The meta object literal for the '<em><b>Same Anatomy</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GENUS__SAME_ANATOMY = eINSTANCE.getGenus_SameAnatomy();
+
+		/**
+		 * The meta object literal for the '<em><b>Anatomy</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GENUS__ANATOMY = eINSTANCE.getGenus_Anatomy();
 
 		/**
 		 * The meta object literal for the '{@link domain.impl.SpeciesImpl <em>Species</em>}' class.
@@ -674,7 +820,7 @@ public interface DomainPackage extends EPackage {
 		EAttribute SPECIES__NAME = eINSTANCE.getSpecies_Name();
 
 		/**
-		 * The meta object literal for the '<em><b>Evolves To</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Evolves To</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -682,7 +828,7 @@ public interface DomainPackage extends EPackage {
 		EReference SPECIES__EVOLVES_TO = eINSTANCE.getSpecies_EvolvesTo();
 
 		/**
-		 * The meta object literal for the '<em><b>Evolves From</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Evolves From</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -690,34 +836,12 @@ public interface DomainPackage extends EPackage {
 		EReference SPECIES__EVOLVES_FROM = eINSTANCE.getSpecies_EvolvesFrom();
 
 		/**
-		 * The meta object literal for the '{@link domain.Kingdoms <em>Kingdoms</em>}' enum.
+		 * The meta object literal for the '<em><b>Icon</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see domain.Kingdoms
-		 * @see domain.impl.DomainPackageImpl#getKingdoms()
 		 * @generated
 		 */
-		EEnum KINGDOMS = eINSTANCE.getKingdoms();
-
-		/**
-		 * The meta object literal for the '{@link domain.Phlya <em>Phlya</em>}' enum.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see domain.Phlya
-		 * @see domain.impl.DomainPackageImpl#getPhlya()
-		 * @generated
-		 */
-		EEnum PHLYA = eINSTANCE.getPhlya();
-
-		/**
-		 * The meta object literal for the '{@link domain.Classes <em>Classes</em>}' enum.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see domain.Classes
-		 * @see domain.impl.DomainPackageImpl#getClasses()
-		 * @generated
-		 */
-		EEnum CLASSES = eINSTANCE.getClasses();
+		EAttribute SPECIES__ICON = eINSTANCE.getSpecies_Icon();
 
 	}
 

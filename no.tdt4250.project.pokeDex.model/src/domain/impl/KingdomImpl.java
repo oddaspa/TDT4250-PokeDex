@@ -4,8 +4,7 @@ package domain.impl;
 
 import domain.DomainPackage;
 import domain.Kingdom;
-import domain.Species;
-
+import domain.Phylum;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -34,7 +33,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link domain.impl.KingdomImpl#getName <em>Name</em>}</li>
  * </ul>
  *
- * @generated
+ * @generated NOT
  */
 public class KingdomImpl extends MinimalEObjectImpl.Container implements Kingdom {
 	/**
@@ -45,7 +44,7 @@ public class KingdomImpl extends MinimalEObjectImpl.Container implements Kingdom
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Species> phyla;
+	protected EList<Phylum> phyla;
 
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -92,9 +91,9 @@ public class KingdomImpl extends MinimalEObjectImpl.Container implements Kingdom
 	 * @generated
 	 */
 	@Override
-	public EList<Species> getPhyla() {
+	public EList<Phylum> getPhyla() {
 		if (phyla == null) {
-			phyla = new EObjectContainmentEList<Species>(Species.class, this, DomainPackage.KINGDOM__PHYLA);
+			phyla = new EObjectContainmentEList<Phylum>(Phylum.class, this, DomainPackage.KINGDOM__PHYLA);
 		}
 		return phyla;
 	}
@@ -163,7 +162,7 @@ public class KingdomImpl extends MinimalEObjectImpl.Container implements Kingdom
 		switch (featureID) {
 			case DomainPackage.KINGDOM__PHYLA:
 				getPhyla().clear();
-				getPhyla().addAll((Collection<? extends Species>)newValue);
+				getPhyla().addAll((Collection<? extends Phylum>)newValue);
 				return;
 			case DomainPackage.KINGDOM__NAME:
 				setName((String)newValue);
@@ -201,7 +200,7 @@ public class KingdomImpl extends MinimalEObjectImpl.Container implements Kingdom
 			case DomainPackage.KINGDOM__PHYLA:
 				return phyla != null && !phyla.isEmpty();
 			case DomainPackage.KINGDOM__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+				return name != NAME_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
 	}
@@ -222,4 +221,4 @@ public class KingdomImpl extends MinimalEObjectImpl.Container implements Kingdom
 		return result.toString();
 	}
 
-} //KingdomImpl
+	} //KingdomImpl

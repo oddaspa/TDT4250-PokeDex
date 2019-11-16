@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
 public interface Kingdom extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Phyla</b></em>' containment reference list.
-	 * The list contents are of type {@link domain.Species}.
+	 * The list contents are of type {@link domain.Phylum}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Phyla</em>' containment reference list.
@@ -34,7 +34,7 @@ public interface Kingdom extends EObject {
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<Species> getPhyla();
+	EList<Phylum> getPhyla();
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
@@ -48,14 +48,6 @@ public interface Kingdom extends EObject {
 	 */
 	String getName();
 
-	/**
-	 * Sets the value of the '{@link domain.Kingdom#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
+	void setName(String newName);
 
 } // Kingdom

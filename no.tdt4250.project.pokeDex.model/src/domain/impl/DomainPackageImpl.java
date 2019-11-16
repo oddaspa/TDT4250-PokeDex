@@ -2,19 +2,16 @@
  */
 package domain.impl;
 
-import domain.Classes;
+import domain.Domain;
 import domain.DomainFactory;
 import domain.DomainPackage;
 import domain.Genus;
 import domain.Kingdom;
-import domain.Kingdoms;
-import domain.Phlya;
 import domain.Phylum;
 import domain.Species;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -27,6 +24,13 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
  * @generated
  */
 public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass domainEClass = null;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -61,27 +65,6 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 	 * @generated
 	 */
 	private EClass speciesEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EEnum kingdomsEEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EEnum phlyaEEnum = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EEnum classesEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -142,6 +125,36 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(DomainPackage.eNS_URI, theDomainPackage);
 		return theDomainPackage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getDomain() {
+		return domainEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getDomain_Name() {
+		return (EAttribute)domainEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDomain_Kingdoms() {
+		return (EReference)domainEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -270,6 +283,36 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getGenus_Habitat() {
+		return (EAttribute)genusEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGenus_SameAnatomy() {
+		return (EReference)genusEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getGenus_Anatomy() {
+		return (EAttribute)genusEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getSpecies() {
 		return speciesEClass;
 	}
@@ -310,28 +353,8 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 	 * @generated
 	 */
 	@Override
-	public EEnum getKingdoms() {
-		return kingdomsEEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EEnum getPhlya() {
-		return phlyaEEnum;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EEnum getClasses() {
-		return classesEEnum;
+	public EAttribute getSpecies_Icon() {
+		return (EAttribute)speciesEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -363,6 +386,10 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 		isCreated = true;
 
 		// Create classes and their features
+		domainEClass = createEClass(DOMAIN);
+		createEAttribute(domainEClass, DOMAIN__NAME);
+		createEReference(domainEClass, DOMAIN__KINGDOMS);
+
 		kingdomEClass = createEClass(KINGDOM);
 		createEReference(kingdomEClass, KINGDOM__PHYLA);
 		createEAttribute(kingdomEClass, KINGDOM__NAME);
@@ -378,16 +405,15 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 		genusEClass = createEClass(GENUS);
 		createEReference(genusEClass, GENUS__SPECIES);
 		createEAttribute(genusEClass, GENUS__NAME);
+		createEAttribute(genusEClass, GENUS__HABITAT);
+		createEReference(genusEClass, GENUS__SAME_ANATOMY);
+		createEAttribute(genusEClass, GENUS__ANATOMY);
 
 		speciesEClass = createEClass(SPECIES);
 		createEAttribute(speciesEClass, SPECIES__NAME);
 		createEReference(speciesEClass, SPECIES__EVOLVES_TO);
 		createEReference(speciesEClass, SPECIES__EVOLVES_FROM);
-
-		// Create enums
-		kingdomsEEnum = createEEnum(KINGDOMS);
-		phlyaEEnum = createEEnum(PHLYA);
-		classesEEnum = createEEnum(CLASSES);
+		createEAttribute(speciesEClass, SPECIES__ICON);
 	}
 
 	/**
@@ -420,8 +446,12 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 		// Add supertypes to classes
 
 		// Initialize classes, features, and operations; add parameters
+		initEClass(domainEClass, Domain.class, "Domain", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getDomain_Name(), ecorePackage.getEString(), "name", null, 0, 1, Domain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDomain_Kingdoms(), this.getKingdom(), null, "kingdoms", null, 0, -1, Domain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		initEClass(kingdomEClass, Kingdom.class, "Kingdom", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getKingdom_Phyla(), this.getSpecies(), null, "phyla", null, 0, -1, Kingdom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getKingdom_Phyla(), this.getPhylum(), null, "phyla", null, 0, -1, Kingdom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getKingdom_Name(), ecorePackage.getEString(), "name", null, 0, 1, Kingdom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(phylumEClass, Phylum.class, "Phylum", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -433,31 +463,17 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 		initEAttribute(getClass_Name(), ecorePackage.getEString(), "name", null, 0, 1, domain.Class.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(genusEClass, Genus.class, "Genus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getGenus_Species(), this.getSpecies(), null, "species", null, 0, -1, Genus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getGenus_Species(), this.getSpecies(), null, "species", null, 0, -1, Genus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGenus_Name(), ecorePackage.getEString(), "name", null, 0, 1, Genus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGenus_Habitat(), ecorePackage.getEString(), "habitat", null, 0, 1, Genus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getGenus_SameAnatomy(), this.getGenus(), null, "sameAnatomy", null, 0, -1, Genus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getGenus_Anatomy(), ecorePackage.getEString(), "anatomy", null, 1, 1, Genus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(speciesEClass, Species.class, "Species", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSpecies_Name(), ecorePackage.getEString(), "name", null, 0, 1, Species.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getSpecies_EvolvesTo(), this.getSpecies(), null, "evolvesTo", null, 0, -1, Species.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getSpecies_EvolvesFrom(), this.getSpecies(), null, "evolvesFrom", null, 0, -1, Species.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		// Initialize enums and add enum literals
-		initEEnum(kingdomsEEnum, Kingdoms.class, "Kingdoms");
-		addEEnumLiteral(kingdomsEEnum, Kingdoms.PLANTAE);
-		addEEnumLiteral(kingdomsEEnum, Kingdoms.ANIMALIA);
-		addEEnumLiteral(kingdomsEEnum, Kingdoms.MINERALIA);
-
-		initEEnum(phlyaEEnum, Phlya.class, "Phlya");
-		addEEnumLiteral(phlyaEEnum, Phlya.CHORDATES);
-		addEEnumLiteral(phlyaEEnum, Phlya.ARTHROPODS);
-		addEEnumLiteral(phlyaEEnum, Phlya.VERTEBRATE);
-
-		initEEnum(classesEEnum, Classes.class, "Classes");
-		addEEnumLiteral(classesEEnum, Classes.BIRD);
-		addEEnumLiteral(classesEEnum, Classes.FISH);
-		addEEnumLiteral(classesEEnum, Classes.DRAGON);
-		addEEnumLiteral(classesEEnum, Classes.FAIRY);
-		addEEnumLiteral(classesEEnum, Classes.MAMMAL);
+		initEReference(getSpecies_EvolvesTo(), this.getSpecies(), null, "evolvesTo", null, 0, 1, Species.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSpecies_EvolvesFrom(), this.getSpecies(), null, "evolvesFrom", null, 0, 1, Species.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSpecies_Icon(), ecorePackage.getEString(), "icon", null, 0, 1, Species.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

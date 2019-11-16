@@ -2,6 +2,7 @@
  */
 package domain.util;
 
+import domain.Domain;
 import domain.DomainPackage;
 import domain.Genus;
 import domain.Kingdom;
@@ -72,6 +73,10 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 	protected DomainSwitch<Adapter> modelSwitch =
 		new DomainSwitch<Adapter>() {
 			@Override
+			public Adapter caseDomain(Domain object) {
+				return createDomainAdapter();
+			}
+			@Override
 			public Adapter caseKingdom(Kingdom object) {
 				return createKingdomAdapter();
 			}
@@ -110,6 +115,20 @@ public class DomainAdapterFactory extends AdapterFactoryImpl {
 		return modelSwitch.doSwitch((EObject)target);
 	}
 
+
+	/**
+	 * Creates a new adapter for an object of class '{@link domain.Domain <em>Domain</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see domain.Domain
+	 * @generated
+	 */
+	public Adapter createDomainAdapter() {
+		return null;
+	}
 
 	/**
 	 * Creates a new adapter for an object of class '{@link domain.Kingdom <em>Kingdom</em>}'.

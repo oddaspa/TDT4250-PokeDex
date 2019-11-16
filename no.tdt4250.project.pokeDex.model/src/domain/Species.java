@@ -2,8 +2,6 @@
  */
 package domain;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -18,6 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link domain.Species#getName <em>Name</em>}</li>
  *   <li>{@link domain.Species#getEvolvesTo <em>Evolves To</em>}</li>
  *   <li>{@link domain.Species#getEvolvesFrom <em>Evolves From</em>}</li>
+ *   <li>{@link domain.Species#getIcon <em>Icon</em>}</li>
  * </ul>
  *
  * @see domain.DomainPackage#getSpecies()
@@ -48,27 +47,69 @@ public interface Species extends EObject {
 	void setName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Evolves To</b></em>' reference list.
-	 * The list contents are of type {@link domain.Species}.
+	 * Returns the value of the '<em><b>Evolves To</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Evolves To</em>' reference list.
+	 * @return the value of the '<em>Evolves To</em>' reference.
+	 * @see #setEvolvesTo(Species)
 	 * @see domain.DomainPackage#getSpecies_EvolvesTo()
 	 * @model
 	 * @generated
 	 */
-	EList<Species> getEvolvesTo();
+	Species getEvolvesTo();
 
 	/**
-	 * Returns the value of the '<em><b>Evolves From</b></em>' reference list.
-	 * The list contents are of type {@link domain.Species}.
+	 * Sets the value of the '{@link domain.Species#getEvolvesTo <em>Evolves To</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Evolves From</em>' reference list.
+	 * @param value the new value of the '<em>Evolves To</em>' reference.
+	 * @see #getEvolvesTo()
+	 * @generated
+	 */
+	void setEvolvesTo(Species value);
+
+	/**
+	 * Returns the value of the '<em><b>Evolves From</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Evolves From</em>' reference.
+	 * @see #setEvolvesFrom(Species)
 	 * @see domain.DomainPackage#getSpecies_EvolvesFrom()
 	 * @model
 	 * @generated
 	 */
-	EList<Species> getEvolvesFrom();
+	Species getEvolvesFrom();
+
+	/**
+	 * Sets the value of the '{@link domain.Species#getEvolvesFrom <em>Evolves From</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Evolves From</em>' reference.
+	 * @see #getEvolvesFrom()
+	 * @generated
+	 */
+	void setEvolvesFrom(Species value);
+
+	/**
+	 * Returns the value of the '<em><b>Icon</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Icon</em>' attribute.
+	 * @see #setIcon(String)
+	 * @see domain.DomainPackage#getSpecies_Icon()
+	 * @model
+	 * @generated
+	 */
+	String getIcon();
+
+	/**
+	 * Sets the value of the '{@link domain.Species#getIcon <em>Icon</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Icon</em>' attribute.
+	 * @see #getIcon()
+	 * @generated
+	 */
+	void setIcon(String value);
 
 } // Species
