@@ -1,12 +1,23 @@
 package domain.util;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
 import domain.Domain;
 import domain.DomainFactory;
 import domain.Genus;
@@ -23,7 +34,9 @@ import domain.Class;
  * @see no.tdt4250.project.pokeDex.util.DomainResourceFactoryImpl
  * @generated NOT
  */
+
 public class DomainResourceImpl extends XMIResourceImpl {
+	JSONArray pokemonList;
 	/**
 	 * Creates an instance of the resource.
 	 * <!-- begin-user-doc -->
@@ -35,10 +48,13 @@ public class DomainResourceImpl extends XMIResourceImpl {
 		super(uri);
 	}
 
+	
 	public static void main(String[] args) throws IOException {
+		
+		// SAVING TO XMI
 		ResourceSet resSet = new ResourceSetImpl();
 		resSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("domain", new DomainResourceFactoryImpl());
-		Resource domainResource = resSet.createResource(URI.createURI("test.ra"));
+		Resource domainResource = resSet.createResource(URI.createURI("test.domain"));
 		Domain domain = DomainFactory.eINSTANCE.createDomain();
 		
 		// FILL IN ALL NEEDED ATTRIBUTES
@@ -57,7 +73,8 @@ public class DomainResourceImpl extends XMIResourceImpl {
 		// ADD CLASS
 		Class c1 = DomainFactory.eINSTANCE.createClass();
 		c1.setName("Mammal");
-		
+		// TRY TO ADD ALL POKEMON
+	
 		// ADD GENUS
 		Genus g1 = DomainFactory.eINSTANCE.createGenus();
 		g1.setName("Poison Pin");
@@ -87,10 +104,16 @@ public class DomainResourceImpl extends XMIResourceImpl {
 		g1.getSpecies().add(species1);
 		g1.getSpecies().add(species2);
 		g1.getSpecies().add(species3);
+		
 		domain.getKingdoms().add(k1);
-		
-		
+		String fileSeparator = System.getProperty("file.separator");
+        File file = new File("src-gen" + fileSeparator + "file.xmi");
+        
+        
 		domainResource.save(System.out, null);
 	}
+	
+	
+	
 	
 } //RaResourceImpl
