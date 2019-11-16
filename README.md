@@ -14,12 +14,12 @@ Group members:
 
 TODOS:
 - [x] Retrieve JSON data
-- [ ] Make habitat relations on genera
-- [ ] Start filling out readme
-- [ ] Build EMF model of the data
+- [X] Make anatomy relations on genera
+- [X] Build EMF model of the data
 - [ ] Instantiate the model from data
 - [ ] Build diagram editor 
 - [ ] Additional transformation and manipulation
+- [ ] Finish filling out readme
 
 
 1. [Import data from API](#import_data)
@@ -27,6 +27,8 @@ TODOS:
 3. [Instantiating pokemon models](#init_models)
 4. [Building the diagram editor](#editor)
 5. [Editing and transforming the models](#transform)
+6. [User guide](#guide)
+7. [Dependencies](#dependencies)
 
 
 <a name="import_data"></a>
@@ -45,3 +47,11 @@ The greatest challenge in finding a good model was deciding how we would use the
 
 <a name="transfrom"></a>
 ### Editing and transforming the models
+
+<a name="guide"></a>
+### User guide
+
+<a name="transfrom"></a>
+### Dependencies
+
+Need Simple JSON from [here](https://code.google.com/archive/p/json-simple/downloads).
