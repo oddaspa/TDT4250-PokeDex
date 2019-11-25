@@ -79,7 +79,7 @@ public class DomainResourceImpl extends XMIResourceImpl {
 		
 		// IF CONDITIONS
 		ArrayList<String> animals = new ArrayList<>();
-		animals.add("glying");
+		animals.add("flying");
 		animals.add("water1");
 		animals.add("water2");
 		animals.add("water3");

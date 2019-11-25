@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<no.tdt4250.project.pokeDex.model:Domain
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:no.tdt4250.project.pokeDex.model="http://no/tdt4250/project/pokeDex/model"
+    xsi:schemaLocation="http://no/tdt4250/project/pokeDex/model domain.ecore"
+    name="Pokemons">
+  <kingdoms>
+    <phyla name="Angiospermophyta"/>
+  </kingdoms>
+  <kingdoms
+      name="Animalia">
+    <phyla name="Arthropods"/>
+    <phyla>
+      <classes/>
+      <classes
+          name="Fish"/>
+      <classes
+          name="Mammal">
+        <genera
+            name="Poison Pin"
+            habitat="Grassland"
+            sameAnatomy="//@kingdoms.1/@phyla.1/@classes.2/@genera.1"
+            anatomy="Upright">
+          <species
+              name="Nidoran"
+              evolvesTo="//@kingdoms.1/@phyla.1/@classes.2/@genera.0/@species.1"
+              icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png"/>
+          <species
+              name="Nidorino"
+              evolvesTo="//@kingdoms.1/@phyla.1/@classes.2/@genera.0/@species.2"
+              evolvesFrom="//@kingdoms.1/@phyla.1/@classes.2/@genera.0/@species.0"
+              icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png"/>
+          <species
+              name="Nidoking"
+              evolvesFrom="//@kingdoms.1/@phyla.1/@classes.2/@genera.0/@species.1"
+              icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png"/>
+        </genera>
+        <genera
+            name="Fairy Pokémon"
+            sameAnatomy="//@kingdoms.1/@phyla.1/@classes.2/@genera.0"
+            anatomy="Upright">
+          <species
+              name="Clefable"
+              evolvesFrom="//@kingdoms.1/@phyla.1/@classes.2/@genera.1/@species.2"/>
+          <species
+              name="Cleffa"
+              evolvesTo="//@kingdoms.1/@phyla.1/@classes.2/@genera.1/@species.2"/>
+          <species
+              name="Clefairy"
+              evolvesTo="//@kingdoms.1/@phyla.1/@classes.2/@genera.1/@species.0"
+              evolvesFrom="//@kingdoms.1/@phyla.1/@classes.2/@genera.1/@species.1"/>
+        </genera>
+      </classes>
+    </phyla>
+    <phyla name="Vertebrate"/>
+  </kingdoms>
+  <kingdoms
+      name="Mineralia">
+    <phyla name="Metamorphic"/>
+  </kingdoms>
+</no.tdt4250.project.pokeDex.model:Domain>
