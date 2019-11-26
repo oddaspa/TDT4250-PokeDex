@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\oddgu\Programmering\TDT4250\project_pokeDex\TDT4250-PokeDex\no.tdt4250.project.pokeDex.model"/>
+	</list>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.sirius.samples.family.NewBasicFamilyExampleModel"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Examples/org.eclipse.emf.examples.EMF"/>
+			<item value="org.eclipse.ui.Examples/org.eclipse.sirius.samples.category"/>
+			<item value="org.eclipse.ui.Examples/org.eclipse.wst.xml.examples"/>
+			<item value="org.eclipse.ui.Examples/org.eclipse.xtend.ui.Examples"/>
+			<item value="org.eclipse.ui.Examples/org.eclipse.xtext.ui.Examples"/>
+		</list>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
+	</section>
+</section>

@@ -1,0 +1,17 @@
+content_assist_number_of_computers=13
+eclipse.preferences.version=1
+java_keyword_bold=false
+java_keyword_return_bold=false
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=16
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+semanticHighlighting.inheritedField.color=143,143,191
+semanticHighlighting.localVariableDeclaration.bold=false
+semanticHighlighting.methodDeclarationName.bold=false
+semanticHighlighting.typeParameter.bold=false
+semanticHighlighting.varKeyword.color=204,120,50
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

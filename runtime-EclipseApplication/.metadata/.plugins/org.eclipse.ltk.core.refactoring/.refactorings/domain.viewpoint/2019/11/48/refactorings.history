@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;domain.viewpoint/model/domain.ecore&apos; to &apos;domain.diagram&apos;" description="Rename resource &apos;domain.ecore&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="model/domain.ecore" name="domain.diagram" stamp="1574691358885" updateReferences="true"/>
+</session>
