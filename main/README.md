@@ -9,7 +9,7 @@ Group members:
 
 # Using the [PokeDex API](https://pokeapi.co/docs/v2.html/#pokemon-section) to build the Tree of Life 
 
-![Darwin's Tree of Life](https://github.com/oddaspa/TDT4250-PokeDex/blob/master/prestudy/img/tree_of_life_darwin.jpg "Tree of Life Darwin")
+![Darwin's Tree of Life](https://github.com/oddaspa/TDT4250-PokeDex/blob/master/main/prestudy/img/tree_of_life_darwin.jpg "Tree of Life Darwin")
 
 We looked for a domain with a structure that would be interesting to model with EMF. At first we considered using data from the [Open Tree of Life](https://opentreeoflife.github.io/), but when we discovered a data source that described Pokemon in a similar way, we quickly decided that modeling Pokemon would be more interesting.
 
@@ -42,7 +42,7 @@ TODOS:
 
 <a name="import_data"></a>
 ### Import data from API
-Using a python script and the API provided from [PokeAPI](https://pokeapi.co) we dumped all 807 Pokemon into a single JSON file which we will use in the project. See [the notebook](https://github.com/oddaspa/TDT4250-PokeDex/blob/master/prestudy/python_retrival/PokeDex%20API.ipynb) to see how we did it.
+Using a python script and the API provided from [PokeAPI](https://pokeapi.co) we dumped all 807 Pokemon into a single JSON file which we will use in the project. See [the notebook](https://github.com/oddaspa/TDT4250-PokeDex/blob/master/main/prestudy/python_retrival/PokeDex%20API.ipynb) to see how we did it.
 
 <a name="build_emf"></a>
 ### Building the EMF model
