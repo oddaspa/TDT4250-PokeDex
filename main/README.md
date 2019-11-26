@@ -37,6 +37,7 @@ TODOS:
 5. [Editing and transforming the models](#transform)
 6. [User guide](#guide)
 7. [Dependencies](#dependencies)
+8. [Changing the dataset](#change)
 
 
 <a name="import_data"></a>
@@ -63,3 +64,8 @@ The greatest challenge in finding a good model was deciding how we would use the
 ### Dependencies
 
 Need Simple JSON from [here](https://code.google.com/archive/p/json-simple/downloads).
+
+<a name="change"></a>
+### Changing the dataset
+
+Once the team started working with the front end it started impacting performance that there were over 800 entities in the diagram. To improve performace a filter was added to get the number of entities retrieved from the API down to 151 (the first generation of Pokemon) as well as compressing the images we use.  
