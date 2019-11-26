@@ -4,24 +4,38 @@
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="diagram" domainClass="domain::Domain" preconditionExpression="aql:self.name" enablePopupBars="true">
       <defaultLayer name="Default">
         <nodeMappings name="Kingdom" domainClass="domain::Kingdom">
-          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="aql:self.name.toUpper()" labelPosition="node" resizeKind="NSEW" workspacePath="/my.project.diagram/img/castle.png">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <labelFormat>bold</labelFormat>
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql:self.name.toUpper()" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="Phylum" domainClass="domain::Phylum">
-          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="aql:self.name.toUpper()" labelPosition="node" resizeKind="NSEW" workspacePath="/my.project.diagram/img/branch.png">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:self.name.toUpper()" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelFormat>bold</labelFormat>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="Class" domainClass="domain::Class">
-          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="aql:self.name.toUpper()" labelPosition="node" resizeKind="NSEW" workspacePath="/my.project.diagram/img/easter-egg.png">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:self.name.toUpper()" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelFormat>bold</labelFormat>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Genus" domainClass="domain::Genus">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:self.name.toUpper()" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_orange']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Species" domainClass="domain::Species">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelExpression="aql:self.name.toUpper()" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
           </style>
         </nodeMappings>
         <edgeMappings name="hasPhylum" sourceMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Kingdom']" targetMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Phylum']" targetFinderExpression="feature:phyla">
@@ -35,6 +49,30 @@
         <edgeMappings name="hasClass" sourceMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Phylum']" targetMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Class']" targetFinderExpression="feature:classes">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="hasGenus" sourceMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Class']" targetMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Genus']" targetFinderExpression="feature:genera">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="hasSpecies" sourceMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Genus']" targetMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Species']" targetFinderExpression="feature:species">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="sameAnatomy" sourceMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Genus']" targetMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Genus']" targetFinderExpression="feature:sameAnatomy">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
             <centerLabelStyleDescription labelSize="12">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>

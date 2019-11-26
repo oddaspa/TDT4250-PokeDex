@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="ASCII"?>
+<no.tdt4250.project.pokeDex.model:Domain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:no.tdt4250.project.pokeDex.model="http://no/tdt4250/project/pokeDex/model" name="Pokemons">
+ <kingdoms name="Plantae">
+    <phyla name="Not specified plants">
+      <classes name="Some type of plant">
+        <genera name="Seed Pok&#xe9;mon">
+          <species name="Bulbasaur"/>
+          <species name="Ivysaur"/>
+          <species name="Venusaur"/>
+        </genera>
+        <genera name="Weed Pok&#xe9;mon">
+          <species name="Oddish"/>
+          <species name="Gloom"/>
+        </genera>
+        <genera name="Flower Pok&#xe9;mon">
+          <species name="Vileplume"/>
+          <species name="Bellsprout"/>
+        </genera>
+        <genera name="Mushroom Pok&#xe9;mon">
+          <species name="Paras"/>
+          <species name="Parasect"/>
+        </genera>
+        <genera name="Flycatcher Pok&#xe9;mon">
+          <species name="Weepinbell"/>
+          <species name="Victreebel"/>
+        </genera>
+        <genera name="Egg Pok&#xe9;mon">
+          <species name="Exeggcute"/>
+          <species name="Chansey"/>
+        </genera>
+        <genera name="Coconut Pok&#xe9;mon">
+          <species name="Exeggutor"/>
+        </genera>
+        <genera name="Vine Pok&#xe9;mon">
+          <species name="Tangela"/>
+        </genera>
+      </classes>
+    </phyla>
+  </kingdoms>
+  <kingdoms name="Animalia">
+    <phyla name="Not specified animals">
+      <classes name="Some type of animal">
+        <genera name="Lizard Pok&#xe9;mon">
+          <species name="Charmander"/>
+        </genera>
+        <genera name="Flame Pok&#xe9;mon">
+          <species name="Charmeleon"/>
+          <species name="Charizard"/>
+          <species name="Flareon"/>
+          <species name="Moltres"/>
+        </genera>
+        <genera name="Tiny Turtle Pok&#xe9;mon">
+          <species name="Squirtle"/>
+        </genera>
+        <genera name="Turtle Pok&#xe9;mon">
+          <species name="Wartortle"/>
+        </genera>
+        <genera name="Shellfish Pok&#xe9;mon">
+          <species name="Blastoise"/>
+          <species name="Kabuto"/>
+          <species name="Kabutops"/>
+        </genera>
+        <genera name="Worm Pok&#xe9;mon">
+          <species name="Caterpie"/>
+        </genera>
+        <genera name="Cocoon Pok&#xe9;mon">
+          <species name="Metapod"/>
+          <species name="Kakuna"/>
+        </genera>
+        <genera name="Butterfly Pok&#xe9;mon">
+          <species name="Butterfree"/>
+        </genera>
+        <genera name="Hairy Bug Pok&#xe9;mon">
+          <species name="Weedle"/>
+        </genera>
+        <genera name="Poison Bee Pok&#xe9;mon">
+          <species name="Beedrill"/>
+        </genera>
+        <genera name="Tiny Bird Pok&#xe9;mon">
+          <species name="Pidgey"/>
+          <species name="Spearow"/>
+        </genera>
+        <genera name="Bird Pok&#xe9;mon">
+          <species name="Pidgeotto"/>
+          <species name="Pidgeot"/>
+        </genera>
+        <genera name="Mouse Pok&#xe9;mon">
+          <species name="Rattata"/>
+          <species name="Raticate"/>
+          <species name="Pikachu"/>
+          <species name="Raichu"/>
+          <species name="Sandshrew"/>
+          <species name="Sandslash"/>
+        </genera>
+        <genera name="Beak Pok&#xe9;mon">
+          <species name="Fearow"/>
+        </genera>
+        <genera name="Snake Pok&#xe9;mon">
+          <species name="Ekans"/>
+        </genera>
+        <genera name="Cobra Pok&#xe9;mon">
+          <species name="Arbok"/>
+        </genera>
+        <genera name="Poison Pin Pok&#xe9;mon">
+          <species name="Nidoran-f"/>
+          <species name="Nidorina"/>
+          <species name="Nidoran-m"/>
+          <species name="Nidorino"/>
+        </genera>
+        <genera name="Drill Pok&#xe9;mon">
+          <species name="Nidoqueen"/>
+          <species name="Nidoking"/>
+          <species name="Rhydon"/>
+        </genera>
+        <genera name="Fairy Pok&#xe9;mon">
+          <species name="Clefairy"/>
+          <species name="Clefable"/>
+        </genera>
+        <genera name="Fox Pok&#xe9;mon">
+          <species name="Vulpix"/>
+          <species name="Ninetales"/>
+        </genera>
+        <genera name="Balloon Pok&#xe9;mon">
+          <species name="Jigglypuff"/>
+          <species name="Wigglytuff"/>
+        </genera>
+        <genera name="Bat Pok&#xe9;mon">
+          <species name="Zubat"/>
+          <species name="Golbat"/>
+        </genera>
+        <genera name="Insect Pok&#xe9;mon">
+          <species name="Venonat"/>
+        </genera>
+        <genera name="Poison Moth Pok&#xe9;mon">
+          <species name="Venomoth"/>
+        </genera>
+        <genera name="Mole Pok&#xe9;mon">
+          <species name="Diglett"/>
+          <species name="Dugtrio"/>
+        </genera>
+        <genera name="Scratch Cat Pok&#xe9;mon">
+          <species name="Meowth"/>
+        </genera>
+        <genera name="Classy Cat Pok&#xe9;mon">
+          <species name="Persian"/>
+        </genera>
+        <genera name="Duck Pok&#xe9;mon">
+          <species name="Psyduck"/>
+          <species name="Golduck"/>
+        </genera>
+        <genera name="Pig Monkey Pok&#xe9;mon">
+          <species name="Mankey"/>
+          <species name="Primeape"/>
+        </genera>
+        <genera name="Puppy Pok&#xe9;mon">
+          <species name="Growlithe"/>
+        </genera>
+        <genera name="Legendary Pok&#xe9;mon">
+          <species name="Arcanine"/>
+        </genera>
+        <genera name="Tadpole Pok&#xe9;mon">
+          <species name="Poliwag"/>
+          <species name="Poliwhirl"/>
+          <species name="Poliwrath"/>
+        </genera>
+        <genera name="Psi Pok&#xe9;mon">
+          <species name="Abra"/>
+          <species name="Kadabra"/>
+          <species name="Alakazam"/>
+        </genera>
+        <genera name="Superpower Pok&#xe9;mon">
+          <species name="Machop"/>
+          <species name="Machoke"/>
+          <species name="Machamp"/>
+        </genera>
+        <genera name="Jellyfish Pok&#xe9;mon">
+          <species name="Tentacool"/>
+          <species name="Tentacruel"/>
+        </genera>
+        <genera name="Fire Horse Pok&#xe9;mon">
+          <species name="Ponyta"/>
+          <species name="Rapidash"/>
+        </genera>
+        <genera name="Dopey Pok&#xe9;mon">
+          <species name="Slowpoke"/>
+        </genera>
+        <genera name="Hermit Crab Pok&#xe9;mon">
+          <species name="Slowbro"/>
+        </genera>
+        <genera name="Wild Duck Pok&#xe9;mon">
+          <species name="Farfetchd"/>
+        </genera>
+        <genera name="Twin Bird Pok&#xe9;mon">
+          <species name="Doduo"/>
+        </genera>
+        <genera name="Triple Bird Pok&#xe9;mon">
+          <species name="Dodrio"/>
+        </genera>
+        <genera name="Sea Lion Pok&#xe9;mon">
+          <species name="Seel"/>
+          <species name="Dewgong"/>
+        </genera>
+        <genera name="Sludge Pok&#xe9;mon">
+          <species name="Grimer"/>
+          <species name="Muk"/>
+        </genera>
+        <genera name="Bivalve Pok&#xe9;mon">
+          <species name="Shellder"/>
+          <species name="Cloyster"/>
+        </genera>
+        <genera name="Gas Pok&#xe9;mon">
+          <species name="Gastly"/>
+          <species name="Haunter"/>
+        </genera>
+        <genera name="Shadow Pok&#xe9;mon">
+          <species name="Gengar"/>
+        </genera>
+        <genera name="Hypnosis Pok&#xe9;mon">
+          <species name="Drowzee"/>
+          <species name="Hypno"/>
+        </genera>
+        <genera name="River Crab Pok&#xe9;mon">
+          <species name="Krabby"/>
+        </genera>
+        <genera name="Pincer Pok&#xe9;mon">
+          <species name="Kingler"/>
+        </genera>
+        <genera name="Lonely Pok&#xe9;mon">
+          <species name="Cubone"/>
+        </genera>
+        <genera name="Bone Keeper Pok&#xe9;mon">
+          <species name="Marowak"/>
+        </genera>
+        <genera name="Kicking Pok&#xe9;mon">
+          <species name="Hitmonlee"/>
+        </genera>
+        <genera name="Punching Pok&#xe9;mon">
+          <species name="Hitmonchan"/>
+        </genera>
+        <genera name="Licking Pok&#xe9;mon">
+          <species name="Lickitung"/>
+        </genera>
+        <genera name="Poison Gas Pok&#xe9;mon">
+          <species name="Koffing"/>
+          <species name="Weezing"/>
+        </genera>
+        <genera name="Spikes Pok&#xe9;mon">
+          <species name="Rhyhorn"/>
+        </genera>
+        <genera name="Parent Pok&#xe9;mon">
+          <species name="Kangaskhan"/>
+        </genera>
+        <genera name="Dragon Pok&#xe9;mon">
+          <species name="Horsea"/>
+          <species name="Seadra"/>
+          <species name="Dratini"/>
+          <species name="Dragonair"/>
+          <species name="Dragonite"/>
+        </genera>
+        <genera name="Goldfish Pok&#xe9;mon">
+          <species name="Goldeen"/>
+          <species name="Seaking"/>
+        </genera>
+        <genera name="Star Shape Pok&#xe9;mon">
+          <species name="Staryu"/>
+        </genera>
+        <genera name="Mysterious Pok&#xe9;mon">
+          <species name="Starmie"/>
+        </genera>
+        <genera name="Barrier Pok&#xe9;mon">
+          <species name="Mr-mime"/>
+        </genera>
+        <genera name="Mantis Pok&#xe9;mon">
+          <species name="Scyther"/>
+        </genera>
+        <genera name="Human Shape Pok&#xe9;mon">
+          <species name="Jynx"/>
+        </genera>
+        <genera name="Electric Pok&#xe9;mon">
+          <species name="Electabuzz"/>
+          <species name="Zapdos"/>
+        </genera>
+        <genera name="Spitfire Pok&#xe9;mon">
+          <species name="Magmar"/>
+        </genera>
+        <genera name="Stag Beetle Pok&#xe9;mon">
+          <species name="Pinsir"/>
+        </genera>
+        <genera name="Wild Bull Pok&#xe9;mon">
+          <species name="Tauros"/>
+        </genera>
+        <genera name="Fish Pok&#xe9;mon">
+          <species name="Magikarp"/>
+        </genera>
+        <genera name="Atrocious Pok&#xe9;mon">
+          <species name="Gyarados"/>
+        </genera>
+        <genera name="Transport Pok&#xe9;mon">
+          <species name="Lapras"/>
+        </genera>
+        <genera name="Transform Pok&#xe9;mon">
+          <species name="Ditto"/>
+        </genera>
+        <genera name="Evolution Pok&#xe9;mon">
+          <species name="Eevee"/>
+        </genera>
+        <genera name="Bubble Jet Pok&#xe9;mon">
+          <species name="Vaporeon"/>
+        </genera>
+        <genera name="Lightning Pok&#xe9;mon">
+          <species name="Jolteon"/>
+        </genera>
+        <genera name="Spiral Pok&#xe9;mon">
+          <species name="Omanyte"/>
+          <species name="Omastar"/>
+        </genera>
+        <genera name="Fossil Pok&#xe9;mon">
+          <species name="Aerodactyl"/>
+        </genera>
+        <genera name="Sleeping Pok&#xe9;mon">
+          <species name="Snorlax"/>
+        </genera>
+        <genera name="Freeze Pok&#xe9;mon">
+          <species name="Articuno"/>
+        </genera>
+        <genera name="Genetic Pok&#xe9;mon">
+          <species name="Mewtwo"/>
+        </genera>
+        <genera name="New Species Pok&#xe9;mon">
+          <species name="Mew"/>
+        </genera>
+      </classes>
+    </phyla>
+  </kingdoms>
+  <kingdoms name="Mineralia">
+    <phyla name="Not specified mineral">
+      <classes name="Some type of mineral">
+        <genera name="Rock Pok&#xe9;mon">
+          <species name="Geodude"/>
+          <species name="Graveler"/>
+        </genera>
+        <genera name="Megaton Pok&#xe9;mon">
+          <species name="Golem"/>
+        </genera>
+        <genera name="Magnet Pok&#xe9;mon">
+          <species name="Magnemite"/>
+          <species name="Magneton"/>
+        </genera>
+        <genera name="Rock Snake Pok&#xe9;mon">
+          <species name="Onix"/>
+        </genera>
+        <genera name="Ball Pok&#xe9;mon">
+          <species name="Voltorb"/>
+          <species name="Electrode"/>
+        </genera>
+        <genera name="Virtual Pok&#xe9;mon">
+          <species name="Porygon"/>
+        </genera>
+      </classes>
+    </phyla>
+  </kingdoms>
+</no.tdt4250.project.pokeDex.model:Domain>

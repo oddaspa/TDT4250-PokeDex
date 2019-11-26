@@ -117,11 +117,14 @@ public class DomainResourceImpl extends XMIResourceImpl {
 		Phylum chordates = DomainFactory.eINSTANCE.createPhylum();
 		chordates.setName("Chordates");
 		
+		Phylum generalAnimals = DomainFactory.eINSTANCE.createPhylum();
+		generalAnimals.setName("Not specified animals");
+		
 		Phylum generalPlant = DomainFactory.eINSTANCE.createPhylum();
 		generalPlant.setName("Not specified plants");
 		
 		Phylum generalMineral = DomainFactory.eINSTANCE.createPhylum();
-		chordates.setName("Not specified mineral");
+		generalMineral.setName("Not specified mineral");
 		
 		
 		// ADD CLASS
@@ -134,14 +137,15 @@ public class DomainResourceImpl extends XMIResourceImpl {
 		Class fish = DomainFactory.eINSTANCE.createClass();
 		fish.setName("Fish");
 		
+		// GENERAL CLASSES
 		Class generalClassAnimal = DomainFactory.eINSTANCE.createClass();
 		generalClassAnimal.setName("Some type of animal");
 		
 		Class generalClassPlants = DomainFactory.eINSTANCE.createClass();
-		generalClassAnimal.setName("Some type of plant");
+		generalClassPlants.setName("Some type of plant");
 		
 		Class generalClassMineral = DomainFactory.eINSTANCE.createClass();
-		generalClassAnimal.setName("Some type of mineral");
+		generalClassMineral.setName("Some type of mineral");
 		
 		
 		// READING AND PARSING JSON
@@ -194,15 +198,18 @@ public class DomainResourceImpl extends XMIResourceImpl {
 		        e.printStackTrace();
 		    }
 		}
-				
+		
+		// ADD CLASSES TO PHYLA
 		generalPlant.getClasses().add(generalClassPlants);
-		chordates.getClasses().add(generalClassAnimal);
+		generalAnimals.getClasses().add(generalClassAnimal);
 		generalMineral.getClasses().add(generalClassMineral);
 		
+		// ADD PHLYA TO KINGDOMS
 		plantae.getPhyla().add(generalPlant);
-		animalia.getPhyla().add(chordates);
+		animalia.getPhyla().add(generalAnimals);
 		mineralia.getPhyla().add(generalMineral);
 		
+		// ADD KINGDOMS TO DOMAIN
 		domain.getKingdoms().add(plantae);
 		domain.getKingdoms().add(animalia);
 		domain.getKingdoms().add(mineralia);
