@@ -57,96 +57,115 @@ public class DomainResourceImpl extends XMIResourceImpl {
 		ResourceSet resSet = new ResourceSetImpl();
 		resSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("domain", new DomainResourceFactoryImpl());
 		Resource domainResource = resSet.createResource(URI.createURI("test.domain"));
-		Domain domain = DomainFactory.eINSTANCE.createDomain();
-		
-		// CREATE EENUMS
-		ArrayList<String> kingdoms = new ArrayList<>();
-		kingdoms.add("plant");
-		kingdoms.add("animals");
-		kingdoms.add("minerals");
-		
-		ArrayList<String> phyla = new ArrayList<>();
-		phyla.add("Chordata");
-		phyla.add("Angiospemophyta");
-		phyla.add("Arthpods");
-		phyla.add("Vertebrate");
-		phyla.add("Metamorphic");
-		
-		ArrayList<String> classes = new ArrayList<>();
-		classes.add("Fish");
-		classes.add("Bird");
-		classes.add("Mammal");
-		
-		// IF CONDITIONS
-		ArrayList<String> animals = new ArrayList<>();
-		animals.add("flying");
-		animals.add("water1");
-		animals.add("water2");
-		animals.add("water3");
-		animals.add("ground");
-		animals.add("fairy");
-		animals.add("humanshape");
-		animals.add("monster");
-		animals.add("dragon");
-		animals.add("ditto");
-		animals.add("indeterminate");
-
-		
+		Domain domain = DomainFactory.eINSTANCE.createDomain();		
 		
 		
 		// GLOBAL ARRAYS
 		ArrayList<String> genera = new ArrayList<>();
 		ArrayList<Genus> generaInstances = new ArrayList<>();
-		// FILL IN ALL NEEDED ATTRIBUTES
+		
+		// BUILD TREE STRUCTURE BOTTOM UP
+		// GENERAL DOMAIN
 		domain.setName("Pokemons");
 		System.out.println(resSet);
 		domainResource.getContents().add(domain);
+		
+		
+		// BUILD ANIMALIA STRUCTURE
 		
 		// ADD KINGDOMS
 		Kingdom animalia = DomainFactory.eINSTANCE.createKingdom();
 		animalia.setName("Animalia");
 		
+		// ADD PHYLUM
+		
+		// GENERAL EGG_GROUP
+		Phylum chordates = DomainFactory.eINSTANCE.createPhylum(); 
+		chordates.setName("Chordates");
+		animalia.getPhyla().add(chordates);
+
+		
+		// BUGS EGG GROUP
+		Phylum arthropods = DomainFactory.eINSTANCE.createPhylum(); 
+		arthropods.setName("Arthropods");
+		animalia.getPhyla().add(arthropods);
+
+		
+		/*
+		 * ADD CLASS FOR CHORDATES
+		 */
+		
+		// EGG_GROUP == UNSPECIFIED
+		Class mammalClass = DomainFactory.eINSTANCE.createClass();
+		mammalClass.setName("Mammal");
+		chordates.getClasses().add(mammalClass);
+		
+		// EGG_GROUP == FLYING
+		Class birdClass = DomainFactory.eINSTANCE.createClass();
+		birdClass.setName("Bird");
+		chordates.getClasses().add(birdClass);
+		
+		// EGG_GROUP == WATER 1,2,3
+		Class fishClass = DomainFactory.eINSTANCE.createClass();
+		fishClass.setName("Fish");
+		chordates.getClasses().add(fishClass);
+		
+		// EGG_GROUP == DRAGON
+		Class reptileClass = DomainFactory.eINSTANCE.createClass();
+		reptileClass.setName("Reptile");
+		chordates.getClasses().add(reptileClass);
+		
+		// EGG_GROUP == FAIRY
+		Class mythicalClass = DomainFactory.eINSTANCE.createClass();
+		mythicalClass.setName("Mythical creature");
+		chordates.getClasses().add(mythicalClass);
+		
+		/*
+		 * CLASSES FOR ARTHROPODS
+		 */
+		
+		Class generalArthropodsClass = DomainFactory.eINSTANCE.createClass();
+		generalArthropodsClass.setName("UNSPECIFIED BUG CLASS");
+		arthropods.getClasses().add(generalArthropodsClass);
+		
+
+		
+		// BUILD PLANTAE STRUCTURE
 		Kingdom plantae = DomainFactory.eINSTANCE.createKingdom();
 		plantae.setName("Plantae");
 		
-		Kingdom mineralia = DomainFactory.eINSTANCE.createKingdom();
-		mineralia.setName("Mineralia");
 		
+		// ADD PHYLA FOR PLANTAE
+		Phylum generalPhylumPlant = DomainFactory.eINSTANCE.createPhylum();
+		generalPhylumPlant.setName("Unspecified Plantae phylum");
+		plantae.getPhyla().add(generalPhylumPlant);
 		
-		// ADD PHYLUM
-		Phylum chordates = DomainFactory.eINSTANCE.createPhylum();
-		chordates.setName("Chordates");
-		
-		Phylum generalAnimals = DomainFactory.eINSTANCE.createPhylum();
-		generalAnimals.setName("Not specified animals");
-		
-		Phylum generalPlant = DomainFactory.eINSTANCE.createPhylum();
-		generalPlant.setName("Not specified plants");
-		
-		Phylum generalMineral = DomainFactory.eINSTANCE.createPhylum();
-		generalMineral.setName("Not specified mineral");
-		
-		
-		// ADD CLASS
-		Class mammals = DomainFactory.eINSTANCE.createClass();
-		mammals.setName("Mammal");
-		
-		Class birds = DomainFactory.eINSTANCE.createClass();
-		birds.setName("Bird");
-		
-		Class fish = DomainFactory.eINSTANCE.createClass();
-		fish.setName("Fish");
-		
-		// GENERAL CLASSES
-		Class generalClassAnimal = DomainFactory.eINSTANCE.createClass();
-		generalClassAnimal.setName("Some type of animal");
-		
+		// ADD CLASS FOR PHYLUM
 		Class generalClassPlants = DomainFactory.eINSTANCE.createClass();
-		generalClassPlants.setName("Some type of plant");
+		generalClassPlants.setName("Unspecified plant class");
+		generalPhylumPlant.getClasses().add(generalClassPlants);
 		
+		
+		
+		// BUILD MINERALIA STRUCTURE
+		Kingdom mineralia = DomainFactory.eINSTANCE.createKingdom();
+		mineralia.setName("Mineralia");	
+		
+		// ADD PHYLUM FOR MINERALIA
+		Phylum generalPhylumMineral = DomainFactory.eINSTANCE.createPhylum();
+		generalPhylumMineral.setName("Unspecified Mineralia phylum");
+		mineralia.getPhyla().add(generalPhylumMineral);
+		
+		// ADD CLASS FOR PHYLUM
 		Class generalClassMineral = DomainFactory.eINSTANCE.createClass();
-		generalClassMineral.setName("Some type of mineral");
-		
+		generalClassMineral.setName("Unspecified mineral class");
+		generalPhylumMineral.getClasses().add(generalClassMineral);
+				
+				
+		// ADD KINGDOMS TO DOMAIN
+		domain.getKingdoms().add(plantae);
+		domain.getKingdoms().add(animalia);
+		domain.getKingdoms().add(mineralia);
 		
 		// READING AND PARSING JSON
 		
@@ -159,36 +178,128 @@ public class DomainResourceImpl extends XMIResourceImpl {
 		        //Read JSON file
 		        Object obj  = jsonParser.parse(reader);
 		        JSONArray pokemonList = (JSONArray) new JSONParser().parse((String) obj);
-
-		    	// TRY TO ADD ALL POKEMON
+		        Species previousPokemon = null;
+		    	// Adding all Pokemon in JSON to xmi iteratively
 				for(int i = 0; i < pokemonList.size(); i++)
 				{
-				      JSONObject pokemon = (JSONObject) ((JSONArray) pokemonList).get(i);
-				      HashMap pokemonHashMap = parsePokemonObject(pokemon);
-				      Species pokemonSpecies = DomainFactory.eINSTANCE.createSpecies();
-				      pokemonSpecies.setName((String) pokemonHashMap.get("name"));
-				      String currentGenus = (String) pokemonHashMap.get("genus");
-				      String eggGroup = (String) pokemonHashMap.get("egg_group");
-				      if(!genera.contains(currentGenus)){
-				    	  genera.add(currentGenus);
-				    	  Genus newGen = DomainFactory.eINSTANCE.createGenus();
-				    	  newGen.setName(currentGenus);
-				    	  newGen.getSpecies().add(pokemonSpecies);
-				    	  generaInstances.add(newGen);
-				    	  if(eggGroup.equals("plant")) {
-				    		  generalClassPlants.getGenera().add(newGen);
-				    	  }else if(eggGroup.equals("mineral")) {
-				    		  generalClassMineral.getGenera().add(newGen);
-				    	  }else {
-				    		  generalClassAnimal.getGenera().add(newGen);
-				    	  }
-				      }else {
-				    	  for(Genus gen : generaInstances) {
-				    		  if(gen.getName().equals(currentGenus)) {
-				    			  gen.getSpecies().add(pokemonSpecies);
-				    		  }
-				    	  }
-				      }
+					// Get ith pokemon in list 
+				    JSONObject pokemon = (JSONObject) ((JSONArray) pokemonList).get(i);
+				    
+				    // Use custom method to parse to hashmap
+				    HashMap pokemonHashMap = parsePokemonObject(pokemon);
+				    
+				    // Create instance of said pokemon
+				    Species pokemonSpecies = DomainFactory.eINSTANCE.createSpecies();
+				    
+				    // Set name of instance to name in hashmap
+				    pokemonSpecies.setName((String) pokemonHashMap.get("name"));
+				    
+				    pokemonSpecies.setIcon((String) pokemonHashMap.get("icon"));
+				    
+				    // Retrieve genus from hashmap
+				    String currentGenus = (String) pokemonHashMap.get("genus");
+				    
+				    // Retrieve egg group from hashmap
+				    String eggGroup = (String) pokemonHashMap.get("egg_group");
+				    
+				    // Retrieve egg group from hashmap
+				    String shape = (String) pokemonHashMap.get("shape");
+				    
+				    // Retrieve name of pokemon it evolves from from hashmap
+				    String evolvesFrom = (String) pokemonHashMap.get("evolves");
+			
+				    // if this pokemon evoles from a different pokemon...
+				    if(!(evolvesFrom.equals("No evolution"))) {
+				    	pokemonSpecies.setEvolvesFrom(previousPokemon);
+				    	previousPokemon.setEvolvesTo(pokemonSpecies);
+				    	System.out.println(pokemonSpecies.getName() 
+				    			+ " evolves from " + evolvesFrom);
+
+				    }
+				    // Set the previous variable to the current pokemon
+				    previousPokemon = pokemonSpecies;
+				    
+				    // If we have not seen the genus before...
+				    if(!genera.contains(currentGenus)){
+				    	// Add the genus name to the array
+				    	genera.add(currentGenus);
+				    	
+				    	// Create instance of the new genus
+				    	Genus newGen = DomainFactory.eINSTANCE.createGenus();
+				    	
+				    	// Set name of the instance from the name in hashmap
+				    	newGen.setName(currentGenus);
+				    	
+				    	// Set shape of the instance from the shape in hashmap
+				    	newGen.setAnatomy(shape);
+				    	
+				    	// Add the pokemon instance to the genus instance
+				    	newGen.getSpecies().add(pokemonSpecies);
+				    	
+				    	// Add the new genus instance to an array for later use
+				    	generaInstances.add(newGen);
+				    	
+				    	// If the egg group is plant ...
+				    	if(eggGroup.equals("plant")) {
+				    	
+				    		// add the genus to the generalClassPlants class
+				    		generalClassPlants.getGenera().add(newGen);
+				    	
+				    	// Else if the egg group is mineral ...
+				    	}else if(eggGroup.equals("mineral")) {
+				    	
+				    		// add the genus to the generalClassMineral class
+				    		generalClassMineral.getGenera().add(newGen);
+			    		
+				    	// Else if the egg group is bug ...
+				    	}else if(eggGroup.equals("bug")) {
+				    	
+				    		// add the genus to the general Arthropods class
+				    		generalArthropodsClass.getGenera().add(newGen);
+				    	
+				    	// Else if the egg group is flying ...
+			    		}else if(eggGroup.equals("flying") || shape.equals("wings")) {
+				    	
+			    			// add the genus to the bird class
+				    		birdClass.getGenera().add(newGen);
+			    		
+				    	// Else if the egg group is fairy ...
+			    		}else if(eggGroup.equals("fairy")) {
+				    	
+			    			// add the genus to the mythical class
+				    		mythicalClass.getGenera().add(newGen);
+			    		
+				    	// Else if the egg group is dragon ...
+			    		}else if(eggGroup.equals("dragon")) {
+				    	
+			    			// add the genus to the reptile class
+				    		reptileClass.getGenera().add(newGen);
+			    		
+				    	// Else if the egg group starts with water ...
+			    		}else if(eggGroup.startsWith("water") || shape.equals("fish")) {
+				    	
+			    			// add the genus to the fish class
+				    		fishClass.getGenera().add(newGen);
+			    		
+				    	// Else ...
+				    	}else {
+				    	
+				    		// add the genus to the mammal class
+				    		mammalClass.getGenera().add(newGen);
+				    	}
+				   
+				    // If not new genus
+				    }else {
+				    
+				    	// Search for the genus in the list ...
+				    	for(Genus gen : generaInstances) {
+				    		if(gen.getName().equals(currentGenus)) {
+				    	
+				    			// And add it to the existing instance
+				    			gen.getSpecies().add(pokemonSpecies);
+				    		}
+				    	}
+				    }
 				}
 		    } catch (FileNotFoundException e) {
 		        e.printStackTrace();
@@ -199,20 +310,9 @@ public class DomainResourceImpl extends XMIResourceImpl {
 		    }
 		}
 		
-		// ADD CLASSES TO PHYLA
-		generalPlant.getClasses().add(generalClassPlants);
-		generalAnimals.getClasses().add(generalClassAnimal);
-		generalMineral.getClasses().add(generalClassMineral);
+		// ADD RELATIONSHIPS BETWEEN ANATOMIES IN GENUS
 		
-		// ADD PHLYA TO KINGDOMS
-		plantae.getPhyla().add(generalPlant);
-		animalia.getPhyla().add(generalAnimals);
-		mineralia.getPhyla().add(generalMineral);
 		
-		// ADD KINGDOMS TO DOMAIN
-		domain.getKingdoms().add(plantae);
-		domain.getKingdoms().add(animalia);
-		domain.getKingdoms().add(mineralia);
 		String fileSeparator = System.getProperty("file.separator");
         
         try {
@@ -245,9 +345,29 @@ public class DomainResourceImpl extends XMIResourceImpl {
 	    String genus = (String) ((JSONObject) genera.get(2)).get("genus"); 
 	    pokemonInstance.put("genus", genus);
 	    
-	  //Get Pokemon egg_group
+	    //Get Pokemon egg_group
 	    String egg_group =  ((JSONObject) ((JSONArray) pokemon.get("egg_groups")).get(0)).get("name").toString();  
 	    pokemonInstance.put("egg_group", egg_group);
+	    
+	    //Get Pokemon egg_group
+	    String shape =  ((JSONObject) pokemon.get("shape")).get("name").toString();  
+	    pokemonInstance.put("shape", shape);
+	    
+	    /*
+	     *  ICON URL IS "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/X.png"
+	     *  where X can be swapped with the order of the pokemon
+	     */
+	    String icon = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + pokemon.get("id").toString() +".png"; 
+	    pokemonInstance.put("icon", icon);
+
+	    
+	    //Check if it evolves from a pokemon
+	    String evolves = "No evolution";
+	    if(!((JSONObject) pokemon.get("evolves_from_species") == null)) {
+	    	evolves = ((JSONObject) pokemon.get("evolves_from_species")).get("name").toString();
+	    } 
+	    pokemonInstance.put("evolves", evolves);
+
 	    return pokemonInstance;
 	}
 	

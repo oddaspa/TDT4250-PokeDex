@@ -2967,3 +2967,416 @@ java.lang.RuntimeException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
+!SESSION 2019-11-27 13:54:23.827 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=no_NO
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data C:\Users\oddgu\Programmering\TDT4250\project_pokeDex\TDT4250-PokeDex\main/../runtime-EclipseApplication -dev file:C:/Users/oddgu/Programmering/TDT4250/project_pokeDex/TDT4250-PokeDex/main/.metadata/.plugins/org.eclipse.pde.core/Eclipse Application/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.egit.core 1 0 2019-11-27 13:54:27.563
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.pde.core 4 0 2019-11-27 13:54:33.493
+!MESSAGE The current target platform contains errors, open Window > Preferences > Plug-in Development > Target Platform for details.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems occurred while resolving the target contents
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:681)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:591)
+	at org.eclipse.pde.internal.core.PluginModelManager.getEntryTable(PluginModelManager.java:533)
+	at org.eclipse.pde.internal.core.PluginModelManager.getActiveModels(PluginModelManager.java:1104)
+	at org.eclipse.pde.core.plugin.PluginRegistry.getActiveModels(PluginRegistry.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.emf.common.CommonPlugin$PDEHelper.invoke(CommonPlugin.java:592)
+	at org.eclipse.emf.common.CommonPlugin$PDEHelper.computeModels(CommonPlugin.java:675)
+	at org.eclipse.emf.common.CommonPlugin$PDEHelper.access$1(CommonPlugin.java:667)
+	at org.eclipse.emf.common.CommonPlugin.getTargetPlatformExtensionPoints(CommonPlugin.java:147)
+	at org.eclipse.emf.ecore.plugin.EcorePlugin$PDEHelper.computeModels(EcorePlugin.java:1180)
+	at org.eclipse.emf.ecore.plugin.EcorePlugin$PDEHelper.access$1(EcorePlugin.java:1174)
+	at org.eclipse.emf.ecore.plugin.EcorePlugin.computePlatformURIMap(EcorePlugin.java:578)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.emf.ecoretools.design.internal.EcoreToolsSessionListener.notifyAddSession(EcoreToolsSessionListener.java:44)
+	at org.eclipse.sirius.business.internal.session.SessionManagerImpl.add(SessionManagerImpl.java:143)
+	at org.eclipse.sirius.business.internal.session.danalysis.DAnalysisSessionImpl.open(DAnalysisSessionImpl.java:1208)
+	at org.eclipse.sirius.business.internal.session.SessionManagerImpl.openSession(SessionManagerImpl.java:396)
+	at org.eclipse.sirius.ui.editor.SessionEditor$1.run(SessionEditor.java:377)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:438)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:354)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:469)
+	at org.eclipse.sirius.ui.editor.SessionEditor.init(SessionEditor.java:394)
+	at org.eclipse.ui.internal.EditorReference.initialize(EditorReference.java:354)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:340)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:333)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1294)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:693)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:560)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:544)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:105)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:64)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:693)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:665)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1099)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:635)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
+Contains: Configuration directory does not exist: C:\Users\oddgu\Programmering\TDT4250\project_pokeDex\TDT4250-PokeDex\.metadata\.plugins\org.eclipse.pde.core\Eclipse Application\
+!SUBENTRY 1 org.eclipse.pde.core 4 0 2019-11-27 13:54:33.496
+!MESSAGE Problems occurred while resolving the target contents
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-11-27 13:54:33.496
+!MESSAGE Configuration directory does not exist: C:\Users\oddgu\Programmering\TDT4250\project_pokeDex\TDT4250-PokeDex\.metadata\.plugins\org.eclipse.pde.core\Eclipse Application\
+
+!ENTRY org.eclipse.pde.core 4 0 2019-11-27 13:54:33.499
+!MESSAGE Configuration directory does not exist: C:\Users\oddgu\Programmering\TDT4250\project_pokeDex\TDT4250-PokeDex\.metadata\.plugins\org.eclipse.pde.core\Eclipse Application\
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-27 13:54:42.731
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\oddgu'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2019-11-27 13:54:53.658
+!MESSAGE Setup tasks were performed during startup updating 217 preferences. See 'C:\Users\oddgu\Programmering\TDT4250\project_pokeDex\TDT4250-PokeDex\main\.metadata\.plugins\org.eclipse.pde.core\Eclipse Application\org.eclipse.oomph.setup\setup.log' for details
+
+!ENTRY org.eclipse.ui 4 0 2019-11-27 13:56:39.045
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.gef.editparts.AbstractEditPart.createChild(AbstractEditPart.java:269)
+	at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java:780)
+	at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java:726)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java:644)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.access$3(GraphicalEditPart.java:1)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart$3.run(GraphicalEditPart.java:861)
+	at org.eclipse.emf.transaction.impl.TransactionalEditingDomainImpl.runExclusive(TransactionalEditingDomainImpl.java:328)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.refresh(GraphicalEditPart.java:851)
+	at org.eclipse.gmf.runtime.diagram.ui.commands.DeferredLayoutCommand$1.run(DeferredLayoutCommand.java:146)
+	at org.eclipse.gmf.runtime.diagram.ui.util.EditPartUtil.synchronizeRunnableToMainThread(EditPartUtil.java:106)
+	at org.eclipse.gmf.runtime.diagram.ui.commands.DeferredLayoutCommand.doExecuteWithResult(DeferredLayoutCommand.java:186)
+	at org.eclipse.gmf.runtime.emf.commands.core.command.AbstractTransactionalCommand.doExecute(AbstractTransactionalCommand.java:247)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(AbstractEMFOperation.java:150)
+	at org.eclipse.gmf.runtime.diagram.ui.commands.ICommandProxy.execute(ICommandProxy.java:68)
+	at org.eclipse.gef.commands.CompoundCommand.execute(CompoundCommand.java:129)
+	at org.eclipse.sirius.diagram.ui.internal.refresh.layout.SiriusCanonicalLayoutCommand.executeLayoutDueToExternalChanges(SiriusCanonicalLayoutCommand.java:109)
+	at org.eclipse.sirius.diagram.ui.internal.refresh.layout.SiriusCanonicalLayoutCommand.access$3(SiriusCanonicalLayoutCommand.java:106)
+	at org.eclipse.sirius.diagram.ui.internal.refresh.layout.SiriusCanonicalLayoutCommand$1.run(SiriusCanonicalLayoutCommand.java:92)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:635)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-11-27 15:42:29.016
+!MESSAGE Command 'org.eclipse.sirius.diagram.ui.removeBendpoints' failed
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Error executing 'org.eclipse.sirius.diagram.ui.removeBendpoints': java.util.NoSuchElementException: No value present
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:170)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:498)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:438)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:449)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:475)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1056)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:635)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
+Caused by: org.eclipse.e4.core.di.InjectionException: java.util.NoSuchElementException: No value present
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:320)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:254)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	... 33 more
+Caused by: java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Unknown Source)
+	at org.eclipse.sirius.diagram.ui.internal.operation.RemoveBendpointsOperation.computeNewBendpoints(RemoveBendpointsOperation.java:135)
+	at org.eclipse.sirius.diagram.ui.internal.operation.RemoveBendpointsOperation.execute(RemoveBendpointsOperation.java:79)
+	at org.eclipse.sirius.diagram.ui.internal.operation.RemoveBendpointsOperation.execute(RemoveBendpointsOperation.java:1)
+	at org.eclipse.sirius.diagram.ui.tools.internal.edit.command.RecordingCommandsExecutor.doExecute(RecordingCommandsExecutor.java:52)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.emf.common.command.CompoundCommand.execute(CompoundCommand.java:261)
+	at org.eclipse.emf.workspace.EMFCommandOperation.doExecute(EMFCommandOperation.java:119)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(AbstractEMFOperation.java:150)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(DefaultOperationHistory.java:495)
+	at org.eclipse.emf.workspace.impl.WorkspaceCommandStackImpl.doExecute(WorkspaceCommandStackImpl.java:208)
+	at org.eclipse.emf.transaction.impl.AbstractTransactionalCommandStack.execute(AbstractTransactionalCommandStack.java:165)
+	at org.eclipse.emf.transaction.impl.AbstractTransactionalCommandStack.execute(AbstractTransactionalCommandStack.java:219)
+	at org.eclipse.sirius.diagram.ui.tools.internal.handler.RemoveBendpointsHandler.execute(RemoveBendpointsHandler.java:55)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
+	at sun.reflect.GeneratedMethodAccessor65.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 37 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-11-27 15:42:38.031
+!MESSAGE Command 'org.eclipse.sirius.diagram.ui.removeBendpoints' failed
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Error executing 'org.eclipse.sirius.diagram.ui.removeBendpoints': java.util.NoSuchElementException: No value present
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:170)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:498)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:438)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:449)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:475)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4131)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1056)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3944)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3547)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:635)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1441)
+Caused by: org.eclipse.e4.core.di.InjectionException: java.util.NoSuchElementException: No value present
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:320)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:254)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	... 33 more
+Caused by: java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Unknown Source)
+	at org.eclipse.sirius.diagram.ui.internal.operation.RemoveBendpointsOperation.computeNewBendpoints(RemoveBendpointsOperation.java:135)
+	at org.eclipse.sirius.diagram.ui.internal.operation.RemoveBendpointsOperation.execute(RemoveBendpointsOperation.java:79)
+	at org.eclipse.sirius.diagram.ui.internal.operation.RemoveBendpointsOperation.execute(RemoveBendpointsOperation.java:1)
+	at org.eclipse.sirius.diagram.ui.tools.internal.edit.command.RecordingCommandsExecutor.doExecute(RecordingCommandsExecutor.java:52)
+	at org.eclipse.emf.transaction.RecordingCommand.execute(RecordingCommand.java:135)
+	at org.eclipse.emf.common.command.CompoundCommand.execute(CompoundCommand.java:261)
+	at org.eclipse.emf.workspace.EMFCommandOperation.doExecute(EMFCommandOperation.java:119)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(AbstractEMFOperation.java:150)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(DefaultOperationHistory.java:495)
+	at org.eclipse.emf.workspace.impl.WorkspaceCommandStackImpl.doExecute(WorkspaceCommandStackImpl.java:208)
+	at org.eclipse.emf.transaction.impl.AbstractTransactionalCommandStack.execute(AbstractTransactionalCommandStack.java:165)
+	at org.eclipse.emf.transaction.impl.AbstractTransactionalCommandStack.execute(AbstractTransactionalCommandStack.java:219)
+	at org.eclipse.sirius.diagram.ui.tools.internal.handler.RemoveBendpointsHandler.execute(RemoveBendpointsHandler.java:55)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:283)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:95)
+	at sun.reflect.GeneratedMethodAccessor65.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 37 more
+
+!ENTRY org.eclipse.equinox.p2.ui.sdk 2 0 2019-11-27 16:12:28.347
+!MESSAGE Could not locate the running profile instance. The eclipse.p2.data.area and eclipse.p2.profile properties may not be set correctly in this application's config.ini file.
+!SESSION 2019-11-27 16:22:10.176 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=no_NO
+Framework arguments:  -product org.eclipse.platform.ide
+Command-line arguments:  -product org.eclipse.platform.ide -data C:\Users\oddgu\Programmering\TDT4250\project_pokeDex\TDT4250-PokeDex\main/../runtime-EclipseApplication -dev file:C:/Users/oddgu/Programmering/TDT4250/project_pokeDex/TDT4250-PokeDex/main/.metadata/.plugins/org.eclipse.pde.core/Eclipse Application/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.egit.core 1 0 2019-11-27 16:22:14.782
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-11-27 16:22:22.026
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\oddgu'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.pde.core 4 0 2019-11-27 16:22:22.140
+!MESSAGE The current target platform contains errors, open Window > Preferences > Plug-in Development > Target Platform for details.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems occurred while resolving the target contents
+	at org.eclipse.pde.internal.core.PluginModelManager.getExternalBundles(PluginModelManager.java:681)
+	at org.eclipse.pde.internal.core.PluginModelManager.initializeTable(PluginModelManager.java:591)
+	at org.eclipse.pde.internal.core.PluginModelManager.targetReloaded(PluginModelManager.java:522)
+	at org.eclipse.pde.internal.core.RequiredPluginsInitializer.lambda$0(RequiredPluginsInitializer.java:33)
+	at org.eclipse.core.runtime.jobs.Job$2.run(Job.java:185)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Configuration directory does not exist: C:\Users\oddgu\Programmering\TDT4250\project_pokeDex\TDT4250-PokeDex\.metadata\.plugins\org.eclipse.pde.core\Eclipse Application\
+!SUBENTRY 1 org.eclipse.pde.core 4 0 2019-11-27 16:22:22.142
+!MESSAGE Problems occurred while resolving the target contents
+!SUBENTRY 2 org.eclipse.pde.core 4 0 2019-11-27 16:22:22.142
+!MESSAGE Configuration directory does not exist: C:\Users\oddgu\Programmering\TDT4250\project_pokeDex\TDT4250-PokeDex\.metadata\.plugins\org.eclipse.pde.core\Eclipse Application\
+
+!ENTRY org.eclipse.pde.core 4 0 2019-11-27 16:22:22.147
+!MESSAGE Configuration directory does not exist: C:\Users\oddgu\Programmering\TDT4250\project_pokeDex\TDT4250-PokeDex\.metadata\.plugins\org.eclipse.pde.core\Eclipse Application\
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2019-11-27 16:22:37.955
+!MESSAGE Setup tasks were performed during startup updating 217 preferences. See 'C:\Users\oddgu\Programmering\TDT4250\project_pokeDex\TDT4250-PokeDex\main\.metadata\.plugins\org.eclipse.pde.core\Eclipse Application\org.eclipse.oomph.setup\setup.log' for details

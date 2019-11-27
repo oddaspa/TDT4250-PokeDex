@@ -6,15 +6,19 @@
 		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="org.eclipse.ui.DefaultTextEditor"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item key="dialogHeight" value="-1"/>
-		<item key="dialogWidth" value="-1"/>
+		<item key="dialogHeight" value="796"/>
+		<item key="dialogWidth" value="828"/>
 		<list key="orderedElements">
+			<item value="org.eclipse.epp.mpc.ui.command.showMarketplaceWizard"/>
 		</list>
 		<list key="orderedProviders">
+			<item value="org.eclipse.ui.commands"/>
 		</list>
 		<list key="textEntries">
+			<item value="1"/>
 		</list>
 		<list key="textArray">
+			<item value="market"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">
