@@ -1,16 +1,12 @@
 package domain.util;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
-
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
@@ -186,7 +182,7 @@ public class DomainResourceImpl extends XMIResourceImpl {
 				    JSONObject pokemon = (JSONObject) ((JSONArray) pokemonList).get(i);
 				    
 				    // Use custom method to parse to hashmap
-				    HashMap pokemonHashMap = parsePokemonObject(pokemon);
+				    HashMap<String, String> pokemonHashMap = parsePokemonObject(pokemon);
 				    
 				    // Create instance of said pokemon
 				    Species pokemonSpecies = DomainFactory.eINSTANCE.createSpecies();
@@ -312,6 +308,26 @@ public class DomainResourceImpl extends XMIResourceImpl {
 		
 		// ADD RELATIONSHIPS BETWEEN ANATOMIES IN GENUS
 		
+		{
+			HashMap<String, ArrayList<Genus>> anatomyMap = new HashMap<>();
+			
+			for (Genus genus : generaInstances)
+			{
+				if (anatomyMap.containsKey(genus.getAnatomy())) {
+					anatomyMap.get(genus.getAnatomy()).add(genus);
+				} else {
+					ArrayList<Genus> anatomyList = new ArrayList<>();
+					anatomyList.add(genus);
+					anatomyMap.put(genus.getAnatomy(), anatomyList);
+				}
+					
+			}
+			for (Genus genus : generaInstances)
+			{
+				genus.getSameAnatomy().addAll(anatomyMap.get(genus.getAnatomy()));
+				genus.getSameAnatomy().remove(genus);
+			}
+		}
 		
 		String fileSeparator = System.getProperty("file.separator");
         
@@ -331,7 +347,6 @@ public class DomainResourceImpl extends XMIResourceImpl {
 	}
 	
 	
-	//TODO: refactor to get all attributes of pokemon
 	private static HashMap<String, String> parsePokemonObject(JSONObject pokemon) 
 	{	
 		HashMap<String, String> pokemonInstance = new HashMap<String, String>(); 

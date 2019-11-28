@@ -3,24 +3,24 @@
   <kingdoms name="Plantae">
     <phyla name="Unspecified Plantae phylum">
       <classes name="Unspecified plant class">
-        <genera name="Seed Pok&#xe9;mon" anatomy="quadruped">
+        <genera name="Seed Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.0/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.9 //@kingdoms.1/@phyla.0/@classes.0/@genera.10 //@kingdoms.1/@phyla.0/@classes.0/@genera.13 //@kingdoms.1/@phyla.0/@classes.2/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.24 //@kingdoms.1/@phyla.0/@classes.0/@genera.30 //@kingdoms.1/@phyla.0/@classes.0/@genera.32 //@kingdoms.1/@phyla.0/@classes.0/@genera.33 //@kingdoms.1/@phyla.0/@classes.0/@genera.34" anatomy="quadruped">
           <species name="Bulbasaur" evolvesTo="//@kingdoms.0/@phyla.0/@classes.0/@genera.0/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"/>
           <species name="Ivysaur" evolvesTo="//@kingdoms.0/@phyla.0/@classes.0/@genera.0/@species.2" evolvesFrom="//@kingdoms.0/@phyla.0/@classes.0/@genera.0/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"/>
           <species name="Venusaur" evolvesFrom="//@kingdoms.0/@phyla.0/@classes.0/@genera.0/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"/>
         </genera>
-        <genera name="Weed Pok&#xe9;mon" anatomy="legs">
+        <genera name="Weed Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.2/@genera.3 //@kingdoms.1/@phyla.0/@classes.1/@genera.5 //@kingdoms.1/@phyla.0/@classes.1/@genera.6 //@kingdoms.0/@phyla.0/@classes.0/@genera.6 //@kingdoms.0/@phyla.0/@classes.0/@genera.7 //@kingdoms.2/@phyla.0/@classes.0/@genera.5" anatomy="legs">
           <species name="Oddish" evolvesTo="//@kingdoms.0/@phyla.0/@classes.0/@genera.1/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png"/>
           <species name="Gloom" evolvesTo="//@kingdoms.0/@phyla.0/@classes.0/@genera.2/@species.0" evolvesFrom="//@kingdoms.0/@phyla.0/@classes.0/@genera.1/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png"/>
         </genera>
-        <genera name="Flower Pok&#xe9;mon" anatomy="humanoid">
+        <genera name="Flower Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.4/@genera.1 //@kingdoms.1/@phyla.1/@classes.0/@genera.5 //@kingdoms.2/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.17 //@kingdoms.1/@phyla.0/@classes.0/@genera.20 //@kingdoms.1/@phyla.0/@classes.0/@genera.21 //@kingdoms.1/@phyla.0/@classes.0/@genera.26 //@kingdoms.1/@phyla.0/@classes.0/@genera.27 //@kingdoms.1/@phyla.1/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.35" anatomy="humanoid">
           <species name="Vileplume" evolvesFrom="//@kingdoms.0/@phyla.0/@classes.0/@genera.1/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png"/>
           <species name="Bellsprout" evolvesTo="//@kingdoms.0/@phyla.0/@classes.0/@genera.4/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png"/>
         </genera>
-        <genera name="Mushroom Pok&#xe9;mon" anatomy="armor">
+        <genera name="Mushroom Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.1/@classes.0/@genera.0 //@kingdoms.1/@phyla.1/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.2/@genera.9 //@kingdoms.1/@phyla.0/@classes.2/@genera.10" anatomy="armor">
           <species name="Paras" evolvesTo="//@kingdoms.0/@phyla.0/@classes.0/@genera.3/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png"/>
           <species name="Parasect" evolvesFrom="//@kingdoms.0/@phyla.0/@classes.0/@genera.3/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png"/>
         </genera>
-        <genera name="Flycatcher Pok&#xe9;mon" anatomy="blob">
+        <genera name="Flycatcher Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.0/@genera.4 //@kingdoms.1/@phyla.0/@classes.3/@genera.4 //@kingdoms.1/@phyla.0/@classes.2/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.13" anatomy="blob">
           <species name="Weepinbell" evolvesTo="//@kingdoms.0/@phyla.0/@classes.0/@genera.4/@species.1" evolvesFrom="//@kingdoms.0/@phyla.0/@classes.0/@genera.2/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png"/>
           <species name="Victreebel" evolvesFrom="//@kingdoms.0/@phyla.0/@classes.0/@genera.4/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png"/>
         </genera>
@@ -28,10 +28,10 @@
           <species name="Exeggcute" evolvesTo="//@kingdoms.0/@phyla.0/@classes.0/@genera.6/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png"/>
           <species name="Chansey" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.2/@species.2" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png"/>
         </genera>
-        <genera name="Coconut Pok&#xe9;mon" anatomy="legs">
+        <genera name="Coconut Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.3 //@kingdoms.1/@phyla.0/@classes.1/@genera.5 //@kingdoms.1/@phyla.0/@classes.1/@genera.6 //@kingdoms.0/@phyla.0/@classes.0/@genera.7 //@kingdoms.2/@phyla.0/@classes.0/@genera.5" anatomy="legs">
           <species name="Exeggutor" evolvesFrom="//@kingdoms.0/@phyla.0/@classes.0/@genera.5/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png"/>
         </genera>
-        <genera name="Vine Pok&#xe9;mon" anatomy="legs">
+        <genera name="Vine Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.3 //@kingdoms.1/@phyla.0/@classes.1/@genera.5 //@kingdoms.1/@phyla.0/@classes.1/@genera.6 //@kingdoms.0/@phyla.0/@classes.0/@genera.6 //@kingdoms.2/@phyla.0/@classes.0/@genera.5" anatomy="legs">
           <species name="Tangela" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png"/>
         </genera>
       </classes>
@@ -40,7 +40,7 @@
   <kingdoms name="Animalia">
     <phyla name="Chordates">
       <classes name="Mammal">
-        <genera name="Mouse Pok&#xe9;mon" anatomy="quadruped">
+        <genera name="Mouse Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.0/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.9 //@kingdoms.1/@phyla.0/@classes.0/@genera.10 //@kingdoms.1/@phyla.0/@classes.0/@genera.13 //@kingdoms.1/@phyla.0/@classes.2/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.24 //@kingdoms.1/@phyla.0/@classes.0/@genera.30 //@kingdoms.1/@phyla.0/@classes.0/@genera.32 //@kingdoms.1/@phyla.0/@classes.0/@genera.33 //@kingdoms.1/@phyla.0/@classes.0/@genera.34" anatomy="quadruped">
           <species name="Rattata" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.0/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png"/>
           <species name="Raticate" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.0/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"/>
           <species name="Pikachu" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.0/@species.3" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.3/@genera.3/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"/>
@@ -48,264 +48,264 @@
           <species name="Sandshrew" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.0/@species.5" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png"/>
           <species name="Sandslash" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.0/@species.4" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png"/>
         </genera>
-        <genera name="Poison Pin Pok&#xe9;mon" anatomy="quadruped">
+        <genera name="Poison Pin Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.0/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.9 //@kingdoms.1/@phyla.0/@classes.0/@genera.10 //@kingdoms.1/@phyla.0/@classes.0/@genera.13 //@kingdoms.1/@phyla.0/@classes.2/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.24 //@kingdoms.1/@phyla.0/@classes.0/@genera.30 //@kingdoms.1/@phyla.0/@classes.0/@genera.32 //@kingdoms.1/@phyla.0/@classes.0/@genera.33 //@kingdoms.1/@phyla.0/@classes.0/@genera.34" anatomy="quadruped">
           <species name="Nidoran-f" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.1/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png"/>
           <species name="Nidorina" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.2/@species.0" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.1/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png"/>
           <species name="Nidoran-m" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.1/@species.3" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png"/>
           <species name="Nidorino" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.2/@species.1" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.1/@species.2" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png"/>
         </genera>
-        <genera name="Drill Pok&#xe9;mon" anatomy="upright">
+        <genera name="Drill Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Nidoqueen" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.1/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png"/>
           <species name="Nidoking" evolvesTo="//@kingdoms.1/@phyla.0/@classes.4/@genera.0/@species.0" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.1/@species.3" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png"/>
           <species name="Rhydon" evolvesTo="//@kingdoms.0/@phyla.0/@classes.0/@genera.5/@species.1" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.24/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png"/>
         </genera>
-        <genera name="Fox Pok&#xe9;mon" anatomy="quadruped">
+        <genera name="Fox Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.9 //@kingdoms.1/@phyla.0/@classes.0/@genera.10 //@kingdoms.1/@phyla.0/@classes.0/@genera.13 //@kingdoms.1/@phyla.0/@classes.2/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.24 //@kingdoms.1/@phyla.0/@classes.0/@genera.30 //@kingdoms.1/@phyla.0/@classes.0/@genera.32 //@kingdoms.1/@phyla.0/@classes.0/@genera.33 //@kingdoms.1/@phyla.0/@classes.0/@genera.34" anatomy="quadruped">
           <species name="Vulpix" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.3/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png"/>
           <species name="Ninetales" evolvesTo="//@kingdoms.1/@phyla.0/@classes.4/@genera.1/@species.0" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.3/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png"/>
         </genera>
-        <genera name="Mole Pok&#xe9;mon" anatomy="blob">
+        <genera name="Mole Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.4 //@kingdoms.1/@phyla.0/@classes.3/@genera.4 //@kingdoms.1/@phyla.0/@classes.2/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.13" anatomy="blob">
           <species name="Diglett" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.4/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png"/>
           <species name="Dugtrio" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.4/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png"/>
         </genera>
-        <genera name="Scratch Cat Pok&#xe9;mon" anatomy="quadruped">
+        <genera name="Scratch Cat Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.0/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.9 //@kingdoms.1/@phyla.0/@classes.0/@genera.10 //@kingdoms.1/@phyla.0/@classes.0/@genera.13 //@kingdoms.1/@phyla.0/@classes.2/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.24 //@kingdoms.1/@phyla.0/@classes.0/@genera.30 //@kingdoms.1/@phyla.0/@classes.0/@genera.32 //@kingdoms.1/@phyla.0/@classes.0/@genera.33 //@kingdoms.1/@phyla.0/@classes.0/@genera.34" anatomy="quadruped">
           <species name="Meowth" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.6/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png"/>
         </genera>
-        <genera name="Classy Cat Pok&#xe9;mon" anatomy="quadruped">
+        <genera name="Classy Cat Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.0/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.9 //@kingdoms.1/@phyla.0/@classes.0/@genera.10 //@kingdoms.1/@phyla.0/@classes.0/@genera.13 //@kingdoms.1/@phyla.0/@classes.2/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.24 //@kingdoms.1/@phyla.0/@classes.0/@genera.30 //@kingdoms.1/@phyla.0/@classes.0/@genera.32 //@kingdoms.1/@phyla.0/@classes.0/@genera.33 //@kingdoms.1/@phyla.0/@classes.0/@genera.34" anatomy="quadruped">
           <species name="Persian" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.5/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png"/>
         </genera>
-        <genera name="Duck Pok&#xe9;mon" anatomy="upright">
+        <genera name="Duck Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Psyduck" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.7/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"/>
           <species name="Golduck" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.7/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png"/>
         </genera>
-        <genera name="Pig Monkey Pok&#xe9;mon" anatomy="upright">
+        <genera name="Pig Monkey Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Mankey" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.8/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png"/>
           <species name="Primeape" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.8/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png"/>
         </genera>
-        <genera name="Puppy Pok&#xe9;mon" anatomy="quadruped">
+        <genera name="Puppy Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.0/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.10 //@kingdoms.1/@phyla.0/@classes.0/@genera.13 //@kingdoms.1/@phyla.0/@classes.2/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.24 //@kingdoms.1/@phyla.0/@classes.0/@genera.30 //@kingdoms.1/@phyla.0/@classes.0/@genera.32 //@kingdoms.1/@phyla.0/@classes.0/@genera.33 //@kingdoms.1/@phyla.0/@classes.0/@genera.34" anatomy="quadruped">
           <species name="Growlithe" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.10/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"/>
         </genera>
-        <genera name="Legendary Pok&#xe9;mon" anatomy="quadruped">
+        <genera name="Legendary Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.0/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.9 //@kingdoms.1/@phyla.0/@classes.0/@genera.13 //@kingdoms.1/@phyla.0/@classes.2/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.24 //@kingdoms.1/@phyla.0/@classes.0/@genera.30 //@kingdoms.1/@phyla.0/@classes.0/@genera.32 //@kingdoms.1/@phyla.0/@classes.0/@genera.33 //@kingdoms.1/@phyla.0/@classes.0/@genera.34" anatomy="quadruped">
           <species name="Arcanine" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.9/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png"/>
         </genera>
-        <genera name="Psi Pok&#xe9;mon" anatomy="upright">
+        <genera name="Psi Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Abra" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.11/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png"/>
           <species name="Kadabra" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.11/@species.2" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.11/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png"/>
           <species name="Alakazam" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.11/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png"/>
         </genera>
-        <genera name="Superpower Pok&#xe9;mon" anatomy="upright">
+        <genera name="Superpower Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Machop" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.12/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png"/>
           <species name="Machoke" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.12/@species.2" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.12/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png"/>
           <species name="Machamp" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.12/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png"/>
         </genera>
-        <genera name="Fire Horse Pok&#xe9;mon" anatomy="quadruped">
+        <genera name="Fire Horse Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.0/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.9 //@kingdoms.1/@phyla.0/@classes.0/@genera.10 //@kingdoms.1/@phyla.0/@classes.2/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.24 //@kingdoms.1/@phyla.0/@classes.0/@genera.30 //@kingdoms.1/@phyla.0/@classes.0/@genera.32 //@kingdoms.1/@phyla.0/@classes.0/@genera.33 //@kingdoms.1/@phyla.0/@classes.0/@genera.34" anatomy="quadruped">
           <species name="Ponyta" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.13/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png"/>
           <species name="Rapidash" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.13/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png"/>
         </genera>
-        <genera name="Sludge Pok&#xe9;mon" anatomy="arms">
+        <genera name="Sludge Pok&#xe9;mon" sameAnatomy="//@kingdoms.2/@phyla.0/@classes.0/@genera.0 //@kingdoms.2/@phyla.0/@classes.0/@genera.2" anatomy="arms">
           <species name="Grimer" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.14/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png"/>
           <species name="Muk" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.14/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png"/>
         </genera>
-        <genera name="Gas Pok&#xe9;mon" anatomy="ball">
+        <genera name="Gas Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.2/@genera.8 //@kingdoms.2/@phyla.0/@classes.0/@genera.4 //@kingdoms.1/@phyla.0/@classes.0/@genera.23 //@kingdoms.1/@phyla.0/@classes.0/@genera.31" anatomy="ball">
           <species name="Gastly" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.15/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png"/>
           <species name="Haunter" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.16/@species.0" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.15/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png"/>
         </genera>
-        <genera name="Shadow Pok&#xe9;mon" anatomy="upright">
+        <genera name="Shadow Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Gengar" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.15/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png"/>
         </genera>
-        <genera name="Hypnosis Pok&#xe9;mon" anatomy="humanoid">
+        <genera name="Hypnosis Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.4/@genera.1 //@kingdoms.0/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.1/@classes.0/@genera.5 //@kingdoms.2/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.20 //@kingdoms.1/@phyla.0/@classes.0/@genera.21 //@kingdoms.1/@phyla.0/@classes.0/@genera.26 //@kingdoms.1/@phyla.0/@classes.0/@genera.27 //@kingdoms.1/@phyla.1/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.35" anatomy="humanoid">
           <species name="Drowzee" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.17/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png"/>
           <species name="Hypno" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.17/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png"/>
         </genera>
-        <genera name="Lonely Pok&#xe9;mon" anatomy="upright">
+        <genera name="Lonely Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Cubone" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.19/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png"/>
         </genera>
-        <genera name="Bone Keeper Pok&#xe9;mon" anatomy="upright">
+        <genera name="Bone Keeper Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Marowak" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.20/@species.0" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.18/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png"/>
         </genera>
-        <genera name="Kicking Pok&#xe9;mon" anatomy="humanoid">
+        <genera name="Kicking Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.4/@genera.1 //@kingdoms.0/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.1/@classes.0/@genera.5 //@kingdoms.2/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.17 //@kingdoms.1/@phyla.0/@classes.0/@genera.21 //@kingdoms.1/@phyla.0/@classes.0/@genera.26 //@kingdoms.1/@phyla.0/@classes.0/@genera.27 //@kingdoms.1/@phyla.1/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.35" anatomy="humanoid">
           <species name="Hitmonlee" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.21/@species.0" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.19/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png"/>
         </genera>
-        <genera name="Punching Pok&#xe9;mon" anatomy="humanoid">
+        <genera name="Punching Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.4/@genera.1 //@kingdoms.0/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.1/@classes.0/@genera.5 //@kingdoms.2/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.17 //@kingdoms.1/@phyla.0/@classes.0/@genera.20 //@kingdoms.1/@phyla.0/@classes.0/@genera.26 //@kingdoms.1/@phyla.0/@classes.0/@genera.27 //@kingdoms.1/@phyla.1/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.35" anatomy="humanoid">
           <species name="Hitmonchan" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.20/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png"/>
         </genera>
-        <genera name="Licking Pok&#xe9;mon" anatomy="upright">
+        <genera name="Licking Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Lickitung" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png"/>
         </genera>
-        <genera name="Poison Gas Pok&#xe9;mon" anatomy="ball">
+        <genera name="Poison Gas Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.2/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.15 //@kingdoms.2/@phyla.0/@classes.0/@genera.4 //@kingdoms.1/@phyla.0/@classes.0/@genera.31" anatomy="ball">
           <species name="Koffing" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.23/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png"/>
           <species name="Weezing" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.23/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png"/>
         </genera>
-        <genera name="Spikes Pok&#xe9;mon" anatomy="quadruped">
+        <genera name="Spikes Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.0/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.9 //@kingdoms.1/@phyla.0/@classes.0/@genera.10 //@kingdoms.1/@phyla.0/@classes.0/@genera.13 //@kingdoms.1/@phyla.0/@classes.2/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.30 //@kingdoms.1/@phyla.0/@classes.0/@genera.32 //@kingdoms.1/@phyla.0/@classes.0/@genera.33 //@kingdoms.1/@phyla.0/@classes.0/@genera.34" anatomy="quadruped">
           <species name="Rhyhorn" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.2/@species.2" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png"/>
         </genera>
-        <genera name="Parent Pok&#xe9;mon" anatomy="upright">
+        <genera name="Parent Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Kangaskhan" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png"/>
         </genera>
-        <genera name="Barrier Pok&#xe9;mon" anatomy="humanoid">
+        <genera name="Barrier Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.4/@genera.1 //@kingdoms.0/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.1/@classes.0/@genera.5 //@kingdoms.2/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.17 //@kingdoms.1/@phyla.0/@classes.0/@genera.20 //@kingdoms.1/@phyla.0/@classes.0/@genera.21 //@kingdoms.1/@phyla.0/@classes.0/@genera.27 //@kingdoms.1/@phyla.1/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.35" anatomy="humanoid">
           <species name="Mr-mime" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.2/@genera.13/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png"/>
         </genera>
-        <genera name="Human Shape Pok&#xe9;mon" anatomy="humanoid">
+        <genera name="Human Shape Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.4/@genera.1 //@kingdoms.0/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.1/@classes.0/@genera.5 //@kingdoms.2/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.17 //@kingdoms.1/@phyla.0/@classes.0/@genera.20 //@kingdoms.1/@phyla.0/@classes.0/@genera.21 //@kingdoms.1/@phyla.0/@classes.0/@genera.26 //@kingdoms.1/@phyla.1/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.35" anatomy="humanoid">
           <species name="Jynx" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.28/@species.0" evolvesFrom="//@kingdoms.1/@phyla.1/@classes.0/@genera.7/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png"/>
         </genera>
-        <genera name="Electric Pok&#xe9;mon" anatomy="upright">
+        <genera name="Electric Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Electabuzz" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.29/@species.0" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.27/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png"/>
           <species name="Zapdos" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png"/>
         </genera>
-        <genera name="Spitfire Pok&#xe9;mon" anatomy="upright">
+        <genera name="Spitfire Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Magmar" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.28/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png"/>
         </genera>
-        <genera name="Wild Bull Pok&#xe9;mon" anatomy="quadruped">
+        <genera name="Wild Bull Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.0/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.9 //@kingdoms.1/@phyla.0/@classes.0/@genera.10 //@kingdoms.1/@phyla.0/@classes.0/@genera.13 //@kingdoms.1/@phyla.0/@classes.2/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.24 //@kingdoms.1/@phyla.0/@classes.0/@genera.32 //@kingdoms.1/@phyla.0/@classes.0/@genera.33 //@kingdoms.1/@phyla.0/@classes.0/@genera.34" anatomy="quadruped">
           <species name="Tauros" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png"/>
         </genera>
-        <genera name="Transform Pok&#xe9;mon" anatomy="ball">
+        <genera name="Transform Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.2/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.15 //@kingdoms.2/@phyla.0/@classes.0/@genera.4 //@kingdoms.1/@phyla.0/@classes.0/@genera.23" anatomy="ball">
           <species name="Ditto" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"/>
         </genera>
-        <genera name="Evolution Pok&#xe9;mon" anatomy="quadruped">
+        <genera name="Evolution Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.0/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.9 //@kingdoms.1/@phyla.0/@classes.0/@genera.10 //@kingdoms.1/@phyla.0/@classes.0/@genera.13 //@kingdoms.1/@phyla.0/@classes.2/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.24 //@kingdoms.1/@phyla.0/@classes.0/@genera.30 //@kingdoms.1/@phyla.0/@classes.0/@genera.33 //@kingdoms.1/@phyla.0/@classes.0/@genera.34" anatomy="quadruped">
           <species name="Eevee" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.33/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png"/>
         </genera>
-        <genera name="Bubble Jet Pok&#xe9;mon" anatomy="quadruped">
+        <genera name="Bubble Jet Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.0/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.9 //@kingdoms.1/@phyla.0/@classes.0/@genera.10 //@kingdoms.1/@phyla.0/@classes.0/@genera.13 //@kingdoms.1/@phyla.0/@classes.2/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.24 //@kingdoms.1/@phyla.0/@classes.0/@genera.30 //@kingdoms.1/@phyla.0/@classes.0/@genera.32 //@kingdoms.1/@phyla.0/@classes.0/@genera.34" anatomy="quadruped">
           <species name="Vaporeon" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.34/@species.0" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.32/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png"/>
         </genera>
-        <genera name="Lightning Pok&#xe9;mon" anatomy="quadruped">
+        <genera name="Lightning Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.0/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.9 //@kingdoms.1/@phyla.0/@classes.0/@genera.10 //@kingdoms.1/@phyla.0/@classes.0/@genera.13 //@kingdoms.1/@phyla.0/@classes.2/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.24 //@kingdoms.1/@phyla.0/@classes.0/@genera.30 //@kingdoms.1/@phyla.0/@classes.0/@genera.32 //@kingdoms.1/@phyla.0/@classes.0/@genera.33" anatomy="quadruped">
           <species name="Jolteon" evolvesTo="//@kingdoms.1/@phyla.0/@classes.3/@genera.1/@species.2" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.33/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png"/>
         </genera>
-        <genera name="Sleeping Pok&#xe9;mon" anatomy="humanoid">
+        <genera name="Sleeping Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.4/@genera.1 //@kingdoms.0/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.1/@classes.0/@genera.5 //@kingdoms.2/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.17 //@kingdoms.1/@phyla.0/@classes.0/@genera.20 //@kingdoms.1/@phyla.0/@classes.0/@genera.21 //@kingdoms.1/@phyla.0/@classes.0/@genera.26 //@kingdoms.1/@phyla.0/@classes.0/@genera.27 //@kingdoms.1/@phyla.1/@classes.0/@genera.8" anatomy="humanoid">
           <species name="Snorlax" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.1/@genera.7/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png"/>
         </genera>
-        <genera name="Genetic Pok&#xe9;mon" anatomy="upright">
+        <genera name="Genetic Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Mewtwo" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png"/>
         </genera>
-        <genera name="New Species Pok&#xe9;mon" anatomy="upright">
+        <genera name="New Species Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36" anatomy="upright">
           <species name="Mew" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png"/>
         </genera>
       </classes>
       <classes name="Bird">
-        <genera name="Tiny Bird Pok&#xe9;mon" anatomy="wings">
+        <genera name="Tiny Bird Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.1/@genera.1 //@kingdoms.1/@phyla.0/@classes.1/@genera.2 //@kingdoms.1/@phyla.0/@classes.1/@genera.3 //@kingdoms.1/@phyla.0/@classes.1/@genera.4 //@kingdoms.1/@phyla.0/@classes.1/@genera.7 //@kingdoms.1/@phyla.0/@classes.1/@genera.8" anatomy="wings">
           <species name="Pidgey" evolvesTo="//@kingdoms.1/@phyla.0/@classes.1/@genera.1/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png"/>
           <species name="Spearow" evolvesTo="//@kingdoms.1/@phyla.0/@classes.1/@genera.2/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png"/>
         </genera>
-        <genera name="Bird Pok&#xe9;mon" anatomy="wings">
+        <genera name="Bird Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.1/@genera.0 //@kingdoms.1/@phyla.0/@classes.1/@genera.2 //@kingdoms.1/@phyla.0/@classes.1/@genera.3 //@kingdoms.1/@phyla.0/@classes.1/@genera.4 //@kingdoms.1/@phyla.0/@classes.1/@genera.7 //@kingdoms.1/@phyla.0/@classes.1/@genera.8" anatomy="wings">
           <species name="Pidgeotto" evolvesTo="//@kingdoms.1/@phyla.0/@classes.1/@genera.1/@species.1" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.1/@genera.0/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png"/>
           <species name="Pidgeot" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.1/@genera.1/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png"/>
         </genera>
-        <genera name="Beak Pok&#xe9;mon" anatomy="wings">
+        <genera name="Beak Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.1/@genera.0 //@kingdoms.1/@phyla.0/@classes.1/@genera.1 //@kingdoms.1/@phyla.0/@classes.1/@genera.3 //@kingdoms.1/@phyla.0/@classes.1/@genera.4 //@kingdoms.1/@phyla.0/@classes.1/@genera.7 //@kingdoms.1/@phyla.0/@classes.1/@genera.8" anatomy="wings">
           <species name="Fearow" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.1/@genera.0/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png"/>
         </genera>
-        <genera name="Bat Pok&#xe9;mon" anatomy="wings">
+        <genera name="Bat Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.1/@genera.0 //@kingdoms.1/@phyla.0/@classes.1/@genera.1 //@kingdoms.1/@phyla.0/@classes.1/@genera.2 //@kingdoms.1/@phyla.0/@classes.1/@genera.4 //@kingdoms.1/@phyla.0/@classes.1/@genera.7 //@kingdoms.1/@phyla.0/@classes.1/@genera.8" anatomy="wings">
           <species name="Zubat" evolvesTo="//@kingdoms.1/@phyla.0/@classes.1/@genera.3/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png"/>
           <species name="Golbat" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.1/@genera.3/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png"/>
         </genera>
-        <genera name="Wild Duck Pok&#xe9;mon" anatomy="wings">
+        <genera name="Wild Duck Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.1/@genera.0 //@kingdoms.1/@phyla.0/@classes.1/@genera.1 //@kingdoms.1/@phyla.0/@classes.1/@genera.2 //@kingdoms.1/@phyla.0/@classes.1/@genera.3 //@kingdoms.1/@phyla.0/@classes.1/@genera.7 //@kingdoms.1/@phyla.0/@classes.1/@genera.8" anatomy="wings">
           <species name="Farfetchd" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png"/>
         </genera>
-        <genera name="Twin Bird Pok&#xe9;mon" anatomy="legs">
+        <genera name="Twin Bird Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.3 //@kingdoms.1/@phyla.0/@classes.1/@genera.6 //@kingdoms.0/@phyla.0/@classes.0/@genera.6 //@kingdoms.0/@phyla.0/@classes.0/@genera.7 //@kingdoms.2/@phyla.0/@classes.0/@genera.5" anatomy="legs">
           <species name="Doduo" evolvesTo="//@kingdoms.1/@phyla.0/@classes.1/@genera.6/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png"/>
         </genera>
-        <genera name="Triple Bird Pok&#xe9;mon" anatomy="legs">
+        <genera name="Triple Bird Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.3 //@kingdoms.1/@phyla.0/@classes.1/@genera.5 //@kingdoms.0/@phyla.0/@classes.0/@genera.6 //@kingdoms.0/@phyla.0/@classes.0/@genera.7 //@kingdoms.2/@phyla.0/@classes.0/@genera.5" anatomy="legs">
           <species name="Dodrio" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.1/@genera.5/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png"/>
         </genera>
-        <genera name="Fossil Pok&#xe9;mon" anatomy="wings">
+        <genera name="Fossil Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.1/@genera.0 //@kingdoms.1/@phyla.0/@classes.1/@genera.1 //@kingdoms.1/@phyla.0/@classes.1/@genera.2 //@kingdoms.1/@phyla.0/@classes.1/@genera.3 //@kingdoms.1/@phyla.0/@classes.1/@genera.4 //@kingdoms.1/@phyla.0/@classes.1/@genera.8" anatomy="wings">
           <species name="Aerodactyl" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.35/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png"/>
         </genera>
-        <genera name="Freeze Pok&#xe9;mon" anatomy="wings">
+        <genera name="Freeze Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.1/@genera.0 //@kingdoms.1/@phyla.0/@classes.1/@genera.1 //@kingdoms.1/@phyla.0/@classes.1/@genera.2 //@kingdoms.1/@phyla.0/@classes.1/@genera.3 //@kingdoms.1/@phyla.0/@classes.1/@genera.4 //@kingdoms.1/@phyla.0/@classes.1/@genera.7" anatomy="wings">
           <species name="Articuno" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png"/>
         </genera>
       </classes>
       <classes name="Fish">
-        <genera name="Tiny Turtle Pok&#xe9;mon" anatomy="upright">
+        <genera name="Tiny Turtle Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Squirtle" evolvesTo="//@kingdoms.1/@phyla.0/@classes.2/@genera.1/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"/>
         </genera>
-        <genera name="Turtle Pok&#xe9;mon" anatomy="upright">
+        <genera name="Turtle Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Wartortle" evolvesTo="//@kingdoms.1/@phyla.0/@classes.2/@genera.2/@species.0" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.2/@genera.0/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"/>
         </genera>
-        <genera name="Shellfish Pok&#xe9;mon" anatomy="upright">
+        <genera name="Shellfish Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Blastoise" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.2/@genera.1/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"/>
           <species name="Kabuto" evolvesTo="//@kingdoms.1/@phyla.0/@classes.2/@genera.2/@species.2" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png"/>
           <species name="Kabutops" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.2/@genera.2/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png"/>
         </genera>
-        <genera name="Tadpole Pok&#xe9;mon" anatomy="legs">
+        <genera name="Tadpole Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.1/@genera.5 //@kingdoms.1/@phyla.0/@classes.1/@genera.6 //@kingdoms.0/@phyla.0/@classes.0/@genera.6 //@kingdoms.0/@phyla.0/@classes.0/@genera.7 //@kingdoms.2/@phyla.0/@classes.0/@genera.5" anatomy="legs">
           <species name="Poliwag" evolvesTo="//@kingdoms.1/@phyla.0/@classes.2/@genera.3/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png"/>
           <species name="Poliwhirl" evolvesTo="//@kingdoms.1/@phyla.0/@classes.2/@genera.3/@species.2" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.2/@genera.3/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png"/>
           <species name="Poliwrath" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.2/@genera.3/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png"/>
         </genera>
-        <genera name="Jellyfish Pok&#xe9;mon" anatomy="tentacles">
+        <genera name="Jellyfish Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.2/@genera.15" anatomy="tentacles">
           <species name="Tentacool" evolvesTo="//@kingdoms.1/@phyla.0/@classes.2/@genera.4/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png"/>
           <species name="Tentacruel" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.2/@genera.4/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png"/>
         </genera>
-        <genera name="Dopey Pok&#xe9;mon" anatomy="quadruped">
+        <genera name="Dopey Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.0/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.9 //@kingdoms.1/@phyla.0/@classes.0/@genera.10 //@kingdoms.1/@phyla.0/@classes.0/@genera.13 //@kingdoms.1/@phyla.0/@classes.0/@genera.24 //@kingdoms.1/@phyla.0/@classes.0/@genera.30 //@kingdoms.1/@phyla.0/@classes.0/@genera.32 //@kingdoms.1/@phyla.0/@classes.0/@genera.33 //@kingdoms.1/@phyla.0/@classes.0/@genera.34" anatomy="quadruped">
           <species name="Slowpoke" evolvesTo="//@kingdoms.1/@phyla.0/@classes.2/@genera.6/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"/>
         </genera>
-        <genera name="Hermit Crab Pok&#xe9;mon" anatomy="upright">
+        <genera name="Hermit Crab Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Slowbro" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.2/@genera.5/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png"/>
         </genera>
-        <genera name="Sea Lion Pok&#xe9;mon" anatomy="fish">
+        <genera name="Sea Lion Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.2/@genera.11 //@kingdoms.1/@phyla.0/@classes.3/@genera.5 //@kingdoms.1/@phyla.0/@classes.2/@genera.14" anatomy="fish">
           <species name="Seel" evolvesTo="//@kingdoms.1/@phyla.0/@classes.2/@genera.7/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png"/>
           <species name="Dewgong" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.2/@genera.7/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png"/>
         </genera>
-        <genera name="Bivalve Pok&#xe9;mon" anatomy="ball">
+        <genera name="Bivalve Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.0/@genera.15 //@kingdoms.2/@phyla.0/@classes.0/@genera.4 //@kingdoms.1/@phyla.0/@classes.0/@genera.23 //@kingdoms.1/@phyla.0/@classes.0/@genera.31" anatomy="ball">
           <species name="Shellder" evolvesTo="//@kingdoms.1/@phyla.0/@classes.2/@genera.8/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png"/>
           <species name="Cloyster" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.2/@genera.8/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png"/>
         </genera>
-        <genera name="River Crab Pok&#xe9;mon" anatomy="armor">
+        <genera name="River Crab Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.1/@classes.0/@genera.0 //@kingdoms.1/@phyla.1/@classes.0/@genera.3 //@kingdoms.0/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.2/@genera.10" anatomy="armor">
           <species name="Krabby" evolvesTo="//@kingdoms.1/@phyla.0/@classes.2/@genera.10/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png"/>
         </genera>
-        <genera name="Pincer Pok&#xe9;mon" anatomy="armor">
+        <genera name="Pincer Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.1/@classes.0/@genera.0 //@kingdoms.1/@phyla.1/@classes.0/@genera.3 //@kingdoms.0/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.2/@genera.9" anatomy="armor">
           <species name="Kingler" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.2/@genera.9/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png"/>
         </genera>
-        <genera name="Goldfish Pok&#xe9;mon" anatomy="fish">
+        <genera name="Goldfish Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.2/@genera.7 //@kingdoms.1/@phyla.0/@classes.3/@genera.5 //@kingdoms.1/@phyla.0/@classes.2/@genera.14" anatomy="fish">
           <species name="Goldeen" evolvesTo="//@kingdoms.1/@phyla.0/@classes.2/@genera.11/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png"/>
           <species name="Seaking" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.2/@genera.11/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png"/>
         </genera>
-        <genera name="Star Shape Pok&#xe9;mon" anatomy="blob">
+        <genera name="Star Shape Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.0/@genera.4 //@kingdoms.0/@phyla.0/@classes.0/@genera.4 //@kingdoms.1/@phyla.0/@classes.3/@genera.4 //@kingdoms.1/@phyla.0/@classes.2/@genera.13" anatomy="blob">
           <species name="Staryu" evolvesTo="//@kingdoms.1/@phyla.0/@classes.2/@genera.13/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png"/>
         </genera>
-        <genera name="Mysterious Pok&#xe9;mon" anatomy="blob">
+        <genera name="Mysterious Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.0/@genera.4 //@kingdoms.0/@phyla.0/@classes.0/@genera.4 //@kingdoms.1/@phyla.0/@classes.3/@genera.4 //@kingdoms.1/@phyla.0/@classes.2/@genera.12" anatomy="blob">
           <species name="Starmie" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.26/@species.0" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.2/@genera.12/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png"/>
         </genera>
-        <genera name="Transport Pok&#xe9;mon" anatomy="fish">
+        <genera name="Transport Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.2/@genera.7 //@kingdoms.1/@phyla.0/@classes.2/@genera.11 //@kingdoms.1/@phyla.0/@classes.3/@genera.5" anatomy="fish">
           <species name="Lapras" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png"/>
         </genera>
-        <genera name="Spiral Pok&#xe9;mon" anatomy="tentacles">
+        <genera name="Spiral Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.2/@genera.4" anatomy="tentacles">
           <species name="Omanyte" evolvesTo="//@kingdoms.1/@phyla.0/@classes.2/@genera.15/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png"/>
           <species name="Omastar" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.2/@genera.15/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png"/>
         </genera>
       </classes>
       <classes name="Reptile">
-        <genera name="Lizard Pok&#xe9;mon" anatomy="upright">
+        <genera name="Lizard Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Charmander" evolvesTo="//@kingdoms.1/@phyla.0/@classes.3/@genera.1/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"/>
         </genera>
-        <genera name="Flame Pok&#xe9;mon" anatomy="upright">
+        <genera name="Flame Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.4/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Charmeleon" evolvesTo="//@kingdoms.1/@phyla.0/@classes.3/@genera.1/@species.1" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.3/@genera.0/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"/>
           <species name="Charizard" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.3/@genera.1/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"/>
           <species name="Flareon" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.34/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png"/>
           <species name="Moltres" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png"/>
         </genera>
-        <genera name="Snake Pok&#xe9;mon" anatomy="squiggle">
+        <genera name="Snake Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.1/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.3/@genera.3 //@kingdoms.2/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.3/@genera.6" anatomy="squiggle">
           <species name="Ekans" evolvesTo="//@kingdoms.1/@phyla.0/@classes.3/@genera.3/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png"/>
         </genera>
-        <genera name="Cobra Pok&#xe9;mon" anatomy="squiggle">
+        <genera name="Cobra Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.1/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.3/@genera.2 //@kingdoms.2/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.3/@genera.6" anatomy="squiggle">
           <species name="Arbok" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.0/@species.2" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.3/@genera.2/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png"/>
         </genera>
-        <genera name="Dragon Pok&#xe9;mon" anatomy="blob">
+        <genera name="Dragon Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.0/@genera.4 //@kingdoms.0/@phyla.0/@classes.0/@genera.4 //@kingdoms.1/@phyla.0/@classes.2/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.13" anatomy="blob">
           <species name="Horsea" evolvesTo="//@kingdoms.1/@phyla.0/@classes.3/@genera.4/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png"/>
           <species name="Seadra" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.3/@genera.4/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png"/>
           <species name="Dratini" evolvesTo="//@kingdoms.1/@phyla.0/@classes.3/@genera.4/@species.3" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png"/>
           <species name="Dragonair" evolvesTo="//@kingdoms.1/@phyla.0/@classes.3/@genera.4/@species.4" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.3/@genera.4/@species.2" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png"/>
           <species name="Dragonite" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.3/@genera.4/@species.3" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png"/>
         </genera>
-        <genera name="Fish Pok&#xe9;mon" anatomy="fish">
+        <genera name="Fish Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.2/@genera.7 //@kingdoms.1/@phyla.0/@classes.2/@genera.11 //@kingdoms.1/@phyla.0/@classes.2/@genera.14" anatomy="fish">
           <species name="Magikarp" evolvesTo="//@kingdoms.1/@phyla.0/@classes.3/@genera.6/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png"/>
         </genera>
-        <genera name="Atrocious Pok&#xe9;mon" anatomy="squiggle">
+        <genera name="Atrocious Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.1/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.3/@genera.2 //@kingdoms.1/@phyla.0/@classes.3/@genera.3 //@kingdoms.2/@phyla.0/@classes.0/@genera.3" anatomy="squiggle">
           <species name="Gyarados" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.3/@genera.5/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png"/>
         </genera>
       </classes>
       <classes name="Mythical creature">
-        <genera name="Fairy Pok&#xe9;mon" anatomy="upright">
+        <genera name="Fairy Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.0 //@kingdoms.1/@phyla.0/@classes.3/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.0 //@kingdoms.1/@phyla.0/@classes.2/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.7 //@kingdoms.1/@phyla.0/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.11 //@kingdoms.1/@phyla.0/@classes.0/@genera.12 //@kingdoms.1/@phyla.0/@classes.2/@genera.6 //@kingdoms.1/@phyla.0/@classes.0/@genera.16 //@kingdoms.1/@phyla.0/@classes.0/@genera.18 //@kingdoms.1/@phyla.0/@classes.0/@genera.19 //@kingdoms.1/@phyla.0/@classes.0/@genera.22 //@kingdoms.1/@phyla.0/@classes.0/@genera.25 //@kingdoms.1/@phyla.0/@classes.0/@genera.28 //@kingdoms.1/@phyla.0/@classes.0/@genera.29 //@kingdoms.1/@phyla.0/@classes.0/@genera.36 //@kingdoms.1/@phyla.0/@classes.0/@genera.37" anatomy="upright">
           <species name="Clefairy" evolvesTo="//@kingdoms.1/@phyla.0/@classes.4/@genera.0/@species.1" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.2/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png"/>
           <species name="Clefable" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.4/@genera.0/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png"/>
         </genera>
-        <genera name="Balloon Pok&#xe9;mon" anatomy="humanoid">
+        <genera name="Balloon Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.1/@classes.0/@genera.5 //@kingdoms.2/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.17 //@kingdoms.1/@phyla.0/@classes.0/@genera.20 //@kingdoms.1/@phyla.0/@classes.0/@genera.21 //@kingdoms.1/@phyla.0/@classes.0/@genera.26 //@kingdoms.1/@phyla.0/@classes.0/@genera.27 //@kingdoms.1/@phyla.1/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.35" anatomy="humanoid">
           <species name="Jigglypuff" evolvesTo="//@kingdoms.1/@phyla.0/@classes.4/@genera.1/@species.1" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.0/@genera.3/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png"/>
           <species name="Wigglytuff" evolvesFrom="//@kingdoms.1/@phyla.0/@classes.4/@genera.1/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png"/>
         </genera>
@@ -313,32 +313,32 @@
     </phyla>
     <phyla name="Arthropods">
       <classes name="UNSPECIFIED BUG CLASS">
-        <genera name="Worm Pok&#xe9;mon" anatomy="armor">
+        <genera name="Worm Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.1/@classes.0/@genera.3 //@kingdoms.0/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.2/@genera.9 //@kingdoms.1/@phyla.0/@classes.2/@genera.10" anatomy="armor">
           <species name="Caterpie" evolvesTo="//@kingdoms.1/@phyla.1/@classes.0/@genera.1/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"/>
         </genera>
-        <genera name="Cocoon Pok&#xe9;mon" anatomy="squiggle">
+        <genera name="Cocoon Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.3/@genera.2 //@kingdoms.1/@phyla.0/@classes.3/@genera.3 //@kingdoms.2/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.3/@genera.6" anatomy="squiggle">
           <species name="Metapod" evolvesTo="//@kingdoms.1/@phyla.1/@classes.0/@genera.2/@species.0" evolvesFrom="//@kingdoms.1/@phyla.1/@classes.0/@genera.0/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"/>
           <species name="Kakuna" evolvesTo="//@kingdoms.1/@phyla.1/@classes.0/@genera.4/@species.0" evolvesFrom="//@kingdoms.1/@phyla.1/@classes.0/@genera.3/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png"/>
         </genera>
-        <genera name="Butterfly Pok&#xe9;mon" anatomy="bug-wings">
+        <genera name="Butterfly Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.1/@classes.0/@genera.4 //@kingdoms.1/@phyla.1/@classes.0/@genera.6 //@kingdoms.1/@phyla.1/@classes.0/@genera.7" anatomy="bug-wings">
           <species name="Butterfree" evolvesFrom="//@kingdoms.1/@phyla.1/@classes.0/@genera.1/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"/>
         </genera>
-        <genera name="Hairy Bug Pok&#xe9;mon" anatomy="armor">
+        <genera name="Hairy Bug Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.1/@classes.0/@genera.0 //@kingdoms.0/@phyla.0/@classes.0/@genera.3 //@kingdoms.1/@phyla.0/@classes.2/@genera.9 //@kingdoms.1/@phyla.0/@classes.2/@genera.10" anatomy="armor">
           <species name="Weedle" evolvesTo="//@kingdoms.1/@phyla.1/@classes.0/@genera.1/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png"/>
         </genera>
-        <genera name="Poison Bee Pok&#xe9;mon" anatomy="bug-wings">
+        <genera name="Poison Bee Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.1/@classes.0/@genera.2 //@kingdoms.1/@phyla.1/@classes.0/@genera.6 //@kingdoms.1/@phyla.1/@classes.0/@genera.7" anatomy="bug-wings">
           <species name="Beedrill" evolvesFrom="//@kingdoms.1/@phyla.1/@classes.0/@genera.1/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png"/>
         </genera>
-        <genera name="Insect Pok&#xe9;mon" anatomy="humanoid">
+        <genera name="Insect Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.4/@genera.1 //@kingdoms.0/@phyla.0/@classes.0/@genera.2 //@kingdoms.2/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.17 //@kingdoms.1/@phyla.0/@classes.0/@genera.20 //@kingdoms.1/@phyla.0/@classes.0/@genera.21 //@kingdoms.1/@phyla.0/@classes.0/@genera.26 //@kingdoms.1/@phyla.0/@classes.0/@genera.27 //@kingdoms.1/@phyla.1/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.35" anatomy="humanoid">
           <species name="Venonat" evolvesTo="//@kingdoms.1/@phyla.1/@classes.0/@genera.6/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png"/>
         </genera>
-        <genera name="Poison Moth Pok&#xe9;mon" anatomy="bug-wings">
+        <genera name="Poison Moth Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.1/@classes.0/@genera.2 //@kingdoms.1/@phyla.1/@classes.0/@genera.4 //@kingdoms.1/@phyla.1/@classes.0/@genera.7" anatomy="bug-wings">
           <species name="Venomoth" evolvesFrom="//@kingdoms.1/@phyla.1/@classes.0/@genera.5/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png"/>
         </genera>
-        <genera name="Mantis Pok&#xe9;mon" anatomy="bug-wings">
+        <genera name="Mantis Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.1/@classes.0/@genera.2 //@kingdoms.1/@phyla.1/@classes.0/@genera.4 //@kingdoms.1/@phyla.1/@classes.0/@genera.6" anatomy="bug-wings">
           <species name="Scyther" evolvesTo="//@kingdoms.1/@phyla.0/@classes.0/@genera.27/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png"/>
         </genera>
-        <genera name="Stag Beetle Pok&#xe9;mon" anatomy="humanoid">
+        <genera name="Stag Beetle Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.4/@genera.1 //@kingdoms.0/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.1/@classes.0/@genera.5 //@kingdoms.2/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.0/@genera.17 //@kingdoms.1/@phyla.0/@classes.0/@genera.20 //@kingdoms.1/@phyla.0/@classes.0/@genera.21 //@kingdoms.1/@phyla.0/@classes.0/@genera.26 //@kingdoms.1/@phyla.0/@classes.0/@genera.27 //@kingdoms.1/@phyla.0/@classes.0/@genera.35" anatomy="humanoid">
           <species name="Pinsir" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png"/>
         </genera>
       </classes>
@@ -347,25 +347,25 @@
   <kingdoms name="Mineralia">
     <phyla name="Unspecified Mineralia phylum">
       <classes name="Unspecified mineral class">
-        <genera name="Rock Pok&#xe9;mon" anatomy="arms">
+        <genera name="Rock Pok&#xe9;mon" sameAnatomy="//@kingdoms.2/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.0/@classes.0/@genera.14" anatomy="arms">
           <species name="Geodude" evolvesTo="//@kingdoms.2/@phyla.0/@classes.0/@genera.0/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png"/>
           <species name="Graveler" evolvesTo="//@kingdoms.2/@phyla.0/@classes.0/@genera.1/@species.0" evolvesFrom="//@kingdoms.2/@phyla.0/@classes.0/@genera.0/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png"/>
         </genera>
-        <genera name="Megaton Pok&#xe9;mon" anatomy="humanoid">
+        <genera name="Megaton Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.4/@genera.1 //@kingdoms.0/@phyla.0/@classes.0/@genera.2 //@kingdoms.1/@phyla.1/@classes.0/@genera.5 //@kingdoms.1/@phyla.0/@classes.0/@genera.17 //@kingdoms.1/@phyla.0/@classes.0/@genera.20 //@kingdoms.1/@phyla.0/@classes.0/@genera.21 //@kingdoms.1/@phyla.0/@classes.0/@genera.26 //@kingdoms.1/@phyla.0/@classes.0/@genera.27 //@kingdoms.1/@phyla.1/@classes.0/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.35" anatomy="humanoid">
           <species name="Golem" evolvesFrom="//@kingdoms.2/@phyla.0/@classes.0/@genera.0/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png"/>
         </genera>
-        <genera name="Magnet Pok&#xe9;mon" anatomy="arms">
+        <genera name="Magnet Pok&#xe9;mon" sameAnatomy="//@kingdoms.2/@phyla.0/@classes.0/@genera.0 //@kingdoms.1/@phyla.0/@classes.0/@genera.14" anatomy="arms">
           <species name="Magnemite" evolvesTo="//@kingdoms.2/@phyla.0/@classes.0/@genera.2/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png"/>
           <species name="Magneton" evolvesFrom="//@kingdoms.2/@phyla.0/@classes.0/@genera.2/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png"/>
         </genera>
-        <genera name="Rock Snake Pok&#xe9;mon" anatomy="squiggle">
+        <genera name="Rock Snake Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.1/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.3/@genera.2 //@kingdoms.1/@phyla.0/@classes.3/@genera.3 //@kingdoms.1/@phyla.0/@classes.3/@genera.6" anatomy="squiggle">
           <species name="Onix" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png"/>
         </genera>
-        <genera name="Ball Pok&#xe9;mon" anatomy="ball">
+        <genera name="Ball Pok&#xe9;mon" sameAnatomy="//@kingdoms.1/@phyla.0/@classes.2/@genera.8 //@kingdoms.1/@phyla.0/@classes.0/@genera.15 //@kingdoms.1/@phyla.0/@classes.0/@genera.23 //@kingdoms.1/@phyla.0/@classes.0/@genera.31" anatomy="ball">
           <species name="Voltorb" evolvesTo="//@kingdoms.2/@phyla.0/@classes.0/@genera.4/@species.1" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png"/>
           <species name="Electrode" evolvesFrom="//@kingdoms.2/@phyla.0/@classes.0/@genera.4/@species.0" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png"/>
         </genera>
-        <genera name="Virtual Pok&#xe9;mon" anatomy="legs">
+        <genera name="Virtual Pok&#xe9;mon" sameAnatomy="//@kingdoms.0/@phyla.0/@classes.0/@genera.1 //@kingdoms.1/@phyla.0/@classes.2/@genera.3 //@kingdoms.1/@phyla.0/@classes.1/@genera.5 //@kingdoms.1/@phyla.0/@classes.1/@genera.6 //@kingdoms.0/@phyla.0/@classes.0/@genera.6 //@kingdoms.0/@phyla.0/@classes.0/@genera.7" anatomy="legs">
           <species name="Porygon" icon="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png"/>
         </genera>
       </classes>
