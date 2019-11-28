@@ -21,11 +21,11 @@ In order to classify the Pokemon, we borrowed terminology from biological taxono
 
 
 TODOS:
-- [x] Retrieve JSON data
+- [X] Retrieve JSON data
 - [X] Make anatomy relations on genera
 - [X] Build EMF model of the data
-- [ ] Instantiate the model from data
-- [ ] Build diagram editor 
+- [X] Instantiate the model from data
+- [X] Build diagram editor 
 - [ ] Additional transformation and manipulation
 - [ ] Finish filling out readme
 
