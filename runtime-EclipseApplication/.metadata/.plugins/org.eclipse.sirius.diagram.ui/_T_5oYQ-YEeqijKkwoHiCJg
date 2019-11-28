@@ -1,15 +1,15 @@
-#Wed Nov 27 16:18:23 CET 2019
+#Thu Nov 28 15:54:00 CET 2019
 rulergrid.snaptogeometry=true
-viewport.x=142
-zoom=0.5
+viewport.x=0
+zoom=0.050000000000000044
 print.margin.right=0.5
 rulergrid.rulerunit=1
 rulergrid.snaptogrid=true
 print.page.size=A4
 print.margin.left=0.5
 print.page.width=8.26771654
-rulergrid.gridspacing=2.0
-rulergrid.viewgrid=true
+rulergrid.gridspacing=0.125
+rulergrid.viewgrid=false
 print.page.height=11.6929134
 rulergrid.gridlinecolor=12632256
 print.margin.bottom=0.5
@@ -19,4 +19,4 @@ print.margin.top=0.5
 rulergrid.viewrulers=false
 print.useMillim=true
 print.usePortrait=true
-viewport.y=119
+viewport.y=752

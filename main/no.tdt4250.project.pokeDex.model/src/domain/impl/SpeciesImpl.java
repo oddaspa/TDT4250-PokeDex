@@ -76,7 +76,7 @@ public class SpeciesImpl extends MinimalEObjectImpl.Container implements Species
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String ICON_EDEFAULT = null;
+	protected static final byte[] ICON_EDEFAULT = null;
 
 	/**
 	 * The cached value of the '{@link #getIcon() <em>Icon</em>}' attribute.
@@ -86,7 +86,7 @@ public class SpeciesImpl extends MinimalEObjectImpl.Container implements Species
 	 * @generated
 	 * @ordered
 	 */
-	protected String icon = ICON_EDEFAULT;
+	protected byte[] icon = ICON_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -216,7 +216,7 @@ public class SpeciesImpl extends MinimalEObjectImpl.Container implements Species
 	 * @generated
 	 */
 	@Override
-	public String getIcon() {
+	public byte[] getIcon() {
 		return icon;
 	}
 
@@ -226,8 +226,8 @@ public class SpeciesImpl extends MinimalEObjectImpl.Container implements Species
 	 * @generated
 	 */
 	@Override
-	public void setIcon(String newIcon) {
-		String oldIcon = icon;
+	public void setIcon(byte[] newIcon) {
+		byte[] oldIcon = icon;
 		icon = newIcon;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, DomainPackage.SPECIES__ICON, oldIcon, icon));
@@ -260,7 +260,6 @@ public class SpeciesImpl extends MinimalEObjectImpl.Container implements Species
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -274,7 +273,7 @@ public class SpeciesImpl extends MinimalEObjectImpl.Container implements Species
 				setEvolvesFrom((Species)newValue);
 				return;
 			case DomainPackage.SPECIES__ICON:
-				setIcon((String)newValue);
+				setIcon((byte[])newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);

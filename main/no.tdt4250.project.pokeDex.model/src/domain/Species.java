@@ -95,12 +95,12 @@ public interface Species extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Icon</em>' attribute.
-	 * @see #setIcon(String)
+	 * @see #setIcon(byte[])
 	 * @see domain.DomainPackage#getSpecies_Icon()
 	 * @model
 	 * @generated
 	 */
-	String getIcon();
+	byte[] getIcon();
 
 	/**
 	 * Sets the value of the '{@link domain.Species#getIcon <em>Icon</em>}' attribute.
@@ -110,6 +110,7 @@ public interface Species extends EObject {
 	 * @see #getIcon()
 	 * @generated
 	 */
-	void setIcon(String value);
+	void setIcon(byte[] value);
+
 
 } // Species

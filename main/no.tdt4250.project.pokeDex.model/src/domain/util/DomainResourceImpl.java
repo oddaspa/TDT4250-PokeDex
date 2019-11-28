@@ -1,15 +1,21 @@
 package domain.util;
 
-import java.io.BufferedReader;
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.InputStream;
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
+
+import javax.imageio.ImageIO;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -51,7 +57,6 @@ public class DomainResourceImpl extends XMIResourceImpl {
 		super(uri);
 	}
 
-	@SuppressWarnings("unchecked")
 	public static void main(String[] args) throws IOException {
 		// SAVING TO XMI
 		ResourceSet resSet = new ResourceSetImpl();
@@ -186,7 +191,7 @@ public class DomainResourceImpl extends XMIResourceImpl {
 				    JSONObject pokemon = (JSONObject) ((JSONArray) pokemonList).get(i);
 				    
 				    // Use custom method to parse to hashmap
-				    HashMap pokemonHashMap = parsePokemonObject(pokemon);
+				    HashMap<String, String> pokemonHashMap = parsePokemonObject(pokemon);
 				    
 				    // Create instance of said pokemon
 				    Species pokemonSpecies = DomainFactory.eINSTANCE.createSpecies();
@@ -194,7 +199,13 @@ public class DomainResourceImpl extends XMIResourceImpl {
 				    // Set name of instance to name in hashmap
 				    pokemonSpecies.setName((String) pokemonHashMap.get("name"));
 				    
-				    pokemonSpecies.setIcon((String) pokemonHashMap.get("icon"));
+				    // Get icon from an url
+				    try {
+						pokemonSpecies.setIcon(recoverImageFromUrl((String) pokemonHashMap.get("icon")));
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 				    
 				    // Retrieve genus from hashmap
 				    String currentGenus = (String) pokemonHashMap.get("genus");
@@ -371,4 +382,19 @@ public class DomainResourceImpl extends XMIResourceImpl {
 	    return pokemonInstance;
 	}
 	
-} //RaResourceImpl
+	private static byte[] recoverImageFromUrl(String urlText) throws Exception {
+        URL url = new URL(urlText);
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+          
+        try (InputStream inputStream = url.openStream()) {
+            int n = 0;
+            byte [] buffer = new byte[ 1024 ];
+            while (-1 != (n = inputStream.read(buffer))) {
+                output.write(buffer, 0, n);
+            }
+        }
+      
+        return output.toByteArray();
+    }
+	
+} 
