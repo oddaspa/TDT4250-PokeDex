@@ -11,7 +11,7 @@ Group members:
 
 ![Darwin's Tree of Life](https://github.com/oddaspa/TDT4250-PokeDex/blob/master/main/prestudy/img/tree_of_life_darwin.jpg "Tree of Life Darwin")
 
-We looked for a domain with a structure that would be interesting to model with EMF. At first we considered using data from the [Open Tree of Life](https://opentreeoflife.github.io/), but when we discovered a data source that described Pokemon in a similar way, we quickly decided that modeling Pokemon would be more interesting.
+We looked for a domain with a structure that would be interesting to model with EMF. At first we considered using data from the [Open Tree of Life](https://opentreeoflife.github.io/), but when we discovered a data source that described Pokemon in a similar way, we quickly decided that modeling Pokemon would be more interesting as modeling Pokemon comes with its own set of challenges such as how to find cross-model relations as Pokemon do not function exactly like real lifeforms.
 
 
 ## Classification
@@ -63,10 +63,8 @@ The submission itself should be a link to the repository where the project is. T
 
 <a name="transfrom"></a>
 ### Dependencies
-
 Need Simple JSON from [here](https://code.google.com/archive/p/json-simple/downloads).
 
 <a name="change"></a>
 ### Changing the dataset
-
 Once the team started working with the front end it started impacting performance that there were over 800 entities in the diagram. To improve performace a filter was added to get the number of entities retrieved from the API down to 151 (the first generation of Pokemon) as well as compressing the images we use.  
