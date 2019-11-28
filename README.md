@@ -59,6 +59,7 @@ The greatest challenge in finding a good model was deciding how we would use the
 
 <a name="guide"></a>
 ### User guide
+The submission itself should be a link to the repository where the project is. The repository needs to be accessible to the TA and me, so we can clone it, before importing the bundle project into Eclipse. There must be a README.md file in each bundle project, and one of them must include detailed instructions for how to try out your project, including what we need to install into Eclipse to be able to compile and launch, how to launch and what to do when launched, e.g. what actions to take and what to look for to see all the relevant features. It is very important that the instructions are precise and complete, because we don't want to waste time on configuration issues.
 
 <a name="transfrom"></a>
 ### Dependencies
