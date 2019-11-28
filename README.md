@@ -50,6 +50,7 @@ The greatest challenge in finding a good model was deciding how we would use the
 
 <a name="init_models"></a>
 ### Instantiating Pokemon models
+There is a REST call to the PokemonAPI. This returns a JSON object with all our Pokemon. We parse the JSON object and use the data contained to buid our own XMI representation. We use the JSON object to create a list of Pokemon. We iterate over this list and use the information from each individual Pokemon to instantiate Ecore obejcts.
 
 <a name="editor"></a>
 ### Building the diagram editor
