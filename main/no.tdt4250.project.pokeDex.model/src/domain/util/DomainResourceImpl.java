@@ -1,7 +1,5 @@
 package domain.util;
 
-import java.awt.Image;
-import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,12 +8,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashMap;
-
-import javax.imageio.ImageIO;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -207,6 +201,7 @@ public class DomainResourceImpl extends XMIResourceImpl {
 						e.printStackTrace();
 					}
 				    
+				    
 				    // Retrieve genus from hashmap
 				    String currentGenus = (String) pokemonHashMap.get("genus");
 				    
@@ -305,7 +300,7 @@ public class DomainResourceImpl extends XMIResourceImpl {
 				    	// Search for the genus in the list ...
 				    	for(Genus gen : generaInstances) {
 				    		if(gen.getName().equals(currentGenus)) {
-				    	
+				    			
 				    			// And add it to the existing instance
 				    			gen.getSpecies().add(pokemonSpecies);
 				    		}

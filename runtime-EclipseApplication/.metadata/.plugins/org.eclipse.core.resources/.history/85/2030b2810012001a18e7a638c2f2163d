@@ -44,12 +44,17 @@
           </style>
         </nodeMappings>
         <nodeMappings name="Species" domainClass="domain::Species">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql:self.name.toUpper()" iconPath="aql:self.icon" labelPosition="node" resizeKind="NSEW" width="20" height="10">
+          <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" resizeKind="NSEW" width="20" height="10">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelFormat>bold</labelFormat>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
+          <conditionnalStyles predicateExpression="aql:self.icon -> exists()">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="aql:self.icon">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </conditionnalStyles>
         </nodeMappings>
         <edgeMappings name="hasKingdom" sourceMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Domain']" targetMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Kingdom']" targetFinderExpression="feature:kingdoms">
           <style sizeComputationExpression="2">

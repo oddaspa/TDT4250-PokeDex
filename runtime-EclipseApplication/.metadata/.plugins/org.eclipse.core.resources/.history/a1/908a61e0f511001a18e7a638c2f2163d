@@ -44,9 +44,8 @@
           </style>
         </nodeMappings>
         <nodeMappings name="Species" domainClass="domain::Species">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql:self.name.toUpper()" iconPath="aql:self.icon" labelPosition="node" resizeKind="NSEW" width="20" height="10">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelFormat>bold</labelFormat>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
@@ -99,7 +98,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="evolvesTo" targetFinderExpression="feature:evolvesTo">
+        <edgeMappings name="evolvesTo" sourceMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Species']" targetMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Species']" targetFinderExpression="feature:evolvesTo">
           <style lineStyle="dot" targetArrow="InputClosedArrow" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_chocolate']"/>
             <centerLabelStyleDescription labelSize="18" showIcon="false" labelExpression="Evolves To">
