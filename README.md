@@ -1,3 +1,9 @@
+# Installation guide
+Must be filled out
+
+# User guide
+The submission itself should be a link to the repository where the project is. The repository needs to be accessible to the TA and me, so we can clone it, before importing the bundle project into Eclipse. There must be a README.md file in each bundle project, and one of them must include detailed instructions for how to try out your project, including what we need to install into Eclipse to be able to compile and launch, how to launch and what to do when launched, e.g. what actions to take and what to look for to see all the relevant features. It is very important that the instructions are precise and complete, because we don't want to waste time on configuration issues. 
+
 # TDT4250-PokeDex
 Semester project in the course TDT4250 - Advanced Software Design
 Group members:
@@ -35,9 +41,8 @@ TODOS:
 3. [Instantiating Pokemon models](#init_models)
 4. [Building the diagram editor](#editor)
 5. [Editing and transforming the models](#transform)
-6. [User guide](#guide)
-7. [Dependencies](#dependencies)
-8. [Changing the dataset](#change)
+6. [Dependencies](#dependencies)
+7. [Changing the dataset](#change)
 
 
 <a name="import_data"></a>
@@ -50,7 +55,9 @@ The greatest challenge in finding a good model was deciding how we would use the
 
 <a name="init_models"></a>
 ### Instantiating Pokemon models
-There is a REST call to the PokemonAPI. This returns a JSON object with all our Pokemon. We parse the JSON object and use the data contained to buid our own XMI representation. We use the JSON object to create a list of Pokemon. We iterate over this list and use the information from each individual Pokemon to instantiate Ecore obejcts.
+There is a REST call to the PokemonAPI, which returns data which we save as a JSON object with all our Pokemon. We parse the JSON object and create XMI instances with help of our domain factory. 
+
+In the runtime enviroment we use our XMI-file to show the data in a diagram with help of odesign. 
 
 <a name="editor"></a>
 ### Building the diagram editor
@@ -58,9 +65,6 @@ There is a REST call to the PokemonAPI. This returns a JSON object with all our 
 <a name="transfrom"></a>
 ### Editing and transforming the models
 
-<a name="guide"></a>
-### User guide
-The submission itself should be a link to the repository where the project is. The repository needs to be accessible to the TA and me, so we can clone it, before importing the bundle project into Eclipse. There must be a README.md file in each bundle project, and one of them must include detailed instructions for how to try out your project, including what we need to install into Eclipse to be able to compile and launch, how to launch and what to do when launched, e.g. what actions to take and what to look for to see all the relevant features. It is very important that the instructions are precise and complete, because we don't want to waste time on configuration issues.
 
 <a name="transfrom"></a>
 ### Dependencies
