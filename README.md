@@ -1,16 +1,14 @@
 # Installation guide
-Must be filled out
-- clone 
-- import model package to space
-- make sure you have all dependencies installed see #dep 
-
-- run as eclipse application
-- representation.aird
-  - under denne ligger pokemon world
-
+- clone the repo 
+- import model project to workspace (only need no.tdt4250.project.pokeDex.model)
+- make sure you have all dependencies installed see #dep (Simple JSON should be bundled with the project and shouldn't need installing) 
 
 # User guide
-The submission itself should be a link to the repository where the project is. The repository needs to be accessible to the TA and me, so we can clone it, before importing the bundle project into Eclipse. There must be a README.md file in each bundle project, and one of them must include detailed instructions for how to try out your project, including what we need to install into Eclipse to be able to compile and launch, how to launch and what to do when launched, e.g. what actions to take and what to look for to see all the relevant features. It is very important that the instructions are precise and complete, because we don't want to waste time on configuration issues. 
+- run as eclipse application
+- expand representation.aird
+- expand Professor view point
+- expand diagram
+- open PokemonWorld
 
 # TDT4250-PokeDex
 Semester project in the course TDT4250 - Advanced Software Design
