@@ -67,6 +67,7 @@ In the runtime enviroment we use our XMI-file to show the data in a diagram with
 
 <a name="editor"></a>
 ### Building the diagram editor
+We imported the generated XMI from the modelling project into runtime. Then we created a modelling project and a view point project. We coupled the domain XMI and odesign in representations.aird. We created poemonWorld diagram, and made a node for each Eclass. Finaly we made a relation-based edge for all relationships. 
 
 <a name="transfrom"></a>
 ### Editing and transforming the models
