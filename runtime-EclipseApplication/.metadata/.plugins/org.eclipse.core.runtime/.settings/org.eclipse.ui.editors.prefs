@@ -19,6 +19,7 @@ hyperlinkColor=102,175,249
 hyperlinkColor.SystemDefault=false
 infoIndicationColor=86,194,170
 lineNumberColor=101,123,131
+lineNumberRuler=true
 linked.slave.color=66,156,255
 matchingTagIndicationColor=72,72,72
 occurrenceIndicationColor=27,98,145
