@@ -49,9 +49,8 @@ TODOS:
 2. [Building the EMF model](#build_emf)
 3. [Instantiating Pokemon models](#init_models)
 4. [Building the diagram editor](#editor)
-5. [Editing and transforming the models](#transform)
-6. [Dependencies](#dependencies)
-7. [Changing the dataset](#change)
+5. [Dependencies](#dependencies)
+6. [Changing the dataset](#change)
 
 
 <a name="import_data"></a>
@@ -73,12 +72,8 @@ In the runtime enviroment we use our XMI-file to show the data in a diagram with
 We imported the generated XMI from the modelling project into runtime. Then we created a modelling project and a view point project. We coupled the domain XMI and odesign in representations.aird. We created poemonWorld diagram, and made a node for each Eclass. Finaly we made a relation-based edge for all relationships. 
 
 <a name="transfrom"></a>
-### Editing and transforming the models
-
-
-<a name="transfrom"></a>
 ### Dependencies
-Need Simple JSON from [here](https://code.google.com/archive/p/json-simple/downloads).
+Need Simple JSON from [here](https://code.google.com/archive/p/json-simple/downloads). <\br>
 Need Eclipse Layout Kernel from [here](https://www.eclipse.org/elk/)
 
 <a name="change"></a>
