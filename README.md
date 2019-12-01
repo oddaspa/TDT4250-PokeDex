@@ -5,7 +5,7 @@ Clone the repository. Import the model project into the workspace (no.tdt4250.pr
 After you are finished with the installation guide you should have an eclipse IDE looking like this:
 ![After Installation](https://github.com/oddaspa/TDT4250-PokeDex/blob/master/main/prestudy/img/IDE-1.jpg "After Installation")
 
-Right click the root folder and press Run As -> Eclipse Application. Expand the representation.aird -> expand Professor Viewpoint -> expand diagram and open PokemonWorld. When this is done your IDE should look like this:
+Right click the root folder and press Run As -> Eclipse Application. In the Runtime Eclipse IDE expand the representation.aird -> expand Professor Viewpoint -> expand diagram and open PokemonWorld. When this is done your IDE should look like this:
 ![Runtime Environment](https://github.com/oddaspa/TDT4250-PokeDex/blob/master/main/prestudy/img/IDE-2.jpg "Runtime Environment")
 
 In the PokemonWorld diagram there are several fliters and layers. There are several creation tools as well. To create a Pokemon press createPokemon in the Species Tools. Click and drag in the diagram to create the pokemon entity. Same for every creation tool. Double click the name of a node to edit it.
