@@ -1,14 +1,17 @@
 # Installation guide
-- clone the repo 
-- import model project to workspace (only need no.tdt4250.project.pokeDex.model)
-- make sure you have all dependencies installed see #dep (Simple JSON should be bundled with the project and shouldn't need installing) 
+Clone the repository. Import the model project into the workspace (no.tdt4250.project.pokeDex.model). If there are dependencies are bundled, but if there are issues look at the [Dependencies](#dependencies). 
 
 # User guide
-- run as eclipse application
-- expand representation.aird
-- expand Professor view point
-- expand diagram
-- open PokemonWorld
+After you are finished with the installation guide you should have an eclipse IDE looking like this:
+![After Installation](https://github.com/oddaspa/TDT4250-PokeDex/blob/master/main/prestudy/img/tree_of_life_darwin.jpg "After Installation")
+
+Right click the root folder and press Run As -> Eclipse Application. Expand the representation.aird -> expand Professor Viewpoint -> expand diagram and open PokemonWorld. When this is done your IDE should look like this:
+![Runtime Environment](https://github.com/oddaspa/TDT4250-PokeDex/blob/master/main/prestudy/img/IDE-2.jpg "Runtime Environment")
+
+In the PokemonWorld diagram there are several fliters and layers. There are several creation tools as well. To create a Pokemon press createPokemon in the Species Tools. Click and drag in the diagram to create the pokemon entity. Same for every creation tool. Double click the name of a node to edit it.
+
+To create relationships between nodes use the appropriate edge tool. Click on the relationship you want to create, click on the source node then the target node. The relation based edge should now be created.   
+
 
 # TDT4250-PokeDex
 Semester project in the course TDT4250 - Advanced Software Design
@@ -38,8 +41,8 @@ TODOS:
 - [X] Build EMF model of the data
 - [X] Instantiate the model from data
 - [X] Build diagram editor 
-- [ ] Additional transformation and manipulation
-- [ ] Finish filling out readme
+- [X] Additional transformation and manipulation
+- [X] Finish filling out readme
 
 
 1. [Import data from API](#import_data)
@@ -80,4 +83,4 @@ Need Eclipse Layout Kernel from [here](https://www.eclipse.org/elk/)
 
 <a name="change"></a>
 ### Changing the dataset
-Once the team started working with the front end it started impacting performance that there were over 800 entities in the diagram. To improve performace a filter was added to get the number of entities retrieved from the API down to 151 (the first generation of Pokemon) as well as compressing the images we use.  
+Once the team started working with the front end it started impacting performance that there were over 800 entities in the diagram. To improve performace a filter was added to get the number of entities retrieved from the API down to 151 (the first generation of Pokemon) as well as compressing the images we use.
