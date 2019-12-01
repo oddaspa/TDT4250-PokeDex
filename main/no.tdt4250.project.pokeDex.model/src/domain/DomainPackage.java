@@ -85,13 +85,49 @@ public interface DomainPackage extends EPackage {
 	int DOMAIN__KINGDOMS = 1;
 
 	/**
+	 * The feature id for the '<em><b>All Phyla</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN__ALL_PHYLA = 2;
+
+	/**
+	 * The feature id for the '<em><b>All Classes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN__ALL_CLASSES = 3;
+
+	/**
+	 * The feature id for the '<em><b>All Genera</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN__ALL_GENERA = 4;
+
+	/**
+	 * The feature id for the '<em><b>All Species</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DOMAIN__ALL_SPECIES = 5;
+
+	/**
 	 * The number of structural features of the '<em>Domain</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int DOMAIN_FEATURE_COUNT = 2;
+	int DOMAIN_FEATURE_COUNT = 6;
 
 	/**
 	 * The number of operations of the '<em>Domain</em>' class.
@@ -410,6 +446,50 @@ public interface DomainPackage extends EPackage {
 	EReference getDomain_Kingdoms();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link domain.Domain#getAllPhyla <em>All Phyla</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>All Phyla</em>'.
+	 * @see domain.Domain#getAllPhyla()
+	 * @see #getDomain()
+	 * @generated
+	 */
+	EReference getDomain_AllPhyla();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link domain.Domain#getAllClasses <em>All Classes</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>All Classes</em>'.
+	 * @see domain.Domain#getAllClasses()
+	 * @see #getDomain()
+	 * @generated
+	 */
+	EReference getDomain_AllClasses();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link domain.Domain#getAllGenera <em>All Genera</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>All Genera</em>'.
+	 * @see domain.Domain#getAllGenera()
+	 * @see #getDomain()
+	 * @generated
+	 */
+	EReference getDomain_AllGenera();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link domain.Domain#getAllSpecies <em>All Species</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>All Species</em>'.
+	 * @see domain.Domain#getAllSpecies()
+	 * @see #getDomain()
+	 * @generated
+	 */
+	EReference getDomain_AllSpecies();
+
+	/**
 	 * Returns the meta object for class '{@link domain.Kingdom <em>Kingdom</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -672,6 +752,38 @@ public interface DomainPackage extends EPackage {
 		 * @generated
 		 */
 		EReference DOMAIN__KINGDOMS = eINSTANCE.getDomain_Kingdoms();
+
+		/**
+		 * The meta object literal for the '<em><b>All Phyla</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOMAIN__ALL_PHYLA = eINSTANCE.getDomain_AllPhyla();
+
+		/**
+		 * The meta object literal for the '<em><b>All Classes</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOMAIN__ALL_CLASSES = eINSTANCE.getDomain_AllClasses();
+
+		/**
+		 * The meta object literal for the '<em><b>All Genera</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOMAIN__ALL_GENERA = eINSTANCE.getDomain_AllGenera();
+
+		/**
+		 * The meta object literal for the '<em><b>All Species</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference DOMAIN__ALL_SPECIES = eINSTANCE.getDomain_AllSpecies();
 
 		/**
 		 * The meta object literal for the '{@link domain.impl.KingdomImpl <em>Kingdom</em>}' class.

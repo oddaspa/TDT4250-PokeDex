@@ -5,17 +5,8 @@ package domain.provider;
 
 import domain.DomainPackage;
 import domain.Species;
-
-import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Collection;
 import java.util.List;
-
-import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
-
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
@@ -171,22 +162,7 @@ public class SpeciesItemProvider
 	 */
 	@Override
 	public Object getImage(Object object) {
-		URL url = null;
-		try {
-			url = new URL(this.getString("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"));
-		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		BufferedImage c = null;
-		try {
-			c = ImageIO.read(url);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		ImageIcon image = new ImageIcon(c);
-		return overlayImage(object, image);
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/Species"));
 	}
 
 	/**

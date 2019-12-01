@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/description/tool/1.1.0" name="diagram" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="diagram" version="12.0.0.2017041100">
   <ownedViewpoints name="Professor">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="diagram" domainClass="domain::Domain" preconditionExpression="aql:self.name" enablePopupBars="true">
       <defaultLayer name="Default">
@@ -11,44 +11,107 @@
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="Kingdom" domainClass="domain::Kingdom">
-          <style xsi:type="style:SquareDescription" labelSize="54" showIcon="false" labelExpression="aql:self.name.toUpper()" labelPosition="node" resizeKind="NSEW" width="40" height="20">
+        <nodeMappings name="Kingdom" labelDirectEdit="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='editName']" domainClass="domain::Kingdom">
+          <style xsi:type="style:SquareDescription" labelSize="54" labelExpression="aql:self.name.toUpper()" iconPath="/my.project.diagram/img/castle (2).png" labelPosition="node" resizeKind="NSEW" width="40" height="20">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelFormat>bold</labelFormat>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="Phylum" domainClass="domain::Phylum">
-          <style xsi:type="style:SquareDescription" labelSize="32" showIcon="false" labelExpression="aql:self.name.toUpper()" sizeComputationExpression="7" labelPosition="node" width="30" height="15">
+        <nodeMappings name="Phylum" labelDirectEdit="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='editName']" domainClass="domain::Phylum">
+          <style xsi:type="style:SquareDescription" labelSize="32" labelExpression="aql:self.name.toUpper()" iconPath="/my.project.diagram/img/mitosis.png" sizeComputationExpression="7" labelPosition="node" resizeKind="NSEW" width="30" height="15">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelFormat>bold</labelFormat>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="Class" domainClass="domain::Class">
-          <style xsi:type="style:SquareDescription" labelSize="28" showIcon="false" labelExpression="aql:self.name.toUpper()" labelPosition="node" width="20" height="10">
+        <nodeMappings name="Class" labelDirectEdit="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='editName']" domainClass="domain::Class">
+          <style xsi:type="style:SquareDescription" labelSize="28" labelExpression="aql:self.name.toUpper()" labelPosition="node" width="20" height="10">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelFormat>bold</labelFormat>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
           </style>
+          <conditionnalStyles predicateExpression="aql:self.name.toLower().toString().startsWith('rep')">
+            <style xsi:type="style:SquareDescription" labelSize="28" labelExpression="aql:self.name.toUpper()" iconPath="/my.project.diagram/img/crocodile.png" labelPosition="node" width="25" height="10">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.toLower().toString().startsWith('fish')">
+            <style xsi:type="style:SquareDescription" labelSize="28" labelExpression="aql:self.name.toUpper()" iconPath="/my.project.diagram/img/shark.png" labelPosition="node" width="20" height="10">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.toLower().toString().startsWith('mamm')">
+            <style xsi:type="style:SquareDescription" labelSize="28" labelExpression="aql:self.name.toUpper()" iconPath="/my.project.diagram/img/lion.png" labelPosition="node" width="25" height="10">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.toLower().toString().startsWith('myth')">
+            <style xsi:type="style:SquareDescription" labelSize="28" labelExpression="aql:self.name.toUpper()" iconPath="/my.project.diagram/img/unicorn.png" labelPosition="node" width="30" height="10">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.toLower().toString().startsWith('bird')">
+            <style xsi:type="style:SquareDescription" labelSize="28" labelExpression="aql:self.name.toUpper()" iconPath="/my.project.diagram/img/bird.png" labelPosition="node" width="20" height="10">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.toLower().toString().contains('bug')">
+            <style xsi:type="style:SquareDescription" labelSize="28" labelExpression="aql:self.name.toUpper().first(15)" iconPath="/my.project.diagram/img/beetle.png" labelPosition="node" width="31" height="10">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.toLower().toString().contains('plant')">
+            <style xsi:type="style:SquareDescription" labelSize="28" labelExpression="aql:self.name.toUpper().first(18)" iconPath="/my.project.diagram/img/mustard.png" labelPosition="node" width="31" height="10">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            </style>
+          </conditionnalStyles>
+          <conditionnalStyles predicateExpression="aql:self.name.toLower().toString().contains('mineral')">
+            <style xsi:type="style:SquareDescription" labelSize="28" labelExpression="aql:self.name.toUpper().first(20)" iconPath="/my.project.diagram/img/diamond.png" labelPosition="node" width="30" height="20">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelFormat>bold</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            </style>
+          </conditionnalStyles>
         </nodeMappings>
-        <nodeMappings name="Genus" domainClass="domain::Genus">
-          <style xsi:type="style:SquareDescription" labelSize="24" showIcon="false" labelExpression="aql:self.name.toUpper()" labelPosition="node" resizeKind="NSEW" width="10" height="5">
+        <nodeMappings name="Genus" labelDirectEdit="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='editName']" domainClass="domain::Genus">
+          <style xsi:type="style:SquareDescription" labelSize="20" labelExpression="aql:self.name.toUpper()" iconPath="/my.project.diagram/img/dna.png" labelPosition="node" resizeKind="NSEW" width="25" height="10">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelFormat>bold</labelFormat>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
           </style>
         </nodeMappings>
-        <nodeMappings name="Species" domainClass="domain::Species">
-          <style xsi:type="style:SquareDescription" labelSize="20" showIcon="false" labelExpression="aql:self.name.toUpper()" labelPosition="node" resizeKind="NSEW" width="20" height="10">
+        <nodeMappings name="Species" labelDirectEdit="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='editName']" domainClass="domain::Species">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="aql:self.name.toUpper()" iconPath="/my.project.diagram/img/Bilde2.png" sizeComputationExpression="4" labelPosition="node" resizeKind="NSEW" width="15" height="5">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelFormat>bold</labelFormat>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </nodeMappings>
         <edgeMappings name="hasKingdom" sourceMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Domain']" targetMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Kingdom']" targetFinderExpression="feature:kingdoms">
@@ -91,14 +154,6 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="sameAnatomy" sourceMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Genus']" targetMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Genus']" targetFinderExpression="feature:sameAnatomy">
-          <style lineStyle="dash" sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
-            <centerLabelStyleDescription labelSize="12">
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
         <edgeMappings name="evolvesTo" sourceMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Species']" targetMapping="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Species']" targetFinderExpression="feature:evolvesTo">
           <style lineStyle="dot" targetArrow="InputClosedArrow" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_chocolate']"/>
@@ -108,6 +163,131 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
+        <toolSections name="Creation Tools" icon="/my.project.diagram/img/hammer.png">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createKingdom" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Kingdom']" iconPath="/my.project.diagram/img/tool_img/castle (3).png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="domain::Kingdom" referenceName="kingdoms">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'kingdoms'+container.kingdoms -> filter(domain::Kingdom) -> size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createPhylum" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Phylum'] //@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Kingdom']" iconPath="/my.project.diagram/img/tool_img/mitosis (1).png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="domain::Phylum" referenceName="allPhyla">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'phyla'+container.phyla -> filter(domain::Phylum) -> size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createClass" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Class']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="domain::Class" referenceName="allClasses">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'class'+container.classes -> filter(domain::Class) -> size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createGenus" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Genus']" iconPath="/my.project.diagram/img/tool_img/dna (1).png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="domain::Genus" referenceName="allGenera">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'genera'+container.genera -> filter(domain::Genus) -> size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="createPokemon" nodeMappings="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@nodeMappings[name='Species']" iconPath="/my.project.diagram/img/tool_img/Bilde1.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="domain::Species" referenceName="allSpecies">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'New Pokemon'"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Relation Tools">
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setPhyla" edgeMappings="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@edgeMappings[name='hasPhylum']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="phyla" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setClass" edgeMappings="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@edgeMappings[name='hasClass']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="classes" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setGenera" edgeMappings="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@edgeMappings[name='hasGenus']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="genera" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setSpecies" edgeMappings="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@edgeMappings[name='hasSpecies']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="species" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="setEvolvesTo" edgeMappings="//@ownedViewpoints[name='Professor']/@ownedRepresentations[name='diagram']/@defaultLayer/@edgeMappings[name='evolvesTo']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="evolvesTo" valueExpression="var:target"/>
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:target">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="evolvesFrom" valueExpression="var:source"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Editing Tools">
+          <ownedTools xsi:type="tool:DirectEditLabel" name="editName">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:0"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
       </defaultLayer>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="my.project.diagram.Services"/>
@@ -118,7 +298,7 @@
       <groups name="Kingdom Group" labelExpression="Kingdom" domainClass="domain::Kingdom" semanticCandidateExpression="var:self">
         <controls xsi:type="properties:TextDescription">
           <initialOperation>
-            <firstModelOperations xsi:type="tool:ChangeContext" browseExpression="var:self"/>
+            <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self"/>
           </initialOperation>
         </controls>
       </groups>

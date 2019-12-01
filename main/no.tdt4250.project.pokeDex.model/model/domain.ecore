@@ -5,6 +5,14 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="kingdoms" upperBound="-1"
         eType="#//Kingdom" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allPhyla" upperBound="-1"
+        eType="#//Phylum" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allClasses" upperBound="-1"
+        eType="#//Class" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allGenera" upperBound="-1"
+        eType="#//Genus" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allSpecies" upperBound="-1"
+        eType="#//Species" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Kingdom">
     <eStructuralFeatures xsi:type="ecore:EReference" name="phyla" upperBound="-1"

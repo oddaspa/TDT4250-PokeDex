@@ -163,6 +163,46 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getDomain_AllPhyla() {
+		return (EReference)domainEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDomain_AllClasses() {
+		return (EReference)domainEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDomain_AllGenera() {
+		return (EReference)domainEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getDomain_AllSpecies() {
+		return (EReference)domainEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getKingdom() {
 		return kingdomEClass;
 	}
@@ -389,6 +429,10 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 		domainEClass = createEClass(DOMAIN);
 		createEAttribute(domainEClass, DOMAIN__NAME);
 		createEReference(domainEClass, DOMAIN__KINGDOMS);
+		createEReference(domainEClass, DOMAIN__ALL_PHYLA);
+		createEReference(domainEClass, DOMAIN__ALL_CLASSES);
+		createEReference(domainEClass, DOMAIN__ALL_GENERA);
+		createEReference(domainEClass, DOMAIN__ALL_SPECIES);
 
 		kingdomEClass = createEClass(KINGDOM);
 		createEReference(kingdomEClass, KINGDOM__PHYLA);
@@ -449,6 +493,10 @@ public class DomainPackageImpl extends EPackageImpl implements DomainPackage {
 		initEClass(domainEClass, Domain.class, "Domain", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getDomain_Name(), ecorePackage.getEString(), "name", null, 0, 1, Domain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getDomain_Kingdoms(), this.getKingdom(), null, "kingdoms", null, 0, -1, Domain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDomain_AllPhyla(), this.getPhylum(), null, "allPhyla", null, 0, -1, Domain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDomain_AllClasses(), this.getClass_(), null, "allClasses", null, 0, -1, Domain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDomain_AllGenera(), this.getGenus(), null, "allGenera", null, 0, -1, Domain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getDomain_AllSpecies(), this.getSpecies(), null, "allSpecies", null, 0, -1, Domain.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(kingdomEClass, Kingdom.class, "Kingdom", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getKingdom_Phyla(), this.getPhylum(), null, "phyla", null, 0, -1, Kingdom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

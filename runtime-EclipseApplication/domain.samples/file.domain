@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<no.tdt4250.project.pokeDex.model:Domain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:no.tdt4250.project.pokeDex.model="http://no/tdt4250/project/pokeDex/model" name="Pokemons">
+<no.tdt4250.project.pokeDex.model:Domain xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:no.tdt4250.project.pokeDex.model="http://no/tdt4250/project/pokeDex/model" name="phyla">
   <kingdoms name="Plantae">
     <phyla name="Unspecified Plantae phylum">
       <classes name="Unspecified plant class">

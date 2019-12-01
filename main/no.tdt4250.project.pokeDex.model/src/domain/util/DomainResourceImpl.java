@@ -232,6 +232,7 @@ public class DomainResourceImpl extends XMIResourceImpl {
 				    	// Add the pokemon instance to the genus instance
 				    	newGen.getSpecies().add(pokemonSpecies);
 				    	
+				    	domain.getAllSpecies().add(pokemonSpecies);
 				    	// Add the new genus instance to an array for later use
 				    	generaInstances.add(newGen);
 				    	

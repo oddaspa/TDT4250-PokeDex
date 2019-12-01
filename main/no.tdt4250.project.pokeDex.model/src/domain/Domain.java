@@ -17,6 +17,10 @@ import org.eclipse.emf.ecore.EObject;
  * <ul>
  *   <li>{@link domain.Domain#getName <em>Name</em>}</li>
  *   <li>{@link domain.Domain#getKingdoms <em>Kingdoms</em>}</li>
+ *   <li>{@link domain.Domain#getAllPhyla <em>All Phyla</em>}</li>
+ *   <li>{@link domain.Domain#getAllClasses <em>All Classes</em>}</li>
+ *   <li>{@link domain.Domain#getAllGenera <em>All Genera</em>}</li>
+ *   <li>{@link domain.Domain#getAllSpecies <em>All Species</em>}</li>
  * </ul>
  *
  * @see domain.DomainPackage#getDomain()
@@ -57,5 +61,53 @@ public interface Domain extends EObject {
 	 * @generated
 	 */
 	EList<Kingdom> getKingdoms();
+
+	/**
+	 * Returns the value of the '<em><b>All Phyla</b></em>' containment reference list.
+	 * The list contents are of type {@link domain.Phylum}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>All Phyla</em>' containment reference list.
+	 * @see domain.DomainPackage#getDomain_AllPhyla()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Phylum> getAllPhyla();
+
+	/**
+	 * Returns the value of the '<em><b>All Classes</b></em>' containment reference list.
+	 * The list contents are of type {@link domain.Class}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>All Classes</em>' containment reference list.
+	 * @see domain.DomainPackage#getDomain_AllClasses()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<domain.Class> getAllClasses();
+
+	/**
+	 * Returns the value of the '<em><b>All Genera</b></em>' containment reference list.
+	 * The list contents are of type {@link domain.Genus}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>All Genera</em>' containment reference list.
+	 * @see domain.DomainPackage#getDomain_AllGenera()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Genus> getAllGenera();
+
+	/**
+	 * Returns the value of the '<em><b>All Species</b></em>' containment reference list.
+	 * The list contents are of type {@link domain.Species}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>All Species</em>' containment reference list.
+	 * @see domain.DomainPackage#getDomain_AllSpecies()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Species> getAllSpecies();
 
 } // Domain
