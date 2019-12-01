@@ -3,7 +3,7 @@ Clone the repository. Import the model project into the workspace (no.tdt4250.pr
 
 # User guide
 After you are finished with the installation guide you should have an eclipse IDE looking like this:
-![After Installation](https://github.com/oddaspa/TDT4250-PokeDex/blob/master/main/prestudy/img/tree_of_life_darwin.jpg "After Installation")
+![After Installation](https://github.com/oddaspa/TDT4250-PokeDex/blob/master/main/prestudy/img/IDE-1.jpg "After Installation")
 
 Right click the root folder and press Run As -> Eclipse Application. Expand the representation.aird -> expand Professor Viewpoint -> expand diagram and open PokemonWorld. When this is done your IDE should look like this:
 ![Runtime Environment](https://github.com/oddaspa/TDT4250-PokeDex/blob/master/main/prestudy/img/IDE-2.jpg "Runtime Environment")
